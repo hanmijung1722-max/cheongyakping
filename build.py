@@ -98,6 +98,27 @@ def fetch_region(key, region, since):
     return rows
 
 
+def flag(row, key):
+    """'Y'/'N' 형태 필드를 True/False 로. 필드가 없으면 None(모름)."""
+    if key not in row or row.get(key) is None:
+        return None
+    text = str(row.get(key)).strip().upper()
+    if text in ("Y", "O", "TRUE", "해당", "1"):
+        return True
+    if text in ("N", "", "X", "FALSE", "미해당", "0"):
+        return False
+    return None
+
+
+def house_kind(row):
+    text = " ".join(str(row.get(k) or "") for k in ("HOUSE_DTL_SECD_NM", "HOUSE_SECD_NM"))
+    if "국민" in text or "공공" in text:
+        return "국민"
+    if "민영" in text:
+        return "민영"
+    return None
+
+
 def to_listing(row):
     def v(key):
         val = row.get(key)
@@ -159,6 +180,9 @@ def to_listing(row):
         "move_in": v("MVN_PREARNGE_YM"),
         "phone": v("MDHS_TELNO"),
         "url": v("PBLANC_URL"),
+        "kind": house_kind(row),                                  # 민영 / 국민(공공)
+        "reg": {"spec": flag(row, "SPECLT_RDN_EARTH_AT"),         # 투기과열지구
+                "adj": flag(row, "MDAT_TRGET_AREA_SECD")},        # 조정대상(청약과열)지역
         "events": [
             {"kind": k, "start": events[k][0].isoformat(), "end": events[k][1].isoformat()}
             for k in sorted(events, key=ORDER.index)
@@ -171,11 +195,16 @@ def is_finished(listing, today):
     return not ends or max(ends) < today
 
 
+RAW_SAMPLE = []   # 필드명 확인용으로 원본 응답 몇 줄만 보관
+
+
 def fetch_all(key, regions, today):
     since = (today - timedelta(days=90)).isoformat()
     seen, out = set(), []
     for region in regions:
         for row in fetch_region(key, region, since):
+            if len(RAW_SAMPLE) < 2:
+                RAW_SAMPLE.append(row)
             item = to_listing(row)
             if item and item["id"] not in seen and not is_finished(item, today):
                 seen.add(item["id"])
@@ -263,13 +292,15 @@ def sample_listings(today):
         return {"kind": kind, "start": (today + timedelta(days=a)).isoformat(),
                 "end": (today + timedelta(days=b if b is not None else a)).isoformat()}
 
-    def make(i, name, region, addr, units, evs, types):
+    def make(i, name, region, addr, units, evs, types, reg=None):
+        reg = reg or {"spec": region == "서울", "adj": region == "서울"}
         keys = ["general"] + list(SUPPLY_FIELDS)
         totals = {k: sum(t.get(k, 0) for t in types) for k in keys}
         full = [{**{k: 0 for k in keys}, **t} for t in types]
         return {"id": f"sample-{i}", "name": f"{name} (샘플)", "region": region, "address": addr,
                 "units": units, "builder": "샘플건설", "developer": "샘플디벨롭", "move_in": "202908",
-                "phone": "02-000-0000", "url": None, "events": evs, "supply": totals, "types": full}
+                "phone": "02-000-0000", "url": None, "events": evs, "supply": totals, "types": full,
+                "kind": "민영", "reg": reg}
 
     return [
         make(1, "한강 포레스트힐", "서울", "서울특별시 강동구 샘플동 100", 412,
@@ -411,8 +442,10 @@ def main():
 
     DOCS.mkdir(exist_ok=True)
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
-    if debug:  # 주택형 API 응답 샘플 (필드명 확인용)
+    if debug:  # API 응답 샘플 (필드명 확인용)
         (DOCS / "debug_models.json").write_text(json.dumps(debug, ensure_ascii=False, indent=1), encoding="utf-8")
+    if RAW_SAMPLE:
+        (DOCS / "debug_detail.json").write_text(json.dumps(RAW_SAMPLE, ensure_ascii=False, indent=1), encoding="utf-8")
 
     payload = {
         "updated": datetime.now(KST).isoformat(timespec="minutes"),
