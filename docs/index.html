@@ -34,6 +34,23 @@ h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill)
 .chips{display:flex;gap:8px;margin:6px 0 4px}
 .chip{border:0;background:var(--fill);color:var(--text);font-size:14px;font-weight:600;padding:8px 16px;border-radius:99px}
 .chip.on{background:var(--primary);color:#fff}
+.chips.who{margin:2px 0 6px;align-items:center}
+.chips.who .lbl{font-size:12px;font-weight:700;color:var(--sub);margin-right:2px}
+.chips.who .chip{font-size:13px;padding:7px 13px}
+.chips.who .chip.on{background:var(--violet)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
+.tag2{font-size:12px;font-weight:700;padding:4px 9px;border-radius:99px;color:var(--violet);background:color-mix(in srgb,var(--violet) 13%,transparent)}
+.tag2.gray{color:var(--sub);background:var(--fill)}
+.sub-h{font-size:13px;font-weight:700;color:var(--sub);margin:18px 0 8px}
+.fit{background:color-mix(in srgb,var(--violet) 10%,transparent);border-radius:14px;padding:12px 14px;margin:12px 0;font-size:14px;line-height:1.6}
+.fit b{display:block;margin-bottom:2px}
+.fit.no{background:var(--fill)}
+.tbl{overflow-x:auto;margin:8px 0}
+.tbl table{border-collapse:collapse;font-size:12.5px;width:100%;min-width:420px}
+.tbl th,.tbl td{padding:7px 6px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl th{color:var(--sub);font-weight:600}
+.tbl td:first-child,.tbl th:first-child{text-align:left}
+.tbl td.z{color:var(--sub)}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
 .tile{background:var(--card);border-radius:16px;padding:14px 6px;text-align:center}
 .tile b{display:block;font-size:28px;font-weight:800}
@@ -149,7 +166,8 @@ const APPLY = ["special","first","second"];
 const WD = ["일","월","화","수","목","금","토"];
 
 let DATA = {listings:[], kinds:{}, sample:true};
-let tab = "home", region = "전체";
+let tab = "home", region = "전체", persona = "전체";
+try { const p = localStorage.getItem("persona"); if (["전체","싱글","신혼부부"].includes(p)) persona = p; } catch (e) {}
 let added = new Set();
 try { added = new Set(JSON.parse(localStorage.getItem("added") || "[]")); } catch (e) {}
 const saveAdded = () => { try { localStorage.setItem("added", JSON.stringify([...added])); } catch (e) {} };
@@ -195,6 +213,28 @@ function statusOf(l) {
 }
 const visible = () => DATA.listings.filter(l => region === "전체" || l.region === region);
 
+/* ---------- 싱글 / 신혼부부 : 가능성 있는 공급 유형 ----------
+   ※ 참고용 분류예요. 소득·자산·무주택·통장 요건은 반영하지 않아요. 최종 확인은 공고문에서! */
+const SUPPLY_LABEL = {newlywed:"신혼부부", first_home:"생애최초", multi_child:"다자녀", parents:"노부모부양", institution:"기관추천", newborn:"신생아", youth:"청년", etc:"기타"};
+const sumBy = (l, key, cond) => (l.types || []).filter(cond || (() => true)).reduce((a, t) => a + (t[key] || 0), 0);
+const small = t => t.area != null && t.area <= 60;
+function fit(l, p) {
+  if (!l.supply || !l.types || !l.types.length) return {unknown:true, items:[]};
+  const S = l.supply, items = [];
+  if (p === "신혼부부") {
+    if (S.newlywed) items.push({k:"newlywed", n:S.newlywed, text:"신혼부부 특별공급", note:"혼인 7년 이내(공공분양은 예비신혼·한부모 포함)"});
+    if (S.first_home) items.push({k:"first_home", n:S.first_home, text:"생애최초 특별공급", note:"세대 전원 무주택 · 5년 소득세 납부 등"});
+    if (S.newborn) items.push({k:"newborn", n:S.newborn, text:"신생아 특별공급", note:"2년 내 출산 · 공공분양 중심"});
+  } else if (p === "싱글") {
+    const fh = sumBy(l, "first_home", small);
+    if (fh) items.push({k:"first_home", n:fh, text:"생애최초 특공(추첨)", note:"1인 가구는 추첨 물량 · 전용 60㎡ 이하 주택형만 (부모와 같은 등본이면 전 주택형)"});
+    if (S.youth) items.push({k:"youth", n:S.youth, text:"청년 특별공급", note:"만 19~39세 미혼 · 공공 · 주로 소형"});
+  }
+  return {unknown:false, items};
+}
+const hasGeneral = l => !l.supply ? true : (l.supply.general || 0) > 0 || !(l.types || []).length;
+const personaCards = () => persona !== "전체";
+
 /* ---------- 화면 조각 ---------- */
 function mini(l) {
   let ev = l.events.filter(e => ["special","first","winner"].includes(e.kind));
@@ -211,27 +251,43 @@ function card(l) {
   return `<article class="card" data-id="${esc(l.id)}">
     <div class="row"><span class="pill r-${esc(l.region)}">${esc(l.region)}</span><span class="badge ${cls}">${esc(s.badge)}</span></div>
     <h3>${esc(l.name)}</h3><p class="addr">${esc(l.address)}</p>
-    <p class="head ${headCls}">${esc(s.head)}</p>${mini(l)}
+    <p class="head ${headCls}">${esc(s.head)}</p>${mini(l)}${tagsHtml(l)}
     <div class="foot"><span>${l.units ? "🏢 " + l.units + "세대" : ""}</span>${added.has(l.id) ? '<span class="added">🔔 알림 추가됨</span>' : ""}</div>
   </article>`;
 }
+function tagsHtml(l) {
+  if (!personaCards()) return "";
+  const f = fit(l, persona);
+  if (f.unknown) return `<div class="tags"><span class="tag2 gray">유형 정보 확인 필요</span></div>`;
+  if (!f.items.length) return `<div class="tags"><span class="tag2 gray">${persona} 특공 없음 · 일반공급만</span></div>`;
+  return `<div class="tags">${f.items.map(i => `<span class="tag2">${i.text.replace(" 특별공급","").replace("(추첨)","")} ${i.n}세대</span>`).join("")}</div>`;
+}
+const whoChips = () => `<div class="chips who"><span class="lbl">나는</span>${["전체","싱글","신혼부부"].map(r => `<button class="chip ${r === persona ? "on" : ""}" data-persona="${r}">${r}</button>`).join("")}</div>`;
 const chips = () => `<div class="chips">${["전체","서울","경기"].map(r => `<button class="chip ${r === region ? "on" : ""}" data-region="${r}">${r}</button>`).join("")}</div>`;
 const sampleBanner = () => DATA.sample ? `<div class="banner violet"><span>🪄</span><span>지금은 <b>샘플 데이터</b>예요. GitHub에 청약홈 인증키를 등록하면 실제 공고로 바뀌어요.</span></div>` : "";
 
 /* ---------- 홈 ---------- */
 function viewHome() {
-  const L = visible().map(l => ({l, s: statusOf(l)}));
+  const all = visible().map(l => ({l, s: statusOf(l), f: personaCards() ? fit(l, persona) : null}));
+  const L = all.filter(x => !x.f || x.f.unknown || x.f.items.length);          // 내 특공 대상 + 확인 필요
+  const rest = all.filter(x => x.f && !x.f.unknown && !x.f.items.length && x.s.phase !== "done"); // 일반공급만 가능
   const by = p => L.filter(x => x.s.phase === p).sort((a, b) => a.s.sort - b.s.sort);
   const open = by("open"), up = by("upcoming"), wait = by("wait");
   const soon = up.filter(x => x.s.sort - TODAY() <= 7).length;
   const sec = (t, a) => a.length ? `<section><h2>${t}<span class="count">${a.length}</span></h2>${a.map(x => card(x.l)).join("")}</section>` : "";
-  return sampleBanner() + chips() +
+  const restHtml = rest.length ? `<section><h2>일반공급만 가능<span class="count">${rest.length}</span></h2>
+    <p class="help" style="margin:-4px 0 10px">${persona} 대상 특별공급이 없는 단지예요. 일반공급(가점제·추첨제)으로는 신청할 수 있어요.</p>
+    ${rest.sort((a, b) => a.s.sort - b.s.sort).map(x => card(x.l)).join("")}</section>` : "";
+  const whoNote = personaCards() ? `<div class="banner violet"><span>🔎</span><span><b>${persona}</b> 기준으로 가능성 있는 특별공급 단지만 위에 모았어요. 소득·자산·무주택 여부 등은 반영하지 않은 <b>참고용 분류</b>예요.</span></div>` : "";
+  return sampleBanner() + chips() + whoChips() + whoNote +
     `<div class="tiles">
       <div class="tile"><b style="color:var(--success)">${open.length}</b><span>접수 중</span></div>
       <div class="tile"><b style="color:var(--primary)">${soon}</b><span>7일 내 시작</span></div>
       <div class="tile"><b style="color:var(--violet)">${added.size}</b><span>알림 추가</span></div></div>` +
     sec("지금 접수 중", open) + sec("접수 예정", up) + sec("당첨자 발표·계약 대기", wait) +
-    (open.length + up.length + wait.length ? "" : `<div class="empty">표시할 청약 일정이 없어요</div>`) +
+    (open.length + up.length + wait.length || rest.length ? "" : `<div class="empty">표시할 청약 일정이 없어요</div>`) +
+    (personaCards() && !(open.length + up.length + wait.length) ? `<div class="empty">${persona} 대상 특별공급 단지가 아직 없어요</div>` : "") +
+    restHtml +
     `<p class="note">청약 신청은 청약홈(applyhome.co.kr)에서 진행돼요. 이 앱은 일정 확인과 알림을 돕는 비공식 앱이에요.</p>`;
 }
 
@@ -301,6 +357,21 @@ function viewSettings() {
 }
 
 /* ---------- 상세 시트 ---------- */
+function supplySection(l) {
+  const who = persona === "전체" ? ["싱글", "신혼부부"] : [persona];
+  const boxes = who.map(p => {
+    const f = fit(l, p);
+    if (f.unknown) return `<div class="fit no"><b>${p}</b>주택형별 공급 정보를 아직 못 받았어요. 공고문에서 확인해 주세요.</div>`;
+    if (!f.items.length) return `<div class="fit no"><b>${p}</b>${p} 대상 특별공급은 없어 보여요. 일반공급(가점제·추첨제)으로 신청할 수 있어요.</div>`;
+    return `<div class="fit"><b>${p} · 가능성 있는 특별공급</b>${f.items.map(i => `· ${i.text} ${i.n}세대<br><span style="color:var(--sub);font-size:12.5px;margin-left:10px">${i.note}</span>`).join("<br>")}</div>`;
+  }).join("");
+  const cols = [["general","일반"],["newlywed","신혼"],["first_home","생애최초"],["multi_child","다자녀"],["parents","노부모"],["institution","기관추천"],["newborn","신생아"],["youth","청년"]]
+    .filter(c => (l.types || []).some(t => t[c[0]]));
+  const table = l.types && l.types.length ? `<div class="tbl"><table><tr><th>주택형</th>${cols.map(c => `<th>${c[1]}</th>`).join("")}</tr>
+    ${l.types.map(t => `<tr><td>${esc(t.area != null ? t.area + "㎡" : t.ty)}${t.price ? `<br><span style="color:var(--sub)">${Math.round(t.price / 100) / 100}억↑</span>` : ""}</td>${cols.map(c => `<td class="${t[c[0]] ? "" : "z"}">${t[c[0]] || "-"}</td>`).join("")}</tr>`).join("")}</table></div>` : "";
+  return `<div class="tl"><h2 style="margin-top:0">공급 유형</h2>${boxes}${table ? '<div class="sub-h">주택형별 공급 세대수</div>' + table : ""}
+    <p class="help">참고용 분류예요. 소득·자산·무주택·청약통장 요건은 반영하지 않았어요. 자격은 꼭 입주자 모집공고문에서 확인하세요.</p></div>`;
+}
 function openDetail(id) {
   const l = DATA.listings.find(x => x.id === id); if (!l) return;
   const s = statusOf(l), t = TODAY();
@@ -312,6 +383,7 @@ function openDetail(id) {
       <div class="txt"><b style="${past ? "color:var(--sub)" : ""}">${DATA.kinds[e.kind].title}</b>${ong ? '<span class="tag">진행 중</span>' : ""}
       <div class="d" style="color:${past ? "var(--sub)" : COLORS[e.kind]}">${range(e)}</div><p>${DATA.kinds[e.kind].hint}</p></div></div>`;
   }).join("");
+  const supplyHtml = supplySection(l);
   const noticeUrl = l.url && /^https?:\/\//.test(l.url) ? l.url : "https://www.applyhome.co.kr";
   $("#panel").innerHTML = `<button class="close" data-close aria-label="닫기">✕</button>
     <span class="pill r-${esc(l.region)}">${esc(l.region)}</span>
@@ -319,6 +391,7 @@ function openDetail(id) {
     <p class="head ${s.phase === "open" && s.urgent ? "urgent" : s.phase}" style="margin-top:10px"><span class="badge ${s.phase === "open" ? "open" : s.phase} ${s.urgent ? "urgent" : ""}" style="margin-right:6px">${esc(s.badge)}</span>${esc(s.head)}</p>
     <a class="btn primary" data-add="${esc(l.id)}" href="ics/${encodeURIComponent(l.id)}.ics">📅 알림 포함해서 캘린더에 추가</a>
     <p class="help">누르면 “모두 추가” 화면이 떠요. 일정이 바뀌면 다시 추가해 주세요.</p>
+    ${supplyHtml}
     <div class="tl"><h2 style="margin-top:0">청약 일정</h2>${tl}</div>
     ${rows.length ? `<div class="info"><h2 style="margin:0 0 6px">단지 정보</h2>${rows.map(r => `<div><span>${r[0]}</span><b style="font-weight:600">${esc(r[1])}</b></div>`).join("")}</div>` : ""}
     <a class="btn soft" href="${esc(noticeUrl)}" target="_blank" rel="noopener">청약홈에서 공고문 보기 ↗</a>
@@ -343,13 +416,14 @@ function render() {
   $("#sub").textContent = `서울·경기 청약 일정${upd ? " · 업데이트 " + upd : ""}`;
 }
 document.addEventListener("click", ev => {
-  const t = ev.target.closest("[data-tab],[data-region],[data-day],[data-mv],[data-id],[data-close],[data-add],[data-copy]");
+  const t = ev.target.closest("[data-tab],[data-region],[data-persona],[data-day],[data-mv],[data-id],[data-close],[data-add],[data-copy]");
   if (!t) return;
   const d = t.dataset;
   if (d.add) { added.add(d.add); saveAdded(); setTimeout(render, 300); return; }        // 링크는 그대로 열리게 둠
   if (d.close !== undefined) { closeSheet(); return; }
   if (d.tab) { tab = d.tab; window.scrollTo(0, 0); }
   else if (d.region) region = d.region;
+  else if (d.persona) { persona = d.persona; try { localStorage.setItem("persona", persona); } catch (e) {} }
   else if (d.day) sel = d.day;
   else if (d.mv !== undefined) {
     const m = Number(d.mv);
