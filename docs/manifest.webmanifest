@@ -1,0 +1,14 @@
+{
+  "name": "청약핑",
+  "short_name": "청약핑",
+  "description": "서울·경기 청약 일정 확인과 알림",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f2f7",
+  "theme_color": "#2461f5",
+  "icons": [
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

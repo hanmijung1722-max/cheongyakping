@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2461f5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="청약핑">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<title>청약핑</title>
+<style>
+:root{
+  --primary:#2461f5; --urgent:#f55c33; --success:#1aa36e; --violet:#7d57ed; --teal:#14a3a3; --orange:#f59a1f;
+  --bg:#f2f2f7; --card:#ffffff; --text:#111114; --sub:#6c6c74; --fill:#e9e9ee; --line:#dcdce2;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --sub:#98989f; --fill:#2c2c2e; --line:#38383a; }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;}
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom));}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:calc(14px + env(safe-area-inset-top)) 16px 10px;}
+header h1{margin:0;font-size:28px;font-weight:800;letter-spacing:-.5px}
+header p{margin:2px 0 0;font-size:12px;color:var(--sub)}
+main{padding:4px 16px 24px;max-width:640px;margin:0 auto}
+section{margin-top:22px}
+h2{font-size:20px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill);border-radius:99px;padding:2px 8px}
+.chips{display:flex;gap:8px;margin:6px 0 4px}
+.chip{border:0;background:var(--fill);color:var(--text);font-size:14px;font-weight:600;padding:8px 16px;border-radius:99px}
+.chip.on{background:var(--primary);color:#fff}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.tile{background:var(--card);border-radius:16px;padding:14px 6px;text-align:center}
+.tile b{display:block;font-size:28px;font-weight:800}
+.tile span{font-size:12px;color:var(--sub)}
+.card{background:var(--card);border-radius:20px;padding:16px;margin-bottom:12px;cursor:pointer}
+.card:active{opacity:.85}
+.row{display:flex;justify-content:space-between;align-items:center}
+.pill{font-size:12px;font-weight:700;padding:4px 10px;border-radius:99px}
+.r-서울{color:var(--primary);background:color-mix(in srgb,var(--primary) 13%,transparent)}
+.r-경기{color:var(--success);background:color-mix(in srgb,var(--success) 13%,transparent)}
+.badge{font-size:14px;font-weight:800;color:#fff;padding:6px 12px;border-radius:99px;background:var(--primary)}
+.badge.open{background:var(--success)} .badge.urgent{background:var(--urgent)}
+.badge.wait{background:var(--violet)} .badge.done{background:#8e8e93}
+.card h3{margin:12px 0 2px;font-size:17px}
+.addr{margin:0;font-size:13px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.head{margin:8px 0 10px;font-size:14px;font-weight:700}
+.head.open{color:var(--success)} .head.urgent{color:var(--urgent)} .head.upcoming{color:var(--primary)} .head.wait{color:var(--violet)}
+.mini{display:flex;background:color-mix(in srgb,var(--fill) 70%,transparent);border-radius:12px;padding:12px}
+.mini div{flex:1;min-width:0}
+.mini small{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--sub)}
+.mini i{width:6px;height:6px;border-radius:50%;display:inline-block}
+.mini b{font-size:15px}
+.mini b.past{color:var(--sub);font-weight:600}
+.foot{display:flex;justify-content:space-between;margin-top:10px;font-size:13px;color:var(--sub)}
+.added{color:var(--primary);font-weight:700}
+.banner{display:flex;gap:10px;border-radius:14px;padding:12px;font-size:13px;margin-top:10px;line-height:1.45}
+.banner.violet{background:color-mix(in srgb,var(--violet) 12%,transparent)}
+.banner.blue{background:color-mix(in srgb,var(--primary) 11%,transparent)}
+.empty{text-align:center;color:var(--sub);padding:56px 0;font-size:14px}
+.note{font-size:12px;color:var(--sub);margin-top:18px;line-height:1.5}
+/* 캘린더 */
+.cal{background:var(--card);border-radius:20px;padding:14px}
+.calhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.calhead b{font-size:18px}
+.calhead button{border:0;background:var(--fill);color:var(--text);border-radius:99px;padding:6px 14px;font-size:14px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);text-align:center}
+.grid .w{font-size:12px;font-weight:600;color:var(--sub);padding:4px 0}
+.grid .w:first-child{color:var(--urgent)} .grid .w:nth-child(7){color:var(--primary)}
+.day{height:52px;border:0;background:none;color:var(--text);display:flex;flex-direction:column;align-items:center;gap:3px;padding-top:4px;font-size:15px}
+.day span{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.day.today span{box-shadow:inset 0 0 0 1.5px var(--primary);color:var(--primary);font-weight:700}
+.day.sel span{background:var(--primary);color:#fff;font-weight:700;box-shadow:none}
+.dots{display:flex;gap:3px;height:6px}
+.dots i{width:5px;height:5px;border-radius:50%}
+.legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--sub)}
+.legend i{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:4px}
+.item{background:var(--card);border-radius:18px;padding:14px;margin-bottom:10px;display:flex;gap:12px;align-items:center;cursor:pointer}
+.ico{width:40px;height:40px;border-radius:12px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex:none}
+.item b{font-size:15px;display:block;margin:2px 0}
+.item small{color:var(--sub);font-size:12px}
+/* 가이드 */
+.step{display:flex;gap:14px;align-items:center;background:var(--card);border-radius:18px;padding:14px;margin-bottom:10px}
+.step .n{width:40px;height:40px;border-radius:50%;background:color-mix(in srgb,var(--primary) 13%,transparent);color:var(--primary);font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.step b{font-size:15px} .step p{margin:2px 0 0;font-size:13px;color:var(--sub)}
+.hero{background:linear-gradient(135deg,var(--primary),var(--violet));color:#fff;border-radius:20px;padding:20px;margin-top:10px}
+.hero h2{margin:0 0 4px;font-size:22px} .hero p{margin:0;opacity:.88;font-size:14px}
+.box{background:var(--card);border-radius:18px;padding:6px 16px}
+.box li{margin:10px 0;font-size:14px;list-style:none}
+details{border-bottom:1px solid var(--line);padding:12px 0}
+details:last-child{border-bottom:0}
+summary{font-weight:600;font-size:14px;cursor:pointer}
+details p{margin:8px 0 0;color:var(--sub);font-size:13px;line-height:1.55}
+/* 하단 탭 */
+nav{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;background:color-mix(in srgb,var(--card) 92%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;border:0;background:none;color:var(--sub);padding:9px 0 8px;font-size:11px;font-weight:600}
+nav button svg{display:block;margin:0 auto 3px;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+nav button.on{color:var(--primary)}
+/* 상세 시트 */
+.sheet{position:fixed;inset:0;z-index:10;display:none}
+.sheet.open{display:block}
+.sheet .bg{position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.sheet .panel{position:absolute;left:0;right:0;bottom:0;max-height:92vh;overflow:auto;background:var(--bg);
+  border-radius:24px 24px 0 0;padding:16px 16px calc(24px + env(safe-area-inset-bottom));max-width:640px;margin:0 auto}
+.sheet .close{float:right;border:0;background:var(--fill);color:var(--text);width:32px;height:32px;border-radius:50%;font-size:16px}
+.panel h2{font-size:22px;margin:10px 0 4px}
+.tl{background:var(--card);border-radius:20px;padding:16px;margin-top:14px}
+.ev{display:flex;gap:14px}
+.ev .rail{display:flex;flex-direction:column;align-items:center}
+.ev .dot{width:28px;height:28px;border-radius:50%;color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.ev .line{width:2px;flex:1;background:var(--line);margin:2px 0}
+.ev .txt{padding-bottom:16px}
+.ev .txt b{font-size:15px}
+.ev .txt .d{font-weight:700;font-size:14px;margin-top:2px}
+.ev .txt p{margin:3px 0 0;font-size:12px;color:var(--sub)}
+.tag{background:var(--urgent);color:#fff;font-size:10px;padding:2px 6px;border-radius:99px;margin-left:6px;font-weight:700}
+.info{background:var(--card);border-radius:20px;padding:16px;margin-top:14px;font-size:14px}
+.info div{display:flex;gap:10px;margin:8px 0}
+.info span{color:var(--sub);width:76px;flex:none}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:700;font-size:15px;padding:15px;border-radius:14px;margin-top:10px;border:0;width:100%}
+.btn.primary{background:var(--primary);color:#fff}
+.btn.soft{background:color-mix(in srgb,var(--primary) 12%,transparent);color:var(--primary)}
+.btn.gray{background:var(--fill);color:var(--text)}
+.help{font-size:12px;color:var(--sub);margin:8px 2px 0;line-height:1.5}
+.url{word-break:break-all;background:var(--fill);border-radius:10px;padding:10px;font-size:12px;margin:8px 0}
+ol.steps{padding-left:20px;font-size:14px;line-height:1.7}
+.box ol.steps li{list-style:decimal;margin:4px 0}
+</style>
+</head>
+<body>
+<header><h1>청약핑</h1><p id="sub"></p></header>
+<main id="view"></main>
+<nav id="tabs"></nav>
+<div class="sheet" id="sheet"><div class="bg" data-close></div><div class="panel" id="panel"></div></div>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const COLORS = {announcement:"#8e8e93", special:"#7d57ed", first:"#2461f5", second:"#14a3a3", winner:"#f59a1f", contract:"#1aa36e"};
+const ORDER = ["announcement","special","first","second","winner","contract"];
+const APPLY = ["special","first","second"];
+const WD = ["일","월","화","수","목","금","토"];
+
+let DATA = {listings:[], kinds:{}, sample:true};
+let tab = "home", region = "전체";
+let added = new Set();
+try { added = new Set(JSON.parse(localStorage.getItem("added") || "[]")); } catch (e) {}
+const saveAdded = () => { try { localStorage.setItem("added", JSON.stringify([...added])); } catch (e) {} };
+
+/* ---------- 날짜 (KST 기준, 'YYYY-MM-DD' 문자열 ↔ 일수) ---------- */
+const dn = s => { const [y,m,d] = s.split("-").map(Number); return Math.round(Date.UTC(y, m-1, d) / 86400000); };
+const ds = n => new Date(n * 86400000).toISOString().slice(0, 10);
+const todayStr = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+const TODAY = () => dn(todayStr());
+const md = n => { const t = new Date(n * 86400000); return `${t.getUTCMonth()+1}.${t.getUTCDate()}`; };
+const mdw = n => `${md(n)} (${WD[new Date(n * 86400000).getUTCDay()]})`;
+const range = e => dn(e.end) > dn(e.start) ? `${md(dn(e.start))} ~ ${mdw(dn(e.end))}` : mdw(dn(e.start));
+
+/* ---------- 상태 계산 (앱의 Listing.status 와 동일 규칙) ---------- */
+function statusOf(l) {
+  const t = TODAY();
+  const ap = l.events.filter(e => APPLY.includes(e.kind));
+  if (ap.length) {
+    const s = Math.min(...ap.map(e => dn(e.start))), en = Math.max(...ap.map(e => dn(e.end)));
+    if (t < s) {
+      const first = ap.slice().sort((a, b) => dn(a.start) - dn(b.start))[0];
+      return {phase:"upcoming", badge:`D-${s - t}`, head:`${DATA.kinds[first.kind].short} 접수 시작`, urgent:false, sort:s};
+    }
+    if (t <= en) {
+      const act = ap.filter(e => dn(e.start) <= t && t <= dn(e.end));
+      if (act.length) {
+        const left = Math.min(...act.map(e => dn(e.end) - t));
+        const names = act.sort((a, b) => ORDER.indexOf(a.kind) - ORDER.indexOf(b.kind)).map(e => DATA.kinds[e.kind].short).join("·");
+        return {phase:"open", badge: left === 0 ? "오늘 마감" : `D-${left} 마감`, head:`${names} 접수 중`, urgent:left <= 1, sort:t + left};
+      }
+      const next = ap.filter(e => dn(e.start) > t).sort((a, b) => dn(a.start) - dn(b.start))[0];
+      if (next) return {phase:"open", badge:`D-${dn(next.start) - t}`, head:`다음 ${DATA.kinds[next.kind].short} 접수까지`, urgent:false, sort:dn(next.start)};
+    }
+  }
+  const w = l.events.find(e => e.kind === "winner");
+  if (w && dn(w.start) >= t) {
+    const n = dn(w.start) - t;
+    return {phase:"wait", badge: n === 0 ? "오늘 발표" : `발표 D-${n}`, head:"당첨자 발표 대기", urgent:n === 0, sort:dn(w.start)};
+  }
+  const c = l.events.find(e => e.kind === "contract");
+  if (c && dn(c.end) >= t) return {phase:"wait", badge: dn(c.start) <= t ? "계약 중" : "계약 예정", head:"계약 일정", urgent:false, sort:dn(c.start)};
+  return {phase:"done", badge:"종료", head:"청약 일정 종료", urgent:false, sort:t};
+}
+const visible = () => DATA.listings.filter(l => region === "전체" || l.region === region);
+
+/* ---------- 화면 조각 ---------- */
+function mini(l) {
+  let ev = l.events.filter(e => ["special","first","winner"].includes(e.kind));
+  if (!ev.length) ev = l.events.filter(e => e.kind !== "announcement");
+  return `<div class="mini">${ev.slice(0, 3).map(e => {
+    const past = dn(e.end) < TODAY();
+    return `<div><small><i style="background:${COLORS[e.kind]}"></i>${DATA.kinds[e.kind].short}</small><b class="${past ? "past" : ""}">${md(dn(e.start))}</b></div>`;
+  }).join("")}</div>`;
+}
+function card(l) {
+  const s = statusOf(l);
+  const cls = s.phase === "open" ? (s.urgent ? "open urgent" : "open") : s.phase;
+  const headCls = s.phase === "open" && s.urgent ? "urgent" : s.phase;
+  return `<article class="card" data-id="${esc(l.id)}">
+    <div class="row"><span class="pill r-${esc(l.region)}">${esc(l.region)}</span><span class="badge ${cls}">${esc(s.badge)}</span></div>
+    <h3>${esc(l.name)}</h3><p class="addr">${esc(l.address)}</p>
+    <p class="head ${headCls}">${esc(s.head)}</p>${mini(l)}
+    <div class="foot"><span>${l.units ? "🏢 " + l.units + "세대" : ""}</span>${added.has(l.id) ? '<span class="added">🔔 알림 추가됨</span>' : ""}</div>
+  </article>`;
+}
+const chips = () => `<div class="chips">${["전체","서울","경기"].map(r => `<button class="chip ${r === region ? "on" : ""}" data-region="${r}">${r}</button>`).join("")}</div>`;
+const sampleBanner = () => DATA.sample ? `<div class="banner violet"><span>🪄</span><span>지금은 <b>샘플 데이터</b>예요. GitHub에 청약홈 인증키를 등록하면 실제 공고로 바뀌어요.</span></div>` : "";
+
+/* ---------- 홈 ---------- */
+function viewHome() {
+  const L = visible().map(l => ({l, s: statusOf(l)}));
+  const by = p => L.filter(x => x.s.phase === p).sort((a, b) => a.s.sort - b.s.sort);
+  const open = by("open"), up = by("upcoming"), wait = by("wait");
+  const soon = up.filter(x => x.s.sort - TODAY() <= 7).length;
+  const sec = (t, a) => a.length ? `<section><h2>${t}<span class="count">${a.length}</span></h2>${a.map(x => card(x.l)).join("")}</section>` : "";
+  return sampleBanner() + chips() +
+    `<div class="tiles">
+      <div class="tile"><b style="color:var(--success)">${open.length}</b><span>접수 중</span></div>
+      <div class="tile"><b style="color:var(--primary)">${soon}</b><span>7일 내 시작</span></div>
+      <div class="tile"><b style="color:var(--violet)">${added.size}</b><span>알림 추가</span></div></div>` +
+    sec("지금 접수 중", open) + sec("접수 예정", up) + sec("당첨자 발표·계약 대기", wait) +
+    (open.length + up.length + wait.length ? "" : `<div class="empty">표시할 청약 일정이 없어요</div>`) +
+    `<p class="note">청약 신청은 청약홈(applyhome.co.kr)에서 진행돼요. 이 앱은 일정 확인과 알림을 돕는 비공식 앱이에요.</p>`;
+}
+
+/* ---------- 캘린더 ---------- */
+let cur = (() => { const t = new Date(Date.now() + 9 * 3600e3); return {y: t.getUTCFullYear(), m: t.getUTCMonth()}; })();
+let sel = todayStr();
+function itemsOn(n) {
+  return visible().flatMap(l => l.events.filter(e => e.kind !== "announcement" && dn(e.start) <= n && n <= dn(e.end)).map(e => ({l, e})))
+    .sort((a, b) => ORDER.indexOf(a.e.kind) - ORDER.indexOf(b.e.kind));
+}
+function viewCalendar() {
+  const first = new Date(Date.UTC(cur.y, cur.m, 1)), lead = first.getUTCDay();
+  const days = new Date(Date.UTC(cur.y, cur.m + 1, 0)).getUTCDate();
+  const t = TODAY(), sn = dn(sel);
+  let cells = WD.map(w => `<div class="w">${w}</div>`).join("") + '<div></div>'.repeat(lead);
+  for (let d = 1; d <= days; d++) {
+    const n = Math.round(Date.UTC(cur.y, cur.m, d) / 86400000);
+    const kinds = [...new Set(itemsOn(n).map(x => x.e.kind))].sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b)).slice(0, 3);
+    cells += `<button class="day ${n === t ? "today" : ""} ${n === sn ? "sel" : ""}" data-day="${ds(n)}"><span>${d}</span><div class="dots">${kinds.map(k => `<i style="background:${COLORS[k]}"></i>`).join("")}</div></button>`;
+  }
+  const list = itemsOn(sn);
+  return chips() + `<div class="cal" style="margin-top:10px">
+    <div class="calhead"><button data-mv="-1">‹</button><b>${cur.y}년 ${cur.m + 1}월</b><span><button data-mv="1">›</button> <button data-mv="0">오늘</button></span></div>
+    <div class="grid">${cells}</div>
+    <div class="legend">${["special","first","second","winner","contract"].map(k => `<span><i style="background:${COLORS[k]}"></i>${DATA.kinds[k].short}</span>`).join("")}</div></div>
+    <section><h2>${mdw(sn)}${list.length ? `<span class="count">${list.length}</span>` : ""}</h2>
+    ${list.length ? list.map(x => `<div class="item" data-id="${esc(x.l.id)}"><div class="ico" style="background:${COLORS[x.e.kind]}">${DATA.kinds[x.e.kind].short}</div>
+      <div><small style="color:${COLORS[x.e.kind]};font-weight:700">${DATA.kinds[x.e.kind].title}</small><b>${esc(x.l.name)}</b><small>${esc(x.l.region)} · ${range(x.e)}</small></div></div>`).join("")
+      : '<div class="empty" style="padding:24px 0">이 날은 예정된 청약 일정이 없어요</div>'}</section>`;
+}
+
+/* ---------- 가이드 ---------- */
+const STEPS = [["공고 확인","모집공고가 나면 일정과 공급 조건을 확인해요."],["자격 확인","통장, 무주택 여부, 거주지 등 내 조건을 점검해요."],["청약 신청","접수 기간에 청약홈에서 신청해요."],["당첨 발표","발표일에 당첨 여부를 확인해요."],["계약","당첨자는 계약 기간에 서류와 계약금을 준비해요."]];
+const CHECK = ["청약통장 가입 여부와 가입 기간","무주택 여부 (세대원 포함)","현재 거주지 (서울·경기 해당지역 여부)","특별공급 대상 여부 (신혼·생애최초·다자녀 등)","청약홈 신청용 인증서 준비"];
+const TERMS = [
+ ["청약통장 (주택청약종합저축)","아파트 청약을 하려면 필요한 통장이에요. 가입 기간과 납입 횟수·금액이 신청 자격(순위)에 영향을 줘요."],
+ ["특별공급","신혼부부, 생애최초, 다자녀 등 정해진 조건에 맞는 분들께 일반공급보다 먼저 기회를 주는 제도예요."],
+ ["일반공급 · 1순위 / 2순위","특별공급 외의 일반 물량이에요. 청약통장 요건 등을 갖춘 분이 1순위로 먼저 신청하고, 남으면 2순위로 이어져요. 순위 요건은 지역·규제에 따라 달라요."],
+ ["가점제 · 추첨제","가점제는 무주택 기간·부양가족 수·통장 가입 기간을 점수로 매겨 높은 순서대로 뽑는 방식(84점 만점)이고, 추첨제는 말 그대로 추첨이에요. 주택 크기와 지역에 따라 비율이 달라요."],
+ ["해당지역 · 기타지역","단지가 있는 시·군에 사는 분이 해당지역이에요. 보통 해당지역 → 경기(또는 서울) → 기타지역 순으로 접수일이 나뉘어 있어요."],
+ ["무순위 청약 (줍줍)","미계약·미분양 물량을 다시 공급하는 청약이에요. 신청 조건은 공고마다 달라서 꼭 공고문을 확인해야 해요."],
+ ["예비입주자","당첨자가 계약을 포기할 때를 대비해 순번을 정해 두는 후보예요."],
+ ["재당첨 제한","당첨된 이력이 있으면 일정 기간 다른 단지에 청약하는 데 제한이 있을 수 있어요. 지역과 주택 유형에 따라 달라요."]];
+function viewGuide() {
+  return `<div class="hero"><h2>청약, 이 순서만 기억하세요</h2><p>복잡해 보여도 큰 흐름은 다섯 단계예요.</p></div>
+  <section><h2>청약 5단계</h2>${STEPS.map((s, i) => `<div class="step"><div class="n">${i + 1}</div><div><b>${s[0]}</b><p>${s[1]}</p></div></div>`).join("")}</section>
+  <section><h2>신청 전 체크리스트</h2><ul class="box" style="padding:6px 16px;margin:0">${CHECK.map(c => `<li>✅ ${c}</li>`).join("")}</ul></section>
+  <section><h2>쉬운 용어 사전</h2><div class="box">${TERMS.map(t => `<details><summary>${t[0]}</summary><p>${t[1]}</p></details>`).join("")}</div></section>
+  <p class="note">이 화면은 이해를 돕기 위한 일반 안내예요. 실제 자격·점수·기간은 청약홈과 각 단지의 입주자 모집공고문 기준으로 확인하세요.</p>`;
+}
+
+/* ---------- 설정/알림 안내 ---------- */
+function viewSettings() {
+  const url = new URL("all.ics", location.href).href;
+  const upd = DATA.updated ? DATA.updated.replace("T", " ").slice(0, 16) : "-";
+  return `<section><h2>알림 받는 방법</h2>
+   <div class="banner blue"><span>💡</span><span>단지 상세 화면의 <b>“알림 포함해서 캘린더에 추가”</b> 버튼을 누르면 아이폰 캘린더에 일정과 알림(하루 전·당일·마감일 오전 ${DATA.alarm_hour ?? 9}시)이 한 번에 들어가요.</span></div></section>
+  <section><h2>전체 일정 구독 <span class="count">선택</span></h2>
+   <div class="box" style="padding:14px 16px"><p class="help" style="margin:0 0 6px">모든 단지의 일정이 캘린더에 자동으로 계속 업데이트돼요. (알림은 포함되지 않아요)</p>
+   <div class="url" id="icsurl">${esc(url)}</div>
+   <button class="btn soft" data-copy>주소 복사</button>
+   <ol class="steps"><li>설정 → 캘린더 → 계정 → 계정 추가 → 기타</li><li>“구독 캘린더 추가”에 위 주소 붙여넣기</li><li>저장</li></ol></div></section>
+  <section><h2>홈 화면에 앱처럼 추가</h2><div class="box" style="padding:14px 16px"><ol class="steps"><li>Safari에서 이 페이지 열기</li><li>공유 버튼 → “홈 화면에 추가”</li></ol></div></section>
+  <section><h2>데이터</h2><div class="box" style="padding:14px 16px;font-size:14px;line-height:1.8">
+   마지막 업데이트: ${esc(upd)}<br>${DATA.sample ? "현재 샘플 데이터를 보고 있어요.<br>" : ""}출처: 한국부동산원 청약홈 분양정보 (공공데이터포털)</div></section>
+  <p class="note">청약핑은 공식 청약홈 앱이 아닌 비공식 일정 알림 앱이에요. 청약 신청과 당첨 확인은 청약홈에서 진행해 주세요.</p>`;
+}
+
+/* ---------- 상세 시트 ---------- */
+function openDetail(id) {
+  const l = DATA.listings.find(x => x.id === id); if (!l) return;
+  const s = statusOf(l), t = TODAY();
+  const rows = [["총 공급세대", l.units ? l.units + "세대" : ""], ["입주 예정", l.move_in && l.move_in.length >= 6 ? l.move_in.slice(0,4) + "." + l.move_in.slice(4,6) : ""],
+                ["시공사", l.builder], ["시행사", l.developer], ["분양 문의", l.phone]].filter(r => r[1]);
+  const tl = l.events.map((e, i) => {
+    const past = dn(e.end) < t, ong = dn(e.start) <= t && t <= dn(e.end), last = i === l.events.length - 1;
+    return `<div class="ev"><div class="rail"><div class="dot" style="background:${past ? "#b9b9c0" : COLORS[e.kind]}">${past ? "✓" : DATA.kinds[e.kind].short.slice(0, 2)}</div>${last ? "" : '<div class="line"></div>'}</div>
+      <div class="txt"><b style="${past ? "color:var(--sub)" : ""}">${DATA.kinds[e.kind].title}</b>${ong ? '<span class="tag">진행 중</span>' : ""}
+      <div class="d" style="color:${past ? "var(--sub)" : COLORS[e.kind]}">${range(e)}</div><p>${DATA.kinds[e.kind].hint}</p></div></div>`;
+  }).join("");
+  const noticeUrl = l.url && /^https?:\/\//.test(l.url) ? l.url : "https://www.applyhome.co.kr";
+  $("#panel").innerHTML = `<button class="close" data-close aria-label="닫기">✕</button>
+    <span class="pill r-${esc(l.region)}">${esc(l.region)}</span>
+    <h2>${esc(l.name)}</h2><div class="addr" style="white-space:normal">📍 ${esc(l.address)}</div>
+    <p class="head ${s.phase === "open" && s.urgent ? "urgent" : s.phase}" style="margin-top:10px"><span class="badge ${s.phase === "open" ? "open" : s.phase} ${s.urgent ? "urgent" : ""}" style="margin-right:6px">${esc(s.badge)}</span>${esc(s.head)}</p>
+    <a class="btn primary" data-add="${esc(l.id)}" href="ics/${encodeURIComponent(l.id)}.ics">📅 알림 포함해서 캘린더에 추가</a>
+    <p class="help">누르면 “모두 추가” 화면이 떠요. 일정이 바뀌면 다시 추가해 주세요.</p>
+    <div class="tl"><h2 style="margin-top:0">청약 일정</h2>${tl}</div>
+    ${rows.length ? `<div class="info"><h2 style="margin:0 0 6px">단지 정보</h2>${rows.map(r => `<div><span>${r[0]}</span><b style="font-weight:600">${esc(r[1])}</b></div>`).join("")}</div>` : ""}
+    <a class="btn soft" href="${esc(noticeUrl)}" target="_blank" rel="noopener">청약홈에서 공고문 보기 ↗</a>
+    ${l.phone ? `<a class="btn gray" href="tel:${esc(l.phone.replace(/[^\d+]/g, ""))}">분양 문의 전화</a>` : ""}
+    <p class="note">일정과 정보는 참고용이에요. 신청 전 반드시 입주자 모집공고문에서 자격과 일정을 다시 확인하세요.</p>`;
+  $("#sheet").classList.add("open");
+}
+const closeSheet = () => $("#sheet").classList.remove("open");
+
+/* ---------- 렌더 & 이벤트 ---------- */
+const ICON = {
+  home:'<svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>',
+  cal:'<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
+  book:'<svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5"/><path d="M9 8h6"/></svg>',
+  bell:'<svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 1 1 12 0v6l2 2H4zM10 21h4"/></svg>'
+};
+const TABS = [["home","홈",ICON.home],["cal","캘린더",ICON.cal],["guide","가이드",ICON.book],["set","알림 설정",ICON.bell]];
+function render() {
+  $("#tabs").innerHTML = TABS.map(t => `<button class="${t[0] === tab ? "on" : ""}" data-tab="${t[0]}">${t[2]}${t[1]}</button>`).join("");
+  $("#view").innerHTML = ({home:viewHome, cal:viewCalendar, guide:viewGuide, set:viewSettings}[tab])();
+  const upd = DATA.updated ? DATA.updated.slice(5, 16).replace("T", " ") : "";
+  $("#sub").textContent = `서울·경기 청약 일정${upd ? " · 업데이트 " + upd : ""}`;
+}
+document.addEventListener("click", ev => {
+  const t = ev.target.closest("[data-tab],[data-region],[data-day],[data-mv],[data-id],[data-close],[data-add],[data-copy]");
+  if (!t) return;
+  const d = t.dataset;
+  if (d.add) { added.add(d.add); saveAdded(); setTimeout(render, 300); return; }        // 링크는 그대로 열리게 둠
+  if (d.close !== undefined) { closeSheet(); return; }
+  if (d.tab) { tab = d.tab; window.scrollTo(0, 0); }
+  else if (d.region) region = d.region;
+  else if (d.day) sel = d.day;
+  else if (d.mv !== undefined) {
+    const m = Number(d.mv);
+    if (m === 0) { const n = new Date(Date.now() + 9 * 3600e3); cur = {y:n.getUTCFullYear(), m:n.getUTCMonth()}; sel = todayStr(); }
+    else { const n = new Date(Date.UTC(cur.y, cur.m + m, 1)); cur = {y:n.getUTCFullYear(), m:n.getUTCMonth()}; }
+  }
+  else if (d.copy !== undefined) {
+    const text = $("#icsurl").textContent;
+    (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(() => { t.textContent = "복사했어요 ✓"; }).catch(() => { t.textContent = "주소를 길게 눌러 복사해 주세요"; });
+    return;
+  }
+  else if (d.id) { openDetail(d.id); return; }
+  render();
+});
+
+fetch("listings.json?v=" + Date.now()).then(r => r.json()).then(j => { DATA = j; render(); })
+  .catch(() => { $("#view").innerHTML = '<div class="empty">데이터를 불러오지 못했어요.<br>build.py를 먼저 실행해 주세요.</div>'; });
+render();
+</script>
+</body>
+</html>

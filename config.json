@@ -1,0 +1,9 @@
+{
+  "regions": ["서울", "경기"],
+  "alarm_hour": 9,
+  "alarms": {
+    "day_before": true,
+    "day_of": true,
+    "deadline": true
+  }
+}

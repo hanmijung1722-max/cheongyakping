@@ -1,0 +1,153 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CheongyakPing//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:청약핑 · 한강 포레스트힐 (샘플)
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:sample-1-special@cheongyakping
+DTSTAMP:20261115T114713Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261116
+SUMMARY:[특공] 한강 포레스트힐 (샘플)
+LOCATION:서울특별시 강동구 샘플동 100
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n서울특별시 강동구 샘
+ 플동 100\n※ 신청 전 입주자 모집공고문에서 자격과 일
+ 정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 특별공급 접수 · 서울 · 한강 포레스트힐 
+ (샘플)
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 특별공급 접수 · 서울 · 한강 포레스트힐 
+ (샘플)
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 특별공급 접수 · 서울 · 한강 포레
+ 스트힐 (샘플)
+TRIGGER:P1DT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sample-1-first@cheongyakping
+DTSTAMP:20261115T114713Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261118
+SUMMARY:[1순위] 한강 포레스트힐 (샘플)
+LOCATION:서울특별시 강동구 샘플동 100
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n서울특별시 강동구 
+ 샘플동 100\n※ 신청 전 입주자 모집공고문에서 자격과 
+ 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 1순위 접수 · 서울 · 한강 포레스트힐 (샘
+ 플)
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 1순위 접수 · 서울 · 한강 포레스트힐 (샘
+ 플)
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 1순위 접수 · 서울 · 한강 포레스트
+ 힐 (샘플)
+TRIGGER:P1DT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sample-1-second@cheongyakping
+DTSTAMP:20261115T114713Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[2순위] 한강 포레스트힐 (샘플)
+LOCATION:서울특별시 강동구 샘플동 100
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n서울특별시 강동구 샘플동 100\n※ 
+ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
+ 하세요.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 2순위 접수 · 서울 · 한강 포레스트힐 (샘
+ 플)
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 2순위 접수 · 서울 · 한강 포레스트힐 (샘
+ 플)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sample-1-winner@cheongyakping
+DTSTAMP:20261115T114713Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[발표] 한강 포레스트힐 (샘플)
+LOCATION:서울특별시 강동구 샘플동 100
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n서울특별시 강동구 샘플동 100\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 당첨자 발표 · 서울 · 한강 포레스트힐 (
+ 샘플)
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 당첨자 발표 · 서울 · 한강 포레스트힐 (
+ 샘플)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sample-1-contract@cheongyakping
+DTSTAMP:20261115T114713Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261204
+SUMMARY:[계약] 한강 포레스트힐 (샘플)
+LOCATION:서울특별시 강동구 샘플동 100
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n서울특별시 강동구 샘플동 100\n※ 
+ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
+ 하세요.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 계약 체결 · 서울 · 한강 포레스트힐 (샘
+ 플)
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 계약 체결 · 서울 · 한강 포레스트힐 (샘
+ 플)
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 계약 체결 · 서울 · 한강 포레스트
+ 힐 (샘플)
+TRIGGER:P3DT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
