@@ -8,326 +8,2462 @@ X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:sample-5-special@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261108
-SUMMARY:[특공] 성수 아뜰리에 (샘플)
-LOCATION:서울특별시 성동구 샘플로 8
-DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
- 맞으면 먼저 신청할 수 있어요.\n서울특별시 성동구 샘
- 플로 8\n※ 신청 전 입주자 모집공고문에서 자격과 일정
- 을 꼭 확인하세요.
+UID:2026000409-2026000409-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260916
+SUMMARY:[1순위] 의정부우정 A2블록 공공분양주택(본청약)
+LOCATION:경기도 의정부시 녹양동 일원 의정부우정 공공주
+ 택지구 내 A-2블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 의정부시 녹
+ 양동 일원 의정부우정 공공주택지구 내 A-2블록\n공고문:
+  https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseMan
+ ageNo=2026000409&pblancNo=2026000409\n※ 신청 전 입주자 모집공
+ 고문에서 자격과 일정을 꼭 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000409&pblancNo=2026000409
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-5-first@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261110
-SUMMARY:[1순위] 성수 아뜰리에 (샘플)
-LOCATION:서울특별시 성동구 샘플로 8
-DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
- 하는 일반공급 첫 번째 기회예요.\n서울특별시 성동구 
- 샘플로 8\n※ 신청 전 입주자 모집공고문에서 자격과 일
+UID:2026000409-2026000409-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260918
+SUMMARY:[2순위] 의정부우정 A2블록 공공분양주택(본청약)
+LOCATION:경기도 의정부시 녹양동 일원 의정부우정 공공주
+ 택지구 내 A-2블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 의정부시 녹양동 일원 의
+ 정부우정 공공주택지구 내 A-2블록\n공고문: https://www.appl
+ yhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000409&
+ pblancNo=2026000409\n※ 신청 전 입주자 모집공고문에서 자격
+ 과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000409&pblancNo=2026000409
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000409-2026000409-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:[발표] 의정부우정 A2블록 공공분양주택(본청약)
+LOCATION:경기도 의정부시 녹양동 일원 의정부우정 공공주
+ 택지구 내 A-2블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 의정부시 녹양동 일원 의정부우
+ 정 공공주택지구 내 A-2블록\n공고문: https://www.applyhome.co.
+ kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000409&pblancNo=
+ 2026000409\n※ 신청 전 입주자 모집공고문에서 자격과 일
  정을 꼭 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000409&pblancNo=2026000409
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-5-second@cheongyakping
-DTSTAMP:20261115T114713Z
+UID:2026000409-2026000409-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261216
+SUMMARY:[계약] 의정부우정 A2블록 공공분양주택(본청약)
+LOCATION:경기도 의정부시 녹양동 일원 의정부우정 공공주
+ 택지구 내 A-2블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 의정부시 녹양동 일원 의정
+ 부우정 공공주택지구 내 A-2블록\n공고문: https://www.applyho
+ me.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000409&pbl
+ ancNo=2026000409\n※ 신청 전 입주자 모집공고문에서 자격과
+  일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000409&pblancNo=2026000409
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820009-2026820009-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:[1순위] 남양주진접2지구 A-4블록 신혼희망타운(공
+ 공분양) 잔여세대 추가입주자모집공고
+LOCATION:경기도 남양주시 진접읍 내각리\, 연평리 일원 남
+ 양주진접2 공공주택지구 A-4블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 남양주시 진
+ 접읍 내각리\, 연평리 일원 남양주진접2 공공주택지구 A-
+ 4블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblan
+ cDetail.do?houseManageNo=2026820009&pblancNo=2026820009\n※ 신청 전 
+ 입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820009&pblancNo=2026820009
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820009-2026820009-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:[2순위] 남양주진접2지구 A-4블록 신혼희망타운(공
+ 공분양) 잔여세대 추가입주자모집공고
+LOCATION:경기도 남양주시 진접읍 내각리\, 연평리 일원 남
+ 양주진접2 공공주택지구 A-4블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 남양주시 진접읍 내각리\, 
+ 연평리 일원 남양주진접2 공공주택지구 A-4블록\n공고문:
+  https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseMan
+ ageNo=2026820009&pblancNo=2026820009\n※ 신청 전 입주자 모집공
+ 고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820009&pblancNo=2026820009
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820009-2026820009-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:[발표] 남양주진접2지구 A-4블록 신혼희망타운(공공
+ 분양) 잔여세대 추가입주자모집공고
+LOCATION:경기도 남양주시 진접읍 내각리\, 연평리 일원 남
+ 양주진접2 공공주택지구 A-4블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 남양주시 진접읍 내각리\, 연평리
+  일원 남양주진접2 공공주택지구 A-4블록\n공고문: https://
+ www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=202
+ 6820009&pblancNo=2026820009\n※ 신청 전 입주자 모집공고문에
+ 서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820009&pblancNo=2026820009
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820009-2026820009-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261212
+SUMMARY:[계약] 남양주진접2지구 A-4블록 신혼희망타운(공공
+ 분양) 잔여세대 추가입주자모집공고
+LOCATION:경기도 남양주시 진접읍 내각리\, 연평리 일원 남
+ 양주진접2 공공주택지구 A-4블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 남양주시 진접읍 내각리\, 
+ 연평리 일원 남양주진접2 공공주택지구 A-4블록\n공고문:
+  https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseMan
+ ageNo=2026820009&pblancNo=2026820009\n※ 신청 전 입주자 모집공
+ 고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820009&pblancNo=2026820009
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000416-2026000416-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260916
+SUMMARY:[1순위] 양주회천지구 A-26블록 공공분양주택
+LOCATION:경기도 양주시 덕정동 일원 양주신도시 택지개발
+ 지구 내 A-26블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 양주시 덕정
+ 동 일원 양주신도시 택지개발지구 내 A-26블록\n공고문: h
+ ttps://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManag
+ eNo=2026000416&pblancNo=2026000416\n※ 신청 전 입주자 모집공고
+ 문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000416&pblancNo=2026000416
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000416-2026000416-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260918
+SUMMARY:[2순위] 양주회천지구 A-26블록 공공분양주택
+LOCATION:경기도 양주시 덕정동 일원 양주신도시 택지개발
+ 지구 내 A-26블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 양주시 덕정동 일원 양주
+ 신도시 택지개발지구 내 A-26블록\n공고문: https://www.applyh
+ ome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000416&pb
+ lancNo=2026000416\n※ 신청 전 입주자 모집공고문에서 자격
+ 과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000416&pblancNo=2026000416
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000416-2026000416-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:[발표] 양주회천지구 A-26블록 공공분양주택
+LOCATION:경기도 양주시 덕정동 일원 양주신도시 택지개발
+ 지구 내 A-26블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 양주시 덕정동 일원 양주신도시 
+ 택지개발지구 내 A-26블록\n공고문: https://www.applyhome.co.kr/
+ ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000416&pblancNo=202
+ 6000416\n※ 신청 전 입주자 모집공고문에서 자격과 일정
+ 을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000416&pblancNo=2026000416
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000416-2026000416-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261216
+SUMMARY:[계약] 양주회천지구 A-26블록 공공분양주택
+LOCATION:경기도 양주시 덕정동 일원 양주신도시 택지개발
+ 지구 내 A-26블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 양주시 덕정동 일원 양주신
+ 도시 택지개발지구 내 A-26블록\n공고문: https://www.applyhome
+ .co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000416&pblan
+ cNo=2026000416\n※ 신청 전 입주자 모집공고문에서 자격과 
+ 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000416&pblancNo=2026000416
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820011-2026820011-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:[1순위] 시흥하중지구 A-4블록 신혼희망타운(공공분
+ 양) 추가입주자모집
+LOCATION:경기도 시흥시 하중동 일원 (시흥하중 공공주택지
+ 구 내 A-4블록)
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 시흥시 하중
+ 동 일원 (시흥하중 공공주택지구 내 A-4블록)\n공고문: htt
+ ps://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageN
+ o=2026820011&pblancNo=2026820011\n※ 신청 전 입주자 모집공고문
+ 에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820011&pblancNo=2026820011
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820011-2026820011-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:[2순위] 시흥하중지구 A-4블록 신혼희망타운(공공분
+ 양) 추가입주자모집
+LOCATION:경기도 시흥시 하중동 일원 (시흥하중 공공주택지
+ 구 내 A-4블록)
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 시흥시 하중동 일원 (시흥
+ 하중 공공주택지구 내 A-4블록)\n공고문: https://www.applyhome
+ .co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820011&pblan
+ cNo=2026820011\n※ 신청 전 입주자 모집공고문에서 자격과 
+ 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820011&pblancNo=2026820011
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820011-2026820011-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:[발표] 시흥하중지구 A-4블록 신혼희망타운(공공분
+ 양) 추가입주자모집
+LOCATION:경기도 시흥시 하중동 일원 (시흥하중 공공주택지
+ 구 내 A-4블록)
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 시흥시 하중동 일원 (시흥하중 공
+ 공주택지구 내 A-4블록)\n공고문: https://www.applyhome.co.kr/ai/
+ aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820011&pblancNo=202682
+ 0011\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 
+ 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820011&pblancNo=2026820011
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820011-2026820011-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261231
+SUMMARY:[계약] 시흥하중지구 A-4블록 신혼희망타운(공공분
+ 양) 추가입주자모집
+LOCATION:경기도 시흥시 하중동 일원 (시흥하중 공공주택지
+ 구 내 A-4블록)
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 시흥시 하중동 일원 (시흥
+ 하중 공공주택지구 내 A-4블록)\n공고문: https://www.applyhome
+ .co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820011&pblan
+ cNo=2026820011\n※ 신청 전 입주자 모집공고문에서 자격과 
+ 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820011&pblancNo=2026820011
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000373-2026000373-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261106
+SUMMARY:[1순위] 고덕강일지구 3단지 토지임대부(본청약)
+LOCATION:서울특별시 강동구 강일동 174 일원(고덕강일공공
+ 주택지구 3단지)
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n서울특별시 강동구 
+ 강일동 174 일원(고덕강일공공주택지구 3단지)\n공고문: h
+ ttps://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManag
+ eNo=2026000373&pblancNo=2026000373\n※ 신청 전 입주자 모집공고
+ 문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000373&pblancNo=2026000373
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000373-2026000373-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[2순위] 고덕강일지구 3단지 토지임대부(본청약)
+LOCATION:서울특별시 강동구 강일동 174 일원(고덕강일공공
+ 주택지구 3단지)
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n서울특별시 강동구 강일동 174 일
+ 원(고덕강일공공주택지구 3단지)\n공고문: https://www.applyh
+ ome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000373&pb
+ lancNo=2026000373\n※ 신청 전 입주자 모집공고문에서 자격
+ 과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000373&pblancNo=2026000373
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000373-2026000373-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:[발표] 고덕강일지구 3단지 토지임대부(본청약)
+LOCATION:서울특별시 강동구 강일동 174 일원(고덕강일공공
+ 주택지구 3단지)
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n서울특별시 강동구 강일동 174 일원(고덕
+ 강일공공주택지구 3단지)\n공고문: https://www.applyhome.co.kr/
+ ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000373&pblancNo=202
+ 6000373\n※ 신청 전 입주자 모집공고문에서 자격과 일정
+ 을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000373&pblancNo=2026000373
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000373-2026000373-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270403
+SUMMARY:[계약] 고덕강일지구 3단지 토지임대부(본청약)
+LOCATION:서울특별시 강동구 강일동 174 일원(고덕강일공공
+ 주택지구 3단지)
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n서울특별시 강동구 강일동 174 일원
+ (고덕강일공공주택지구 3단지)\n공고문: https://www.applyhome
+ .co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000373&pblan
+ cNo=2026000373\n※ 신청 전 입주자 모집공고문에서 자격과 
+ 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000373&pblancNo=2026000373
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000509-2026000509-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:[특공] 아크메르 동탄 99
+LOCATION:경기도 화성특례시 동탄구 반송동 99번지[동탄(1) M
+ 1-2-2블록]
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 화성특례시 동
+ 탄구 반송동 99번지[동탄(1) M1-2-2블록]\n공고문: https://www.
+ applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000
+ 509&pblancNo=2026000509\n※ 신청 전 입주자 모집공고문에서 
+ 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000509&pblancNo=2026000509
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000509-2026000509-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:[1순위] 아크메르 동탄 99
+LOCATION:경기도 화성특례시 동탄구 반송동 99번지[동탄(1) M
+ 1-2-2블록]
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 화성특례시 
+ 동탄구 반송동 99번지[동탄(1) M1-2-2블록]\n공고문: https://w
+ ww.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026
+ 000509&pblancNo=2026000509\n※ 신청 전 입주자 모집공고문에서
+  자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000509&pblancNo=2026000509
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000509-2026000509-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:[2순위] 아크메르 동탄 99
+LOCATION:경기도 화성특례시 동탄구 반송동 99번지[동탄(1) M
+ 1-2-2블록]
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 화성특례시 동탄구 반송동
+  99번지[동탄(1) M1-2-2블록]\n공고문: https://www.applyhome.co.kr/
+ ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000509&pblancNo=202
+ 6000509\n※ 신청 전 입주자 모집공고문에서 자격과 일정
+ 을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000509&pblancNo=2026000509
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000509-2026000509-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[발표] 아크메르 동탄 99
+LOCATION:경기도 화성특례시 동탄구 반송동 99번지[동탄(1) M
+ 1-2-2블록]
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 화성특례시 동탄구 반송동 99번지
+ [동탄(1) M1-2-2블록]\n공고문: https://www.applyhome.co.kr/ai/aia/se
+ lectAPTLttotPblancDetail.do?houseManageNo=2026000509&pblancNo=2026000509\n
+ ※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확
+ 인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000509&pblancNo=2026000509
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000509-2026000509-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261119
+SUMMARY:[계약] 아크메르 동탄 99
+LOCATION:경기도 화성특례시 동탄구 반송동 99번지[동탄(1) M
+ 1-2-2블록]
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 화성특례시 동탄구 반송동 
+ 99번지[동탄(1) M1-2-2블록]\n공고문: https://www.applyhome.co.kr/a
+ i/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000509&pblancNo=2026
+ 000509\n※ 신청 전 입주자 모집공고문에서 자격과 일정을
+  꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000509&pblancNo=2026000509
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000508-2026000508-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:[특공] 아크메르 동탄 95
+LOCATION:경기도 화성특례시 동탄구 반송동 95번지[동탄(1) M
+ 1-1-2블록]
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 화성특례시 동
+ 탄구 반송동 95번지[동탄(1) M1-1-2블록]\n공고문: https://www.
+ applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000
+ 508&pblancNo=2026000508\n※ 신청 전 입주자 모집공고문에서 
+ 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000508&pblancNo=2026000508
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000508-2026000508-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:[1순위] 아크메르 동탄 95
+LOCATION:경기도 화성특례시 동탄구 반송동 95번지[동탄(1) M
+ 1-1-2블록]
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 화성특례시 
+ 동탄구 반송동 95번지[동탄(1) M1-1-2블록]\n공고문: https://w
+ ww.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026
+ 000508&pblancNo=2026000508\n※ 신청 전 입주자 모집공고문에서
+  자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000508&pblancNo=2026000508
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000508-2026000508-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:[2순위] 아크메르 동탄 95
+LOCATION:경기도 화성특례시 동탄구 반송동 95번지[동탄(1) M
+ 1-1-2블록]
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 화성특례시 동탄구 반송동
+  95번지[동탄(1) M1-1-2블록]\n공고문: https://www.applyhome.co.kr/
+ ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000508&pblancNo=202
+ 6000508\n※ 신청 전 입주자 모집공고문에서 자격과 일정
+ 을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000508&pblancNo=2026000508
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000508-2026000508-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[발표] 아크메르 동탄 95
+LOCATION:경기도 화성특례시 동탄구 반송동 95번지[동탄(1) M
+ 1-1-2블록]
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 화성특례시 동탄구 반송동 95번지
+ [동탄(1) M1-1-2블록]\n공고문: https://www.applyhome.co.kr/ai/aia/se
+ lectAPTLttotPblancDetail.do?houseManageNo=2026000508&pblancNo=2026000508\n
+ ※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확
+ 인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000508&pblancNo=2026000508
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000508-2026000508-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261119
+SUMMARY:[계약] 아크메르 동탄 95
+LOCATION:경기도 화성특례시 동탄구 반송동 95번지[동탄(1) M
+ 1-1-2블록]
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 화성특례시 동탄구 반송동 
+ 95번지[동탄(1) M1-1-2블록]\n공고문: https://www.applyhome.co.kr/a
+ i/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000508&pblancNo=2026
+ 000508\n※ 신청 전 입주자 모집공고문에서 자격과 일정을
+  꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000508&pblancNo=2026000508
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820012-2026820012-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[1순위] 시흥하중지구 A1블록 신혼희망타운(공공분
+ 양) 추가입주자모집공고
+LOCATION:경기도 시흥시 하중동 일원 시흥하중 공공주택지
+ 구 내 A1블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 시흥시 하중
+ 동 일원 시흥하중 공공주택지구 내 A1블록\n공고문: https:
+ //www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2
+ 026820012&pblancNo=2026820012\n※ 신청 전 입주자 모집공고문에
+ 서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820012&pblancNo=2026820012
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820012-2026820012-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[2순위] 시흥하중지구 A1블록 신혼희망타운(공공분
+ 양) 추가입주자모집공고
+LOCATION:경기도 시흥시 하중동 일원 시흥하중 공공주택지
+ 구 내 A1블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 시흥시 하중동 일원 시흥
+ 하중 공공주택지구 내 A1블록\n공고문: https://www.applyhome.c
+ o.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820012&pblancN
+ o=2026820012\n※ 신청 전 입주자 모집공고문에서 자격과 일
+ 정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820012&pblancNo=2026820012
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820012-2026820012-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[발표] 시흥하중지구 A1블록 신혼희망타운(공공분
+ 양) 추가입주자모집공고
+LOCATION:경기도 시흥시 하중동 일원 시흥하중 공공주택지
+ 구 내 A1블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 시흥시 하중동 일원 시흥하중 공
+ 공주택지구 내 A1블록\n공고문: https://www.applyhome.co.kr/ai/ai
+ a/selectAPTLttotPblancDetail.do?houseManageNo=2026820012&pblancNo=20268200
+ 12\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭
+  확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820012&pblancNo=2026820012
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820012-2026820012-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270219
+SUMMARY:[계약] 시흥하중지구 A1블록 신혼희망타운(공공분
+ 양) 추가입주자모집공고
+LOCATION:경기도 시흥시 하중동 일원 시흥하중 공공주택지
+ 구 내 A1블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 시흥시 하중동 일원 시흥하
+ 중 공공주택지구 내 A1블록\n공고문: https://www.applyhome.co.k
+ r/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820012&pblancNo=2
+ 026820012\n※ 신청 전 입주자 모집공고문에서 자격과 일정
+ 을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820012&pblancNo=2026820012
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000531-2026000531-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261117
+SUMMARY:[1순위] 시흥거모지구 S-1블록 공공분양(본청약)
+LOCATION:경기도 시흥시 거모동\, 군자동 일원 시흥거모 공
+ 공주택지구 내 S-1블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 시흥시 거모
+ 동\, 군자동 일원 시흥거모 공공주택지구 내 S-1블록\n공
+ 고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?h
+ ouseManageNo=2026000531&pblancNo=2026000531\n※ 신청 전 입주자 모
+ 집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000531&pblancNo=2026000531
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000531-2026000531-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[2순위] 시흥거모지구 S-1블록 공공분양(본청약)
+LOCATION:경기도 시흥시 거모동\, 군자동 일원 시흥거모 공
+ 공주택지구 내 S-1블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 시흥시 거모동\, 군자동 일
+ 원 시흥거모 공공주택지구 내 S-1블록\n공고문: https://www.
+ applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000
+ 531&pblancNo=2026000531\n※ 신청 전 입주자 모집공고문에서 
+ 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000531&pblancNo=2026000531
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000531-2026000531-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:[발표] 시흥거모지구 S-1블록 공공분양(본청약)
+LOCATION:경기도 시흥시 거모동\, 군자동 일원 시흥거모 공
+ 공주택지구 내 S-1블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 시흥시 거모동\, 군자동 일원 시
+ 흥거모 공공주택지구 내 S-1블록\n공고문: https://www.applyho
+ me.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000531&pbl
+ ancNo=2026000531\n※ 신청 전 입주자 모집공고문에서 자격과
+  일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000531&pblancNo=2026000531
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000531-2026000531-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270204
+SUMMARY:[계약] 시흥거모지구 S-1블록 공공분양(본청약)
+LOCATION:경기도 시흥시 거모동\, 군자동 일원 시흥거모 공
+ 공주택지구 내 S-1블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 시흥시 거모동\, 군자동 일
+ 원 시흥거모 공공주택지구 내 S-1블록\n공고문: https://www.
+ applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000
+ 531&pblancNo=2026000531\n※ 신청 전 입주자 모집공고문에서 
+ 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000531&pblancNo=2026000531
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[특공] GTX운정중앙역 시티프라디움 4단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 파주시 파주운
+ 정3지구 주상복합 4블록(경기도 파주시 동패동 400-7번지 
+ 일원)\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblan
+ cDetail.do?houseManageNo=2026000518&pblancNo=2026000518\n※ 신청 전 
+ 입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[1순위] GTX운정중앙역 시티프라디움 4단지(후속사
+ 업)
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 파주시 파주
+ 운정3지구 주상복합 4블록(경기도 파주시 동패동 400-7번
+ 지 일원)\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotP
+ blancDetail.do?houseManageNo=2026000518&pblancNo=2026000518\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[2순위] GTX운정중앙역 시티프라디움 4단지(후속사
+ 업)
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 파주시 파주운정3지구 주
+ 상복합 4블록(경기도 파주시 동패동 400-7번지 일원)\n공
+ 고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?h
+ ouseManageNo=2026000518&pblancNo=2026000518\n※ 신청 전 입주자 모
+ 집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[발표] GTX운정중앙역 시티프라디움 4단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 파주시 파주운정3지구 주상복합 4
+ 블록(경기도 파주시 동패동 400-7번지 일원)\n공고문: https
+ ://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=
+ 2026000518&pblancNo=2026000518\n※ 신청 전 입주자 모집공고문
+ 에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261130
+SUMMARY:[계약] GTX운정중앙역 시티프라디움 4단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 파주시 파주운정3지구 주상
+ 복합 4블록(경기도 파주시 동패동 400-7번지 일원)\n공고
+ 문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?hous
+ eManageNo=2026000518&pblancNo=2026000518\n※ 신청 전 입주자 모집
+ 공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000517-2026000517-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[특공] GTX운정중앙역 시티프라디움 3단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 3블록(경
+ 기도 파주시 동패동 1673번지 일원)
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 파주시 파주운
+ 정3지구 주상복합 3블록(경기도 파주시 동패동 1673번지 
+ 일원)\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblan
+ cDetail.do?houseManageNo=2026000517&pblancNo=2026000517\n※ 신청 전 
+ 입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000517&pblancNo=2026000517
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000517-2026000517-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[1순위] GTX운정중앙역 시티프라디움 3단지(후속사
+ 업)
+LOCATION:경기도 파주시 파주운정3지구 주상복합 3블록(경
+ 기도 파주시 동패동 1673번지 일원)
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 파주시 파주
+ 운정3지구 주상복합 3블록(경기도 파주시 동패동 1673번
+ 지 일원)\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotP
+ blancDetail.do?houseManageNo=2026000517&pblancNo=2026000517\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000517&pblancNo=2026000517
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000517-2026000517-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[2순위] GTX운정중앙역 시티프라디움 3단지(후속사
+ 업)
+LOCATION:경기도 파주시 파주운정3지구 주상복합 3블록(경
+ 기도 파주시 동패동 1673번지 일원)
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 파주시 파주운정3지구 주
+ 상복합 3블록(경기도 파주시 동패동 1673번지 일원)\n공고
+ 문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?hous
+ eManageNo=2026000517&pblancNo=2026000517\n※ 신청 전 입주자 모집
+ 공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000517&pblancNo=2026000517
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000517-2026000517-winner@cheongyakping
+DTSTAMP:20261115T122409Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
-SUMMARY:[2순위] 성수 아뜰리에 (샘플)
-LOCATION:서울특별시 성동구 샘플로 8
+SUMMARY:[발표] GTX운정중앙역 시티프라디움 3단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 3블록(경
+ 기도 파주시 동패동 1673번지 일원)
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 파주시 파주운정3지구 주상복합 3
+ 블록(경기도 파주시 동패동 1673번지 일원)\n공고문: https:
+ //www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2
+ 026000517&pblancNo=2026000517\n※ 신청 전 입주자 모집공고문에
+ 서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000517&pblancNo=2026000517
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000517-2026000517-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261130
+SUMMARY:[계약] GTX운정중앙역 시티프라디움 3단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 3블록(경
+ 기도 파주시 동패동 1673번지 일원)
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 파주시 파주운정3지구 주상
+ 복합 3블록(경기도 파주시 동패동 1673번지 일원)\n공고문
+ : https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseMa
+ nageNo=2026000517&pblancNo=2026000517\n※ 신청 전 입주자 모집공
+ 고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000517&pblancNo=2026000517
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000502-2026000502-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[특공] 화성 향남 롯데캐슬 시그니처
+LOCATION:경기도 화성시 만세구 향남읍 상신리 산 13-13 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 화성시 만세구 
+ 향남읍 상신리 산 13-13 일원\n공고문: https://www.applyhome.co.
+ kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000502&pblancNo=
+ 2026000502\n※ 신청 전 입주자 모집공고문에서 자격과 일
+ 정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000502&pblancNo=2026000502
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000502-2026000502-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[1순위] 화성 향남 롯데캐슬 시그니처
+LOCATION:경기도 화성시 만세구 향남읍 상신리 산 13-13 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 화성시 만세
+ 구 향남읍 상신리 산 13-13 일원\n공고문: https://www.applyhome
+ .co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000502&pblan
+ cNo=2026000502\n※ 신청 전 입주자 모집공고문에서 자격과 
+ 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000502&pblancNo=2026000502
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000502-2026000502-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[2순위] 화성 향남 롯데캐슬 시그니처
+LOCATION:경기도 화성시 만세구 향남읍 상신리 산 13-13 일원
 DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
- 지는 신청 기회예요.\n서울특별시 성동구 샘플로 8\n※ 
+ 지는 신청 기회예요.\n경기도 화성시 만세구 향남읍 상
+ 신리 산 13-13 일원\n공고문: https://www.applyhome.co.kr/ai/aia/sel
+ ectAPTLttotPblancDetail.do?houseManageNo=2026000502&pblancNo=2026000502\n
+ ※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확
+ 인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000502&pblancNo=2026000502
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000502-2026000502-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[발표] 화성 향남 롯데캐슬 시그니처
+LOCATION:경기도 화성시 만세구 향남읍 상신리 산 13-13 일원
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 화성시 만세구 향남읍 상신리 산 
+ 13-13 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttot
+ PblancDetail.do?houseManageNo=2026000502&pblancNo=2026000502\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000502&pblancNo=2026000502
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000502-2026000502-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261126
+SUMMARY:[계약] 화성 향남 롯데캐슬 시그니처
+LOCATION:경기도 화성시 만세구 향남읍 상신리 산 13-13 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 화성시 만세구 향남읍 상신
+ 리 산 13-13 일원\n공고문: https://www.applyhome.co.kr/ai/aia/select
+ APTLttotPblancDetail.do?houseManageNo=2026000502&pblancNo=2026000502\n※ 
  신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
  하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000502&pblancNo=2026000502
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-5-winner@cheongyakping
-DTSTAMP:20261115T114713Z
+UID:2026000533-2026000533-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261118
+SUMMARY:[1순위] 안산신길2지구 B-1블록 공공분양주택(본청
+ 약)
+LOCATION:경기도 안산시 단원구 신길동 일원 안산신길2 공
+ 공주택지구 내 B-1블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 안산시 단원
+ 구 신길동 일원 안산신길2 공공주택지구 내 B-1블록\n공
+ 고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?h
+ ouseManageNo=2026000533&pblancNo=2026000533\n※ 신청 전 입주자 모
+ 집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000533&pblancNo=2026000533
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000533-2026000533-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[2순위] 안산신길2지구 B-1블록 공공분양주택(본청
+ 약)
+LOCATION:경기도 안산시 단원구 신길동 일원 안산신길2 공
+ 공주택지구 내 B-1블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 안산시 단원구 신길동 일
+ 원 안산신길2 공공주택지구 내 B-1블록\n공고문: https://www
+ .applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=202600
+ 0533&pblancNo=2026000533\n※ 신청 전 입주자 모집공고문에서 
+ 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000533&pblancNo=2026000533
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000533-2026000533-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[발표] 안산신길2지구 B-1블록 공공분양주택(본청약
+ )
+LOCATION:경기도 안산시 단원구 신길동 일원 안산신길2 공
+ 공주택지구 내 B-1블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 안산시 단원구 신길동 일원 안산
+ 신길2 공공주택지구 내 B-1블록\n공고문: https://www.applyhome
+ .co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000533&pblan
+ cNo=2026000533\n※ 신청 전 입주자 모집공고문에서 자격과 
+ 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000533&pblancNo=2026000533
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000533-2026000533-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270319
+SUMMARY:[계약] 안산신길2지구 B-1블록 공공분양주택(본청약
+ )
+LOCATION:경기도 안산시 단원구 신길동 일원 안산신길2 공
+ 공주택지구 내 B-1블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 안산시 단원구 신길동 일원
+  안산신길2 공공주택지구 내 B-1블록\n공고문: https://www.ap
+ plyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=202600053
+ 3&pblancNo=2026000533\n※ 신청 전 입주자 모집공고문에서 자
+ 격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000533&pblancNo=2026000533
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000528-2026000528-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[특공] 광교 자연앤 센트레빌(A17BL) 공공분양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 수원시 영통구 
+ 원천동 633번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/
+ selectAPTLttotPblancDetail.do?houseManageNo=2026000528&pblancNo=2026000528
+ \n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000528&pblancNo=2026000528
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000528-2026000528-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[1순위] 광교 자연앤 센트레빌(A17BL) 공공분양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 수원시 영통
+ 구 원천동 633번지 일원\n공고문: https://www.applyhome.co.kr/ai/
+ aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000528&pblancNo=202600
+ 0528\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 
+ 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000528&pblancNo=2026000528
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000528-2026000528-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[2순위] 광교 자연앤 센트레빌(A17BL) 공공분양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 수원시 영통구 원천동 633
+ 번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtto
+ tPblancDetail.do?houseManageNo=2026000528&pblancNo=2026000528\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000528&pblancNo=2026000528
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000528-2026000528-winner@cheongyakping
+DTSTAMP:20261115T122409Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
-SUMMARY:[발표] 성수 아뜰리에 (샘플)
-LOCATION:서울특별시 성동구 샘플로 8
+SUMMARY:[발표] 광교 자연앤 센트레빌(A17BL) 공공분양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
 DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
- 할 수 있어요.\n서울특별시 성동구 샘플로 8\n※ 신청 전 
- 입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+ 할 수 있어요.\n경기도 수원시 영통구 원천동 633번지 일
+ 원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDet
+ ail.do?houseManageNo=2026000528&pblancNo=2026000528\n※ 신청 전 입주
+ 자 모집공고문에서 자격과 일정을 꼭 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000528&pblancNo=2026000528
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-5-contract@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261128
-SUMMARY:[계약] 성수 아뜰리에 (샘플)
-LOCATION:서울특별시 성동구 샘플로 8
+UID:2026000528-2026000528-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261224
+SUMMARY:[계약] 광교 자연앤 센트레빌(A17BL) 공공분양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
 DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
- 부하는 기간이에요.\n서울특별시 성동구 샘플로 8\n※ 신
+ 부하는 기간이에요.\n경기도 수원시 영통구 원천동 633번
+ 지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPb
+ lancDetail.do?houseManageNo=2026000528&pblancNo=2026000528\n※ 신청 전
+  입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000528&pblancNo=2026000528
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000527-2026000527-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[특공] 광교 자연앤 센트레빌(A17BL) 지분적립형 분
+ 양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 수원시 영통구 
+ 원천동 633번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/
+ selectAPTLttotPblancDetail.do?houseManageNo=2026000527&pblancNo=2026000527
+ \n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000527&pblancNo=2026000527
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000527-2026000527-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[1순위] 광교 자연앤 센트레빌(A17BL) 지분적립형 분
+ 양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 수원시 영통
+ 구 원천동 633번지 일원\n공고문: https://www.applyhome.co.kr/ai/
+ aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000527&pblancNo=202600
+ 0527\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 
+ 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000527&pblancNo=2026000527
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000527-2026000527-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[2순위] 광교 자연앤 센트레빌(A17BL) 지분적립형 분
+ 양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 수원시 영통구 원천동 633
+ 번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtto
+ tPblancDetail.do?houseManageNo=2026000527&pblancNo=2026000527\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000527&pblancNo=2026000527
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000527-2026000527-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[발표] 광교 자연앤 센트레빌(A17BL) 지분적립형 분
+ 양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 수원시 영통구 원천동 633번지 일
+ 원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDet
+ ail.do?houseManageNo=2026000527&pblancNo=2026000527\n※ 신청 전 입주
+ 자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000527&pblancNo=2026000527
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000527-2026000527-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270128
+SUMMARY:[계약] 광교 자연앤 센트레빌(A17BL) 지분적립형 분
+ 양주택
+LOCATION:경기도 수원시 영통구 원천동 633번지 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 수원시 영통구 원천동 633번
+ 지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPb
+ lancDetail.do?houseManageNo=2026000527&pblancNo=2026000527\n※ 신청 전
+  입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000527&pblancNo=2026000527
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[특공] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 평택시 고덕 국
+ 제화계획지구 내 Abc-33블록\n공고문: https://www.applyhome.co.k
+ r/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000515&pblancNo=2
+ 026000515\n※ 신청 전 입주자 모집공고문에서 자격과 일정
+ 을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[1순위] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 평택시 고덕 
+ 국제화계획지구 내 Abc-33블록\n공고문: https://www.applyhome.c
+ o.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000515&pblancN
+ o=2026000515\n※ 신청 전 입주자 모집공고문에서 자격과 일
+ 정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[2순위] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 평택시 고덕 국제화계획지
+ 구 내 Abc-33블록\n공고문: https://www.applyhome.co.kr/ai/aia/select
+ APTLttotPblancDetail.do?houseManageNo=2026000515&pblancNo=2026000515\n※ 
+ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
+ 하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[발표] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 평택시 고덕 국제화계획지구 내 A
+ bc-33블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotP
+ blancDetail.do?houseManageNo=2026000515&pblancNo=2026000515\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261202
+SUMMARY:[계약] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 평택시 고덕 국제화계획지
+ 구 내 Abc-33블록\n공고문: https://www.applyhome.co.kr/ai/aia/select
+ APTLttotPblancDetail.do?houseManageNo=2026000515&pblancNo=2026000515\n※ 
+ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
+ 하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000472-2026000472-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[특공] 구리갈매역세권 B-1블록 신안인스빌 디센트
+LOCATION:경기도 구리시 구리갈매역세권 B-1블록
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 구리시 구리갈
+ 매역세권 B-1블록\n공고문: https://www.applyhome.co.kr/ai/aia/sele
+ ctAPTLttotPblancDetail.do?houseManageNo=2026000472&pblancNo=2026000472\n
+ ※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확
+ 인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000472&pblancNo=2026000472
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000472-2026000472-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[1순위] 구리갈매역세권 B-1블록 신안인스빌 디센트
+LOCATION:경기도 구리시 구리갈매역세권 B-1블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 구리시 구리
+ 갈매역세권 B-1블록\n공고문: https://www.applyhome.co.kr/ai/aia/s
+ electAPTLttotPblancDetail.do?houseManageNo=2026000472&pblancNo=2026000472\
+ n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000472&pblancNo=2026000472
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000472-2026000472-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[2순위] 구리갈매역세권 B-1블록 신안인스빌 디센트
+LOCATION:경기도 구리시 구리갈매역세권 B-1블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 구리시 구리갈매역세권 B-1
+ 블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblanc
+ Detail.do?houseManageNo=2026000472&pblancNo=2026000472\n※ 신청 전 입
+ 주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000472&pblancNo=2026000472
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000472-2026000472-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[발표] 구리갈매역세권 B-1블록 신안인스빌 디센트
+LOCATION:경기도 구리시 구리갈매역세권 B-1블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 구리시 구리갈매역세권 B-1블록\n
+ 공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.d
+ o?houseManageNo=2026000472&pblancNo=2026000472\n※ 신청 전 입주자 
+ 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000472&pblancNo=2026000472
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000472-2026000472-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261203
+SUMMARY:[계약] 구리갈매역세권 B-1블록 신안인스빌 디센트
+LOCATION:경기도 구리시 구리갈매역세권 B-1블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 구리시 구리갈매역세권 B-1
+ 블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblanc
+ Detail.do?houseManageNo=2026000472&pblancNo=2026000472\n※ 신청 전 입
+ 주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000472&pblancNo=2026000472
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000535-2026000535-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[특공] 중앙하이츠 구성 플랫폼시티
+LOCATION:경기도 용인시 기흥구 마북동 298-1번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 용인시 기흥구 
+ 마북동 298-1번지 일원\n공고문: https://www.applyhome.co.kr/ai/ai
+ a/selectAPTLttotPblancDetail.do?houseManageNo=2026000535&pblancNo=20260005
+ 35\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭
+  확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000535&pblancNo=2026000535
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000535-2026000535-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261112
+SUMMARY:[1순위] 중앙하이츠 구성 플랫폼시티
+LOCATION:경기도 용인시 기흥구 마북동 298-1번지 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 용인시 기흥
+ 구 마북동 298-1번지 일원\n공고문: https://www.applyhome.co.kr/a
+ i/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000535&pblancNo=2026
+ 000535\n※ 신청 전 입주자 모집공고문에서 자격과 일정을
+  꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000535&pblancNo=2026000535
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000535-2026000535-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[2순위] 중앙하이츠 구성 플랫폼시티
+LOCATION:경기도 용인시 기흥구 마북동 298-1번지 일원
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 용인시 기흥구 마북동 298-1
+ 번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtto
+ tPblancDetail.do?houseManageNo=2026000535&pblancNo=2026000535\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000535&pblancNo=2026000535
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000535-2026000535-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[발표] 중앙하이츠 구성 플랫폼시티
+LOCATION:경기도 용인시 기흥구 마북동 298-1번지 일원
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 용인시 기흥구 마북동 298-1번지 
+ 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblanc
+ Detail.do?houseManageNo=2026000535&pblancNo=2026000535\n※ 신청 전 입
+ 주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000535&pblancNo=2026000535
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000535-2026000535-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261203
+SUMMARY:[계약] 중앙하이츠 구성 플랫폼시티
+LOCATION:경기도 용인시 기흥구 마북동 298-1번지 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 용인시 기흥구 마북동 298-1
+ 번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtto
+ tPblancDetail.do?houseManageNo=2026000535&pblancNo=2026000535\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000535&pblancNo=2026000535
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000525-2026000525-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[특공] 엘리프 시흥 더프라임
+LOCATION:경기도 시흥시 거모동 시흥거모지구 B-5블록
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 시흥시 거모동 
+ 시흥거모지구 B-5블록\n공고문: https://www.applyhome.co.kr/ai/ai
+ a/selectAPTLttotPblancDetail.do?houseManageNo=2026000525&pblancNo=20260005
+ 25\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭
+  확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000525&pblancNo=2026000525
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000525-2026000525-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[1순위] 엘리프 시흥 더프라임
+LOCATION:경기도 시흥시 거모동 시흥거모지구 B-5블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 시흥시 거모
+ 동 시흥거모지구 B-5블록\n공고문: https://www.applyhome.co.kr/a
+ i/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000525&pblancNo=2026
+ 000525\n※ 신청 전 입주자 모집공고문에서 자격과 일정을
+  꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000525&pblancNo=2026000525
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000525-2026000525-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[2순위] 엘리프 시흥 더프라임
+LOCATION:경기도 시흥시 거모동 시흥거모지구 B-5블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 시흥시 거모동 시흥거모지
+ 구 B-5블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtto
+ tPblancDetail.do?houseManageNo=2026000525&pblancNo=2026000525\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000525&pblancNo=2026000525
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000525-2026000525-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[발표] 엘리프 시흥 더프라임
+LOCATION:경기도 시흥시 거모동 시흥거모지구 B-5블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 시흥시 거모동 시흥거모지구 B-5
+ 블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblanc
+ Detail.do?houseManageNo=2026000525&pblancNo=2026000525\n※ 신청 전 입
+ 주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000525&pblancNo=2026000525
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000525-2026000525-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261201
+SUMMARY:[계약] 엘리프 시흥 더프라임
+LOCATION:경기도 시흥시 거모동 시흥거모지구 B-5블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 시흥시 거모동 시흥거모지
+ 구 B-5블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtto
+ tPblancDetail.do?houseManageNo=2026000525&pblancNo=2026000525\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000525&pblancNo=2026000525
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000499-2026000499-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[특공] 한화포레나 지제역
+LOCATION:경기도 평택시 세교동 725번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 평택시 세교동 7
+ 25번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLt
+ totPblancDetail.do?houseManageNo=2026000499&pblancNo=2026000499\n※ 신
  청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하
  세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000499&pblancNo=2026000499
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-1-special@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261116
-SUMMARY:[특공] 한강 포레스트힐 (샘플)
-LOCATION:서울특별시 강동구 샘플동 100
-DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
- 맞으면 먼저 신청할 수 있어요.\n서울특별시 강동구 샘
- 플동 100\n※ 신청 전 입주자 모집공고문에서 자격과 일
- 정을 꼭 확인하세요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-1-first@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261118
-SUMMARY:[1순위] 한강 포레스트힐 (샘플)
-LOCATION:서울특별시 강동구 샘플동 100
+UID:2026000499-2026000499-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[1순위] 한화포레나 지제역
+LOCATION:경기도 평택시 세교동 725번지 일원
 DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
- 하는 일반공급 첫 번째 기회예요.\n서울특별시 강동구 
- 샘플동 100\n※ 신청 전 입주자 모집공고문에서 자격과 
- 일정을 꼭 확인하세요.
+ 하는 일반공급 첫 번째 기회예요.\n경기도 평택시 세교
+ 동 725번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/select
+ APTLttotPblancDetail.do?houseManageNo=2026000499&pblancNo=2026000499\n※ 
+ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
+ 하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000499&pblancNo=2026000499
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-1-second@cheongyakping
-DTSTAMP:20261115T114713Z
+UID:2026000499-2026000499-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[2순위] 한화포레나 지제역
+LOCATION:경기도 평택시 세교동 725번지 일원
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 평택시 세교동 725번지 일
+ 원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDet
+ ail.do?houseManageNo=2026000499&pblancNo=2026000499\n※ 신청 전 입주
+ 자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000499&pblancNo=2026000499
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000499-2026000499-winner@cheongyakping
+DTSTAMP:20261115T122409Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
-SUMMARY:[2순위] 한강 포레스트힐 (샘플)
-LOCATION:서울특별시 강동구 샘플동 100
-DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
- 지는 신청 기회예요.\n서울특별시 강동구 샘플동 100\n※ 
- 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
- 하세요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-1-winner@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
-SUMMARY:[발표] 한강 포레스트힐 (샘플)
-LOCATION:서울특별시 강동구 샘플동 100
+SUMMARY:[발표] 한화포레나 지제역
+LOCATION:경기도 평택시 세교동 725번지 일원
 DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
- 할 수 있어요.\n서울특별시 강동구 샘플동 100\n※ 신청 
- 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
- 요.
+ 할 수 있어요.\n경기도 평택시 세교동 725번지 일원\n공고
+ 문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?hous
+ eManageNo=2026000499&pblancNo=2026000499\n※ 신청 전 입주자 모집
+ 공고문에서 자격과 일정을 꼭 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000499&pblancNo=2026000499
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-1-contract@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261204
-SUMMARY:[계약] 한강 포레스트힐 (샘플)
-LOCATION:서울특별시 강동구 샘플동 100
+UID:2026000499-2026000499-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261202
+SUMMARY:[계약] 한화포레나 지제역
+LOCATION:경기도 평택시 세교동 725번지 일원
 DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
- 부하는 기간이에요.\n서울특별시 강동구 샘플동 100\n※ 
+ 부하는 기간이에요.\n경기도 평택시 세교동 725번지 일원
+ \n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail
+ .do?houseManageNo=2026000499&pblancNo=2026000499\n※ 신청 전 입주자
+  모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000499&pblancNo=2026000499
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820014-2026820014-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[1순위] 남양주왕숙 A-2블록 신혼희망타운(공공분양
+ ) 잔여세대 추가입주자모집공고
+LOCATION:경기도 남양주시 진접읍\, 진건읍\, 퇴계원읍 일원
+ \, 남양주왕숙 공공주택지구 내 A-2블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 남양주시 진
+ 접읍\, 진건읍\, 퇴계원읍 일원\, 남양주왕숙 공공주택지
+ 구 내 A-2블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPT
+ LttotPblancDetail.do?houseManageNo=2026820014&pblancNo=2026820014\n※ 신
+ 청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하
+ 세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820014&pblancNo=2026820014
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820014-2026820014-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[2순위] 남양주왕숙 A-2블록 신혼희망타운(공공분양
+ ) 잔여세대 추가입주자모집공고
+LOCATION:경기도 남양주시 진접읍\, 진건읍\, 퇴계원읍 일원
+ \, 남양주왕숙 공공주택지구 내 A-2블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 남양주시 진접읍\, 진건읍\
+ , 퇴계원읍 일원\, 남양주왕숙 공공주택지구 내 A-2블록\n
+ 공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.d
+ o?houseManageNo=2026820014&pblancNo=2026820014\n※ 신청 전 입주자 
+ 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820014&pblancNo=2026820014
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820014-2026820014-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[발표] 남양주왕숙 A-2블록 신혼희망타운(공공분양)
+  잔여세대 추가입주자모집공고
+LOCATION:경기도 남양주시 진접읍\, 진건읍\, 퇴계원읍 일원
+ \, 남양주왕숙 공공주택지구 내 A-2블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 남양주시 진접읍\, 진건읍\, 퇴계
+ 원읍 일원\, 남양주왕숙 공공주택지구 내 A-2블록\n공고
+ 문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?hous
+ eManageNo=2026820014&pblancNo=2026820014\n※ 신청 전 입주자 모집
+ 공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820014&pblancNo=2026820014
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820014-2026820014-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270203
+SUMMARY:[계약] 남양주왕숙 A-2블록 신혼희망타운(공공분양)
+  잔여세대 추가입주자모집공고
+LOCATION:경기도 남양주시 진접읍\, 진건읍\, 퇴계원읍 일원
+ \, 남양주왕숙 공공주택지구 내 A-2블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 남양주시 진접읍\, 진건읍\,
+  퇴계원읍 일원\, 남양주왕숙 공공주택지구 내 A-2블록\n
+ 공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.d
+ o?houseManageNo=2026820014&pblancNo=2026820014\n※ 신청 전 입주자 
+ 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820014&pblancNo=2026820014
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000497-2026000497-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[특공] 중화역 라온프라이빗 센트로
+LOCATION:서울특별시 중랑구 중화동 303-9번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n서울특별시 중랑구 중
+ 화동 303-9번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/s
+ electAPTLttotPblancDetail.do?houseManageNo=2026000497&pblancNo=2026000497\
+ n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000497&pblancNo=2026000497
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000497-2026000497-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261119
+SUMMARY:[1순위] 중화역 라온프라이빗 센트로
+LOCATION:서울특별시 중랑구 중화동 303-9번지 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n서울특별시 중랑구 
+ 중화동 303-9번지 일원\n공고문: https://www.applyhome.co.kr/ai/ai
+ a/selectAPTLttotPblancDetail.do?houseManageNo=2026000497&pblancNo=20260004
+ 97\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭
+  확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000497&pblancNo=2026000497
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000497-2026000497-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[2순위] 중화역 라온프라이빗 센트로
+LOCATION:서울특별시 중랑구 중화동 303-9번지 일원
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n서울특별시 중랑구 중화동 303-9번
+ 지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPb
+ lancDetail.do?houseManageNo=2026000497&pblancNo=2026000497\n※ 신청 전
+  입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000497&pblancNo=2026000497
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000497-2026000497-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[발표] 중화역 라온프라이빗 센트로
+LOCATION:서울특별시 중랑구 중화동 303-9번지 일원
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n서울특별시 중랑구 중화동 303-9번지 일원
+ \n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail
+ .do?houseManageNo=2026000497&pblancNo=2026000497\n※ 신청 전 입주자
+  모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000497&pblancNo=2026000497
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000497-2026000497-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261210
+SUMMARY:[계약] 중화역 라온프라이빗 센트로
+LOCATION:서울특별시 중랑구 중화동 303-9번지 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n서울특별시 중랑구 중화동 303-9번
+ 지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPb
+ lancDetail.do?houseManageNo=2026000497&pblancNo=2026000497\n※ 신청 전
+  입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000497&pblancNo=2026000497
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820015-2026820015-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261127
+SUMMARY:[1순위] 시흥 거모 아테라(시흥거모 A-6BL) 신혼희망
+ 타운(공공분양)(본청약)
+LOCATION:경기도 시흥시 거모지구 내 A-6블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 시흥시 거모
+ 지구 내 A-6블록\n공고문: https://www.applyhome.co.kr/ai/aia/select
+ APTLttotPblancDetail.do?houseManageNo=2026820015&pblancNo=2026820015\n※ 
  신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
  하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820015&pblancNo=2026820015
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-2-special@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261115
-DTEND;VALUE=DATE:20261117
-SUMMARY:[특공] 광교 에코파크 (샘플)
-LOCATION:경기도 수원시 영통구 샘플로 55
-DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
- 맞으면 먼저 신청할 수 있어요.\n경기도 수원시 영통구 
- 샘플로 55\n※ 신청 전 입주자 모집공고문에서 자격과 일
- 정을 꼭 확인하세요.
+UID:2026820015-2026820015-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[2순위] 시흥 거모 아테라(시흥거모 A-6BL) 신혼희망
+ 타운(공공분양)(본청약)
+LOCATION:경기도 시흥시 거모지구 내 A-6블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 시흥시 거모지구 내 A-6블
+ 록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDet
+ ail.do?houseManageNo=2026820015&pblancNo=2026820015\n※ 신청 전 입주
+ 자 모집공고문에서 자격과 일정을 꼭 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820015&pblancNo=2026820015
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-2-first@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261120
-SUMMARY:[1순위] 광교 에코파크 (샘플)
-LOCATION:경기도 수원시 영통구 샘플로 55
-DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
- 하는 일반공급 첫 번째 기회예요.\n경기도 수원시 영통
- 구 샘플로 55\n※ 신청 전 입주자 모집공고문에서 자격과
+UID:2026820015-2026820015-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:[발표] 시흥 거모 아테라(시흥거모 A-6BL) 신혼희망
+ 타운(공공분양)(본청약)
+LOCATION:경기도 시흥시 거모지구 내 A-6블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 시흥시 거모지구 내 A-6블록\n공고
+ 문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?hous
+ eManageNo=2026820015&pblancNo=2026820015\n※ 신청 전 입주자 모집
+ 공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820015&pblancNo=2026820015
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820015-2026820015-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270315
+SUMMARY:[계약] 시흥 거모 아테라(시흥거모 A-6BL) 신혼희망
+ 타운(공공분양)(본청약)
+LOCATION:경기도 시흥시 거모지구 내 A-6블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 시흥시 거모지구 내 A-6블록
+ \n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail
+ .do?houseManageNo=2026820015&pblancNo=2026820015\n※ 신청 전 입주자
+  모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820015&pblancNo=2026820015
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000557-2026000557-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[특공] 제일풍경채 광주 포에듀
+LOCATION:경기도 광주시 탄벌동 203-4번지 일원 (탄벌A지구 A5
+ 블럭)
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 광주시 탄벌동 2
+ 03-4번지 일원 (탄벌A지구 A5블럭)\n공고문: https://www.applyho
+ me.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000557&pbl
+ ancNo=2026000557\n※ 신청 전 입주자 모집공고문에서 자격과
   일정을 꼭 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000557&pblancNo=2026000557
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-2-second@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
-SUMMARY:[2순위] 광교 에코파크 (샘플)
-LOCATION:경기도 수원시 영통구 샘플로 55
+UID:2026000557-2026000557-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[1순위] 제일풍경채 광주 포에듀
+LOCATION:경기도 광주시 탄벌동 203-4번지 일원 (탄벌A지구 A5
+ 블럭)
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 광주시 탄벌
+ 동 203-4번지 일원 (탄벌A지구 A5블럭)\n공고문: https://www.ap
+ plyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=202600055
+ 7&pblancNo=2026000557\n※ 신청 전 입주자 모집공고문에서 자
+ 격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000557&pblancNo=2026000557
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000557-2026000557-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[2순위] 제일풍경채 광주 포에듀
+LOCATION:경기도 광주시 탄벌동 203-4번지 일원 (탄벌A지구 A5
+ 블럭)
 DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
- 지는 신청 기회예요.\n경기도 수원시 영통구 샘플로 55\n
+ 지는 신청 기회예요.\n경기도 광주시 탄벌동 203-4번지 일
+ 원 (탄벌A지구 A5블럭)\n공고문: https://www.applyhome.co.kr/ai/ai
+ a/selectAPTLttotPblancDetail.do?houseManageNo=2026000557&pblancNo=20260005
+ 57\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭
+  확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000557&pblancNo=2026000557
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000557-2026000557-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[발표] 제일풍경채 광주 포에듀
+LOCATION:경기도 광주시 탄벌동 203-4번지 일원 (탄벌A지구 A5
+ 블럭)
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 광주시 탄벌동 203-4번지 일원 (탄
+ 벌A지구 A5블럭)\n공고문: https://www.applyhome.co.kr/ai/aia/select
+ APTLttotPblancDetail.do?houseManageNo=2026000557&pblancNo=2026000557\n※ 
+ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
+ 하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000557&pblancNo=2026000557
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000557-2026000557-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261210
+SUMMARY:[계약] 제일풍경채 광주 포에듀
+LOCATION:경기도 광주시 탄벌동 203-4번지 일원 (탄벌A지구 A5
+ 블럭)
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 광주시 탄벌동 203-4번지 일
+ 원 (탄벌A지구 A5블럭)\n공고문: https://www.applyhome.co.kr/ai/ai
+ a/selectAPTLttotPblancDetail.do?houseManageNo=2026000557&pblancNo=20260005
+ 57\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭
+  확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000557&pblancNo=2026000557
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000553-2026000553-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[특공] 의정부역 펠리스타워 양우내안애
+LOCATION:경기도 의정부시 의정부동 424번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 의정부시 의정
+ 부동 424번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/sel
+ ectAPTLttotPblancDetail.do?houseManageNo=2026000553&pblancNo=2026000553\n
  ※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확
  인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000553&pblancNo=2026000553
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-2-winner@cheongyakping
-DTSTAMP:20261115T114713Z
+UID:2026000553-2026000553-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[1순위] 의정부역 펠리스타워 양우내안애
+LOCATION:경기도 의정부시 의정부동 424번지 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 의정부시 의
+ 정부동 424번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/
+ selectAPTLttotPblancDetail.do?houseManageNo=2026000553&pblancNo=2026000553
+ \n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000553&pblancNo=2026000553
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000553-2026000553-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[2순위] 의정부역 펠리스타워 양우내안애
+LOCATION:경기도 의정부시 의정부동 424번지 일원
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 의정부시 의정부동 424번지
+  일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblan
+ cDetail.do?houseManageNo=2026000553&pblancNo=2026000553\n※ 신청 전 
+ 입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000553&pblancNo=2026000553
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000553-2026000553-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[발표] 의정부역 펠리스타워 양우내안애
+LOCATION:경기도 의정부시 의정부동 424번지 일원
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 의정부시 의정부동 424번지 일원\n
+ 공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.d
+ o?houseManageNo=2026000553&pblancNo=2026000553\n※ 신청 전 입주자 
+ 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000553&pblancNo=2026000553
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000553-2026000553-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261210
+SUMMARY:[계약] 의정부역 펠리스타워 양우내안애
+LOCATION:경기도 의정부시 의정부동 424번지 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 의정부시 의정부동 424번지 
+ 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblanc
+ Detail.do?houseManageNo=2026000553&pblancNo=2026000553\n※ 신청 전 입
+ 주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000553&pblancNo=2026000553
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820013-2026820013-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261124
+SUMMARY:[1순위] 안산신길2 A-6블록 신혼희망타운(공공분양)(
+ 본청약)
+LOCATION:경기도 안산시 단원구 신길동 일원 안산신길2 공
+ 공주택지구 내 A-6블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 안산시 단원
+ 구 신길동 일원 안산신길2 공공주택지구 내 A-6블록\n공
+ 고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?h
+ ouseManageNo=2026820013&pblancNo=2026820013\n※ 신청 전 입주자 모
+ 집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820013&pblancNo=2026820013
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820013-2026820013-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[2순위] 안산신길2 A-6블록 신혼희망타운(공공분양)(
+ 본청약)
+LOCATION:경기도 안산시 단원구 신길동 일원 안산신길2 공
+ 공주택지구 내 A-6블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 안산시 단원구 신길동 일
+ 원 안산신길2 공공주택지구 내 A-6블록\n공고문: https://www
+ .applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=202682
+ 0013&pblancNo=2026820013\n※ 신청 전 입주자 모집공고문에서 
+ 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820013&pblancNo=2026820013
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820013-2026820013-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[발표] 안산신길2 A-6블록 신혼희망타운(공공분양)(
+ 본청약)
+LOCATION:경기도 안산시 단원구 신길동 일원 안산신길2 공
+ 공주택지구 내 A-6블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 안산시 단원구 신길동 일원 안산
+ 신길2 공공주택지구 내 A-6블록\n공고문: https://www.applyhome
+ .co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820013&pblan
+ cNo=2026820013\n※ 신청 전 입주자 모집공고문에서 자격과 
+ 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820013&pblancNo=2026820013
+END:VEVENT
+BEGIN:VEVENT
+UID:2026820013-2026820013-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270403
+SUMMARY:[계약] 안산신길2 A-6블록 신혼희망타운(공공분양)(
+ 본청약)
+LOCATION:경기도 안산시 단원구 신길동 일원 안산신길2 공
+ 공주택지구 내 A-6블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 안산시 단원구 신길동 일원
+  안산신길2 공공주택지구 내 A-6블록\n공고문: https://www.ap
+ plyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=202682001
+ 3&pblancNo=2026820013\n※ 신청 전 입주자 모집공고문에서 자
+ 격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026820013&pblancNo=2026820013
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000560-2026000560-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[특공] 해링턴 플레이스 문래
+LOCATION:서울특별시 영등포구 문래동3가 27-1번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n서울특별시 영등포구 
+ 문래동3가 27-1번지 일원\n공고문: https://www.applyhome.co.kr/ai
+ /aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000560&pblancNo=20260
+ 00560\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 
+ 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000560&pblancNo=2026000560
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000560-2026000560-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261126
+SUMMARY:[1순위] 해링턴 플레이스 문래
+LOCATION:서울특별시 영등포구 문래동3가 27-1번지 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n서울특별시 영등포구
+  문래동3가 27-1번지 일원\n공고문: https://www.applyhome.co.kr/a
+ i/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000560&pblancNo=2026
+ 000560\n※ 신청 전 입주자 모집공고문에서 자격과 일정을
+  꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000560&pblancNo=2026000560
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000560-2026000560-second@cheongyakping
+DTSTAMP:20261115T122409Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
-SUMMARY:[발표] 광교 에코파크 (샘플)
-LOCATION:경기도 수원시 영통구 샘플로 55
+SUMMARY:[2순위] 해링턴 플레이스 문래
+LOCATION:서울특별시 영등포구 문래동3가 27-1번지 일원
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n서울특별시 영등포구 문래동3가 27
+ -1번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLt
+ totPblancDetail.do?houseManageNo=2026000560&pblancNo=2026000560\n※ 신
+ 청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하
+ 세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000560&pblancNo=2026000560
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000560-2026000560-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[발표] 해링턴 플레이스 문래
+LOCATION:서울특별시 영등포구 문래동3가 27-1번지 일원
 DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
- 할 수 있어요.\n경기도 수원시 영통구 샘플로 55\n※ 신청
+ 할 수 있어요.\n서울특별시 영등포구 문래동3가 27-1번지 
+ 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblanc
+ Detail.do?houseManageNo=2026000560&pblancNo=2026000560\n※ 신청 전 입
+ 주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000560&pblancNo=2026000560
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000560-2026000560-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261217
+SUMMARY:[계약] 해링턴 플레이스 문래
+LOCATION:서울특별시 영등포구 문래동3가 27-1번지 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n서울특별시 영등포구 문래동3가 27-
+ 1번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtt
+ otPblancDetail.do?houseManageNo=2026000560&pblancNo=2026000560\n※ 신청
   전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
  요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000560&pblancNo=2026000560
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-2-contract@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261207
-SUMMARY:[계약] 광교 에코파크 (샘플)
-LOCATION:경기도 수원시 영통구 샘플로 55
-DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
- 부하는 기간이에요.\n경기도 수원시 영통구 샘플로 55\n
- ※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확
- 인하세요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-3-special@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261121
-SUMMARY:[특공] 마포 리버뷰 센트럴 (샘플)
-LOCATION:서울특별시 마포구 샘플대로 12
-DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
- 맞으면 먼저 신청할 수 있어요.\n서울특별시 마포구 샘
- 플대로 12\n※ 신청 전 입주자 모집공고문에서 자격과 일
- 정을 꼭 확인하세요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-3-first@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261123
-SUMMARY:[1순위] 마포 리버뷰 센트럴 (샘플)
-LOCATION:서울특별시 마포구 샘플대로 12
-DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
- 하는 일반공급 첫 번째 기회예요.\n서울특별시 마포구 
- 샘플대로 12\n※ 신청 전 입주자 모집공고문에서 자격과 
- 일정을 꼭 확인하세요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-3-second@cheongyakping
-DTSTAMP:20261115T114713Z
+UID:2026000576-2026000576-special@cheongyakping
+DTSTAMP:20261115T122409Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
-SUMMARY:[2순위] 마포 리버뷰 센트럴 (샘플)
-LOCATION:서울특별시 마포구 샘플대로 12
+SUMMARY:[특공] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 안산시 상록구 
+ 성포동 586번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/
+ selectAPTLttotPblancDetail.do?houseManageNo=2026000576&pblancNo=2026000576
+ \n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000576-2026000576-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[1순위] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 안산시 상록
+ 구 성포동 586번지 일원\n공고문: https://www.applyhome.co.kr/ai/
+ aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000576&pblancNo=202600
+ 0576\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 
+ 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000576-2026000576-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[2순위] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
 DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
- 지는 신청 기회예요.\n서울특별시 마포구 샘플대로 12\n
+ 지는 신청 기회예요.\n경기도 안산시 상록구 성포동 586
+ 번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtto
+ tPblancDetail.do?houseManageNo=2026000576&pblancNo=2026000576\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000576-2026000576-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[발표] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 안산시 상록구 성포동 586번지 일
+ 원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDet
+ ail.do?houseManageNo=2026000576&pblancNo=2026000576\n※ 신청 전 입주
+ 자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000576-2026000576-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261216
+SUMMARY:[계약] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 안산시 상록구 성포동 586번
+ 지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPb
+ lancDetail.do?houseManageNo=2026000576&pblancNo=2026000576\n※ 신청 전
+  입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000457-2026000457-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[특공] 부천대장 하우스토리 디센트(부천대장지구 
+ A2BL) 공공분양주택
+LOCATION:경기도 부천시 오정구 대장동\, 오정동\, 원종동\, 
+ 삼정동 일원 부천대장 공공주택지구 내 A2블록
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 부천시 오정구 
+ 대장동\, 오정동\, 원종동\, 삼정동 일원 부천대장 공공
+ 주택지구 내 A2블록\n공고문: https://www.applyhome.co.kr/ai/aia/s
+ electAPTLttotPblancDetail.do?houseManageNo=2026000457&pblancNo=2026000457\
+ n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000457&pblancNo=2026000457
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000457-2026000457-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[1순위] 부천대장 하우스토리 디센트(부천대장지구
+  A2BL) 공공분양주택
+LOCATION:경기도 부천시 오정구 대장동\, 오정동\, 원종동\, 
+ 삼정동 일원 부천대장 공공주택지구 내 A2블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 부천시 오정
+ 구 대장동\, 오정동\, 원종동\, 삼정동 일원 부천대장 공
+ 공주택지구 내 A2블록\n공고문: https://www.applyhome.co.kr/ai/ai
+ a/selectAPTLttotPblancDetail.do?houseManageNo=2026000457&pblancNo=20260004
+ 57\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭
+  확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000457&pblancNo=2026000457
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000457-2026000457-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[2순위] 부천대장 하우스토리 디센트(부천대장지구
+  A2BL) 공공분양주택
+LOCATION:경기도 부천시 오정구 대장동\, 오정동\, 원종동\, 
+ 삼정동 일원 부천대장 공공주택지구 내 A2블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 부천시 오정구 대장동\, 오
+ 정동\, 원종동\, 삼정동 일원 부천대장 공공주택지구 내 
+ A2블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPbla
+ ncDetail.do?houseManageNo=2026000457&pblancNo=2026000457\n※ 신청 전 
+ 입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000457&pblancNo=2026000457
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000457-2026000457-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[발표] 부천대장 하우스토리 디센트(부천대장지구 
+ A2BL) 공공분양주택
+LOCATION:경기도 부천시 오정구 대장동\, 오정동\, 원종동\, 
+ 삼정동 일원 부천대장 공공주택지구 내 A2블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 부천시 오정구 대장동\, 오정동\, 
+ 원종동\, 삼정동 일원 부천대장 공공주택지구 내 A2블록\
+ n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.
+ do?houseManageNo=2026000457&pblancNo=2026000457\n※ 신청 전 입주자 
+ 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000457&pblancNo=2026000457
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000457-2026000457-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270130
+SUMMARY:[계약] 부천대장 하우스토리 디센트(부천대장지구 
+ A2BL) 공공분양주택
+LOCATION:경기도 부천시 오정구 대장동\, 오정동\, 원종동\, 
+ 삼정동 일원 부천대장 공공주택지구 내 A2블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 부천시 오정구 대장동\, 오
+ 정동\, 원종동\, 삼정동 일원 부천대장 공공주택지구 내 
+ A2블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPbla
+ ncDetail.do?houseManageNo=2026000457&pblancNo=2026000457\n※ 신청 전 
+ 입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000457&pblancNo=2026000457
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000505-2026000505-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[특공] 경희궁 에피트
+LOCATION:서울특별시 종로구 교남동 28번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n서울특별시 종로구 교
+ 남동 28번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/sele
+ ctAPTLttotPblancDetail.do?houseManageNo=2026000505&pblancNo=2026000505\n
  ※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확
  인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000505&pblancNo=2026000505
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-3-winner@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261129
-DTEND;VALUE=DATE:20261130
-SUMMARY:[발표] 마포 리버뷰 센트럴 (샘플)
-LOCATION:서울특별시 마포구 샘플대로 12
-DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
- 할 수 있어요.\n서울특별시 마포구 샘플대로 12\n※ 신청 
- 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
- 요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-3-contract@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261210
-SUMMARY:[계약] 마포 리버뷰 센트럴 (샘플)
-LOCATION:서울특별시 마포구 샘플대로 12
-DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
- 부하는 기간이에요.\n서울특별시 마포구 샘플대로 12\n※
-  신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
- 하세요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-4-special@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261126
-SUMMARY:[특공] 위례 스카이 테라스 (샘플)
-LOCATION:경기도 하남시 샘플길 77
-DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
- 맞으면 먼저 신청할 수 있어요.\n경기도 하남시 샘플길 7
- 7\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
- 확인하세요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-4-first@cheongyakping
-DTSTAMP:20261115T114713Z
+UID:2026000505-2026000505-first@cheongyakping
+DTSTAMP:20261115T122409Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261128
-SUMMARY:[1순위] 위례 스카이 테라스 (샘플)
-LOCATION:경기도 하남시 샘플길 77
+SUMMARY:[1순위] 경희궁 에피트
+LOCATION:서울특별시 종로구 교남동 28번지 일원
 DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
- 하는 일반공급 첫 번째 기회예요.\n경기도 하남시 샘플
- 길 77\n※ 신청 전 입주자 모집공고문에서 자격과 일정을
-  꼭 확인하세요.
+ 하는 일반공급 첫 번째 기회예요.\n서울특별시 종로구 
+ 교남동 28번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/s
+ electAPTLttotPblancDetail.do?houseManageNo=2026000505&pblancNo=2026000505\
+ n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000505&pblancNo=2026000505
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-4-second@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
-SUMMARY:[2순위] 위례 스카이 테라스 (샘플)
-LOCATION:경기도 하남시 샘플길 77
+UID:2026000505-2026000505-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[2순위] 경희궁 에피트
+LOCATION:서울특별시 종로구 교남동 28번지 일원
 DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
- 지는 신청 기회예요.\n경기도 하남시 샘플길 77\n※ 신청 
- 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
- 요.
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:sample-4-winner@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:[발표] 위례 스카이 테라스 (샘플)
-LOCATION:경기도 하남시 샘플길 77
-DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
- 할 수 있어요.\n경기도 하남시 샘플길 77\n※ 신청 전 입
+ 지는 신청 기회예요.\n서울특별시 종로구 교남동 28번지 
+ 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblanc
+ Detail.do?houseManageNo=2026000505&pblancNo=2026000505\n※ 신청 전 입
  주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000505&pblancNo=2026000505
 END:VEVENT
 BEGIN:VEVENT
-UID:sample-4-contract@cheongyakping
-DTSTAMP:20261115T114713Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261215
-SUMMARY:[계약] 위례 스카이 테라스 (샘플)
-LOCATION:경기도 하남시 샘플길 77
-DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
- 부하는 기간이에요.\n경기도 하남시 샘플길 77\n※ 신청 
- 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
- 요.
+UID:2026000505-2026000505-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[발표] 경희궁 에피트
+LOCATION:서울특별시 종로구 교남동 28번지 일원
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n서울특별시 종로구 교남동 28번지 일원\n
+ 공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.d
+ o?houseManageNo=2026000505&pblancNo=2026000505\n※ 신청 전 입주자 
+ 모집공고문에서 자격과 일정을 꼭 확인하세요.
 TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000505&pblancNo=2026000505
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000505-2026000505-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261219
+SUMMARY:[계약] 경희궁 에피트
+LOCATION:서울특별시 종로구 교남동 28번지 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n서울특별시 종로구 교남동 28번지 
+ 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblanc
+ Detail.do?houseManageNo=2026000505&pblancNo=2026000505\n※ 신청 전 입
+ 주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000505&pblancNo=2026000505
 END:VEVENT
 END:VCALENDAR

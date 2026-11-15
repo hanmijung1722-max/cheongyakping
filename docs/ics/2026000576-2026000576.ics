@@ -1,0 +1,148 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CheongyakPing//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:청약핑 · 아르뮤제자이
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:2026000576-2026000576-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[특공] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 안산시 상록구 
+ 성포동 586번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/
+ selectAPTLttotPblancDetail.do?houseManageNo=2026000576&pblancNo=2026000576
+ \n※ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 
+ 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 특별공급 접수 · 경기 · 아르뮤제자이
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 특별공급 접수 · 경기 · 아르뮤제자이
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000576-2026000576-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[1순위] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 안산시 상록
+ 구 성포동 586번지 일원\n공고문: https://www.applyhome.co.kr/ai/
+ aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000576&pblancNo=202600
+ 0576\n※ 신청 전 입주자 모집공고문에서 자격과 일정을 
+ 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 1순위 접수 · 경기 · 아르뮤제자이
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 1순위 접수 · 경기 · 아르뮤제자이
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000576-2026000576-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[2순위] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 안산시 상록구 성포동 586
+ 번지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLtto
+ tPblancDetail.do?houseManageNo=2026000576&pblancNo=2026000576\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 2순위 접수 · 경기 · 아르뮤제자이
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 2순위 접수 · 경기 · 아르뮤제자이
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000576-2026000576-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[발표] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 안산시 상록구 성포동 586번지 일
+ 원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDet
+ ail.do?houseManageNo=2026000576&pblancNo=2026000576\n※ 신청 전 입주
+ 자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 당첨자 발표 · 경기 · 아르뮤제자이
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 당첨자 발표 · 경기 · 아르뮤제자이
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000576-2026000576-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261216
+SUMMARY:[계약] 아르뮤제자이
+LOCATION:경기도 안산시 상록구 성포동 586번지 일원
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 안산시 상록구 성포동 586번
+ 지 일원\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPb
+ lancDetail.do?houseManageNo=2026000576&pblancNo=2026000576\n※ 신청 전
+  입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000576&pblancNo=2026000576
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 계약 체결 · 경기 · 아르뮤제자이
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 계약 체결 · 경기 · 아르뮤제자이
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 계약 체결 · 경기 · 아르뮤제자이
+TRIGGER:P2DT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

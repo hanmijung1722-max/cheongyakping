@@ -1,0 +1,125 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CheongyakPing//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:청약핑 · 평택 고덕 우미 린 더 프리미어
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:2026000515-2026000515-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[특공] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 평택시 고덕 국
+ 제화계획지구 내 Abc-33블록\n공고문: https://www.applyhome.co.k
+ r/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000515&pblancNo=2
+ 026000515\n※ 신청 전 입주자 모집공고문에서 자격과 일정
+ 을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[1순위] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 평택시 고덕 
+ 국제화계획지구 내 Abc-33블록\n공고문: https://www.applyhome.c
+ o.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000515&pblancN
+ o=2026000515\n※ 신청 전 입주자 모집공고문에서 자격과 일
+ 정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[2순위] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 평택시 고덕 국제화계획지
+ 구 내 Abc-33블록\n공고문: https://www.applyhome.co.kr/ai/aia/select
+ APTLttotPblancDetail.do?houseManageNo=2026000515&pblancNo=2026000515\n※ 
+ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
+ 하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[발표] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 평택시 고덕 국제화계획지구 내 A
+ bc-33블록\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotP
+ blancDetail.do?houseManageNo=2026000515&pblancNo=2026000515\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 당첨자 발표 · 경기 · 평택 고덕 우미 린 
+ 더 프리미어
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 당첨자 발표 · 경기 · 평택 고덕 우미 린 
+ 더 프리미어
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000515-2026000515-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261202
+SUMMARY:[계약] 평택 고덕 우미 린 더 프리미어
+LOCATION:경기도 평택시 고덕 국제화계획지구 내 Abc-33블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 평택시 고덕 국제화계획지
+ 구 내 Abc-33블록\n공고문: https://www.applyhome.co.kr/ai/aia/select
+ APTLttotPblancDetail.do?houseManageNo=2026000515&pblancNo=2026000515\n※ 
+ 신청 전 입주자 모집공고문에서 자격과 일정을 꼭 확인
+ 하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000515&pblancNo=2026000515
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 계약 체결 · 경기 · 평택 고덕 우미 린 더 
+ 프리미어
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 계약 체결 · 경기 · 평택 고덕 우미 린 더 
+ 프리미어
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 계약 체결 · 경기 · 평택 고덕 우미 
+ 린 더 프리미어
+TRIGGER:P2DT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

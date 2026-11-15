@@ -1,0 +1,125 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CheongyakPing//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:청약핑 · GTX운정중앙역 시티프라디움 4단지(후
+ 속사업)
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:2026000518-2026000518-special@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[특공] GTX운정중앙역 시티프라디움 4단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:특별공급 접수: 신혼부부·생애최초 등 조건이 
+ 맞으면 먼저 신청할 수 있어요.\n경기도 파주시 파주운
+ 정3지구 주상복합 4블록(경기도 파주시 동패동 400-7번지 
+ 일원)\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblan
+ cDetail.do?houseManageNo=2026000518&pblancNo=2026000518\n※ 신청 전 
+ 입주자 모집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-first@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[1순위] GTX운정중앙역 시티프라디움 4단지(후속사
+ 업)
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 파주시 파주
+ 운정3지구 주상복합 4블록(경기도 파주시 동패동 400-7번
+ 지 일원)\n공고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotP
+ blancDetail.do?houseManageNo=2026000518&pblancNo=2026000518\n※ 신청 
+ 전 입주자 모집공고문에서 자격과 일정을 꼭 확인하세
+ 요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-second@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[2순위] GTX운정중앙역 시티프라디움 4단지(후속사
+ 업)
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 파주시 파주운정3지구 주
+ 상복합 4블록(경기도 파주시 동패동 400-7번지 일원)\n공
+ 고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?h
+ ouseManageNo=2026000518&pblancNo=2026000518\n※ 신청 전 입주자 모
+ 집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-winner@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[발표] GTX운정중앙역 시티프라디움 4단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 파주시 파주운정3지구 주상복합 4
+ 블록(경기도 파주시 동패동 400-7번지 일원)\n공고문: https
+ ://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=
+ 2026000518&pblancNo=2026000518\n※ 신청 전 입주자 모집공고문
+ 에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000518-2026000518-contract@cheongyakping
+DTSTAMP:20261115T122409Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261130
+SUMMARY:[계약] GTX운정중앙역 시티프라디움 4단지(후속사업
+ )
+LOCATION:경기도 파주시 파주운정3지구 주상복합 4블록(경
+ 기도 파주시 동패동 400-7번지 일원)
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 파주시 파주운정3지구 주상
+ 복합 4블록(경기도 파주시 동패동 400-7번지 일원)\n공고
+ 문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?hous
+ eManageNo=2026000518&pblancNo=2026000518\n※ 신청 전 입주자 모집
+ 공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000518&pblancNo=2026000518
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 계약 체결 · 경기 · GTX운정중앙역 시티프
+ 라디움 4단지(후속사업)
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 계약 체결 · 경기 · GTX운정중앙역 시티프
+ 라디움 4단지(후속사업)
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 계약 체결 · 경기 · GTX운정중앙역 
+ 시티프라디움 4단지(후속사업)
+TRIGGER:P4DT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
