@@ -3,22 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#2461f5">
+<meta name="theme-color" content="#0E1116">
+<meta name="color-scheme" content="dark">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="청약핑">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>청약핑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --primary:#2461f5; --urgent:#f55c33; --success:#1aa36e; --violet:#7d57ed; --teal:#14a3a3; --orange:#f59a1f;
-  --bg:#f2f2f7; --card:#ffffff; --text:#111114; --sub:#6c6c74; --fill:#e9e9ee; --line:#dcdce2;
+  color-scheme:dark;
+  --primary:#6C9BFF; --urgent:#FF7A59; --success:#5FD9A6; --violet:#B79CFF; --teal:#4FD1D1; --orange:#FFB454; --accent:#C6F432;
+  --bg:#0E1116; --card:#171C24; --text:#F2F4F7; --sub:#9AA4B2; --fill:#1F2631; --line:#2A323F; --ink:#0E1116;
 }
-@media (prefers-color-scheme:dark){
-  :root{ --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --sub:#98989f; --fill:#2c2c2e; --line:#38383a; }
-}
+.num{font-family:'Space Grotesk',-apple-system,sans-serif;font-variant-numeric:tabular-nums}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;background:var(--bg);color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;}
@@ -33,11 +36,11 @@ h2{font-size:20px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
 h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill);border-radius:99px;padding:2px 8px}
 .chips{display:flex;gap:8px;margin:6px 0 4px}
 .chip{border:0;background:var(--fill);color:var(--text);font-size:14px;font-weight:600;padding:8px 16px;border-radius:99px}
-.chip.on{background:var(--primary);color:#fff}
+.chip.on{background:var(--accent);color:var(--ink)}
 .chips.who{margin:2px 0 6px;align-items:center}
 .chips.who .lbl{font-size:12px;font-weight:700;color:var(--sub);margin-right:2px}
 .chips.who .chip{font-size:13px;padding:7px 13px}
-.chips.who .chip.on{background:var(--violet)}
+.chips.who .chip.on{background:var(--violet);color:var(--ink)}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
 .tag2{font-size:12px;font-weight:700;padding:4px 9px;border-radius:99px;color:var(--violet);background:color-mix(in srgb,var(--violet) 13%,transparent)}
 .tag2.gray{color:var(--sub);background:var(--fill)}
@@ -52,7 +55,7 @@ h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill)
 .tbl td:first-child,.tbl th:first-child{text-align:left}
 .tbl td.z{color:var(--sub)}
 .tag2.ok{color:var(--success);background:color-mix(in srgb,var(--success) 13%,transparent)}
-.tag2.warn{color:#c77a00;background:color-mix(in srgb,var(--orange) 18%,transparent)}
+.tag2.warn{color:var(--orange);background:color-mix(in srgb,var(--orange) 18%,transparent)}
 .tag2.bad{color:var(--urgent);background:color-mix(in srgb,var(--urgent) 12%,transparent)}
 .seg{display:flex;background:var(--fill);border-radius:12px;padding:3px;margin:8px 0 4px}
 .seg button{flex:1;border:0;background:none;color:var(--sub);font-weight:700;font-size:14px;padding:8px 0;border-radius:10px}
@@ -64,13 +67,13 @@ h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill)
 .form input,.form select{font:inherit;font-size:16px;color:var(--text);background:var(--fill);border:0;border-radius:10px;padding:8px 10px;text-align:right}
 .form input[type=number]{width:64px}
 .form .pair{display:flex;align-items:center;gap:6px;font-weight:400;font-size:14px}
-.score{background:linear-gradient(135deg,var(--violet),var(--primary));color:#fff;border-radius:22px;padding:18px;margin-top:14px}
+.score{background:linear-gradient(135deg,#2A2150,#18305E);color:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;margin-top:14px}
 .score .big{font-size:44px;font-weight:800;letter-spacing:-1px}
 .score .big small{font-size:16px;font-weight:600;opacity:.8}
 .score .bars{margin-top:10px;display:grid;gap:8px}
 .score .bar{font-size:12px}
 .score .bar i{display:block;height:7px;border-radius:99px;background:rgba(255,255,255,.28);margin-top:4px;overflow:hidden}
-.score .bar i b{display:block;height:100%;background:#fff;border-radius:99px}
+.score .bar i b{display:block;height:100%;background:var(--accent);border-radius:99px}
 .score p{margin:10px 0 0;font-size:13px;line-height:1.5;opacity:.95}
 .card2{background:var(--card);border-radius:20px;padding:16px;margin-top:12px;font-size:14px;line-height:1.65}
 .card2 h3{margin:0 0 6px;font-size:16px}
@@ -81,7 +84,7 @@ h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill)
 .tbl2 th,.tbl2 td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:center}
 .tbl2 th{color:var(--sub);font-weight:600}
 .tbl2 td:first-child,.tbl2 th:first-child{text-align:left}
-.go{display:block;width:100%;border:0;border-radius:14px;padding:13px;font-size:15px;font-weight:700;margin-top:12px;background:var(--primary);color:#fff}
+.go{display:block;width:100%;border:0;border-radius:14px;padding:13px;font-size:15px;font-weight:700;margin-top:12px;background:var(--accent);color:var(--ink)}
 .go.soft{background:color-mix(in srgb,var(--primary) 12%,transparent);color:var(--primary)}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
 .tile{background:var(--card);border-radius:16px;padding:14px 6px;text-align:center}
@@ -93,9 +96,9 @@ h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill)
 .pill{font-size:12px;font-weight:700;padding:4px 10px;border-radius:99px}
 .r-서울{color:var(--primary);background:color-mix(in srgb,var(--primary) 13%,transparent)}
 .r-경기{color:var(--success);background:color-mix(in srgb,var(--success) 13%,transparent)}
-.badge{font-size:14px;font-weight:800;color:#fff;padding:6px 12px;border-radius:99px;background:var(--primary)}
+.badge{font-size:14px;font-weight:800;color:var(--ink);padding:6px 12px;border-radius:99px;background:var(--primary)}
 .badge.open{background:var(--success)} .badge.urgent{background:var(--urgent)}
-.badge.wait{background:var(--violet)} .badge.done{background:#8e8e93}
+.badge.wait{background:var(--violet)} .badge.done{background:#2A323F;color:var(--sub)}
 .card h3{margin:12px 0 2px;font-size:17px}
 .addr{margin:0;font-size:13px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .head{margin:8px 0 10px;font-size:14px;font-weight:700}
@@ -107,12 +110,34 @@ h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill)
 .mini b{font-size:15px}
 .mini b.past{color:var(--sub);font-weight:600}
 .foot{display:flex;justify-content:space-between;margin-top:10px;font-size:13px;color:var(--sub)}
-.added{color:var(--primary);font-weight:700}
+.added{color:var(--accent);font-weight:700}
 .banner{display:flex;gap:10px;border-radius:14px;padding:12px;font-size:13px;margin-top:10px;line-height:1.45}
 .banner.violet{background:color-mix(in srgb,var(--violet) 12%,transparent)}
 .banner.blue{background:color-mix(in srgb,var(--primary) 11%,transparent)}
 .empty{text-align:center;color:var(--sub);padding:56px 0;font-size:14px}
 .note{font-size:12px;color:var(--sub);margin-top:18px;line-height:1.5}
+/* 주간 띠 · 타임라인 */
+.week{display:flex;gap:4px;margin-top:16px}
+.wd{flex:1;border:0;background:none;color:var(--text);padding:8px 0 6px;border-radius:14px;display:flex;flex-direction:column;align-items:center;gap:3px;min-height:64px}
+.wd small{font-size:12px;color:var(--sub);font-weight:500}
+.wd span{font-family:'Space Grotesk',sans-serif;font-size:19px;font-weight:700;width:34px;height:34px;border-radius:12px;display:flex;align-items:center;justify-content:center}
+.wd.on span{background:var(--accent);color:var(--ink)}
+.wd.on small{color:var(--text)}
+.week + .legend{margin:6px 2px 0}
+.sec-t{font-size:14px;font-weight:700;color:var(--sub);margin:22px 2px 10px}
+.tli{display:flex;gap:12px}
+.tli .rail{display:flex;flex-direction:column;align-items:center;width:14px;flex:none}
+.tli .rail i{width:12px;height:12px;border-radius:50%;margin-top:7px;box-sizing:border-box}
+.tli .rail u{flex:1;width:2px;background:var(--line);margin:4px 0;text-decoration:none}
+.tli:last-child .rail u{background:transparent}
+.tli .body{flex:1;min-width:0;background:var(--card);border-radius:18px;padding:13px 15px;margin-bottom:10px;cursor:pointer}
+.tli .body:active{opacity:.85}
+.tli .k{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;font-weight:700}
+.tli .k em{font-style:normal;color:var(--sub);font-weight:500;white-space:nowrap}
+.tli h4{margin:5px 0 0;font-size:17px}
+.tli .dd{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tli .dd b{font-family:'Space Grotesk',sans-serif;font-size:22px;white-space:nowrap}
+.tli.compact h4{font-size:16px;margin-top:3px}
 /* 캘린더 */
 .cal{background:var(--card);border-radius:20px;padding:14px}
 .calhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
@@ -123,21 +148,21 @@ h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill)
 .grid .w:first-child{color:var(--urgent)} .grid .w:nth-child(7){color:var(--primary)}
 .day{height:52px;border:0;background:none;color:var(--text);display:flex;flex-direction:column;align-items:center;gap:3px;padding-top:4px;font-size:15px}
 .day span{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.day.today span{box-shadow:inset 0 0 0 1.5px var(--primary);color:var(--primary);font-weight:700}
-.day.sel span{background:var(--primary);color:#fff;font-weight:700;box-shadow:none}
+.day.today span{box-shadow:inset 0 0 0 1.5px var(--accent);color:var(--accent);font-weight:700}
+.day.sel span{background:var(--accent);color:var(--ink);font-weight:700;box-shadow:none}
 .dots{display:flex;gap:3px;height:6px}
 .dots i{width:5px;height:5px;border-radius:50%}
 .legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--sub)}
 .legend i{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:4px}
 .item{background:var(--card);border-radius:18px;padding:14px;margin-bottom:10px;display:flex;gap:12px;align-items:center;cursor:pointer}
-.ico{width:40px;height:40px;border-radius:12px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex:none}
+.ico{width:40px;height:40px;border-radius:12px;color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex:none}
 .item b{font-size:15px;display:block;margin:2px 0}
 .item small{color:var(--sub);font-size:12px}
 /* 가이드 */
 .step{display:flex;gap:14px;align-items:center;background:var(--card);border-radius:18px;padding:14px;margin-bottom:10px}
-.step .n{width:40px;height:40px;border-radius:50%;background:color-mix(in srgb,var(--primary) 13%,transparent);color:var(--primary);font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.step .n{width:40px;height:40px;border-radius:50%;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent);font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
 .step b{font-size:15px} .step p{margin:2px 0 0;font-size:13px;color:var(--sub)}
-.hero{background:linear-gradient(135deg,var(--primary),var(--violet));color:#fff;border-radius:20px;padding:20px;margin-top:10px}
+.hero{background:linear-gradient(135deg,#2A2150,#18305E);border:1px solid var(--line);color:#fff;border-radius:20px;padding:20px;margin-top:10px}
 .hero h2{margin:0 0 4px;font-size:22px} .hero p{margin:0;opacity:.88;font-size:14px}
 .box{background:var(--card);border-radius:18px;padding:6px 16px}
 .box li{margin:10px 0;font-size:14px;list-style:none}
@@ -150,7 +175,7 @@ nav{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;background:col
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
 nav button{flex:1;border:0;background:none;color:var(--sub);padding:9px 0 8px;font-size:11px;font-weight:600}
 nav button svg{display:block;margin:0 auto 3px;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-nav button.on{color:var(--primary)}
+nav button.on{color:var(--accent)}
 /* 상세 시트 */
 .sheet{position:fixed;inset:0;z-index:10;display:none}
 .sheet.open{display:block}
@@ -162,18 +187,18 @@ nav button.on{color:var(--primary)}
 .tl{background:var(--card);border-radius:20px;padding:16px;margin-top:14px}
 .ev{display:flex;gap:14px}
 .ev .rail{display:flex;flex-direction:column;align-items:center}
-.ev .dot{width:28px;height:28px;border-radius:50%;color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.ev .dot{width:28px;height:28px;border-radius:50%;color:var(--ink);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
 .ev .line{width:2px;flex:1;background:var(--line);margin:2px 0}
 .ev .txt{padding-bottom:16px}
 .ev .txt b{font-size:15px}
 .ev .txt .d{font-weight:700;font-size:14px;margin-top:2px}
 .ev .txt p{margin:3px 0 0;font-size:12px;color:var(--sub)}
-.tag{background:var(--urgent);color:#fff;font-size:10px;padding:2px 6px;border-radius:99px;margin-left:6px;font-weight:700}
+.tag{background:var(--urgent);color:var(--ink);font-size:10px;padding:2px 6px;border-radius:99px;margin-left:6px;font-weight:700}
 .info{background:var(--card);border-radius:20px;padding:16px;margin-top:14px;font-size:14px}
 .info div{display:flex;gap:10px;margin:8px 0}
 .info span{color:var(--sub);width:76px;flex:none}
 .btn{display:block;text-align:center;text-decoration:none;font-weight:700;font-size:15px;padding:15px;border-radius:14px;margin-top:10px;border:0;width:100%}
-.btn.primary{background:var(--primary);color:#fff}
+.btn.primary{background:var(--accent);color:var(--ink)}
 .btn.soft{background:color-mix(in srgb,var(--primary) 12%,transparent);color:var(--primary)}
 .btn.gray{background:var(--fill);color:var(--text)}
 .help{font-size:12px;color:var(--sub);margin:8px 2px 0;line-height:1.5}
@@ -192,7 +217,7 @@ ol.steps{padding-left:20px;font-size:14px;line-height:1.7}
 "use strict";
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const COLORS = {announcement:"#8e8e93", special:"#7d57ed", first:"#2461f5", second:"#14a3a3", winner:"#f59a1f", contract:"#1aa36e"};
+const COLORS = {announcement:"#8A94A3", special:"#B79CFF", first:"#6C9BFF", second:"#4FD1D1", winner:"#FFB454", contract:"#5FD9A6"};
 const ORDER = ["announcement","special","first","second","winner","contract"];
 const APPLY = ["special","first","second"];
 const WD = ["일","월","화","수","목","금","토"];
@@ -349,6 +374,39 @@ const whoChips = () => `<div class="chips who"><span class="lbl">나는</span>${
 const chips = () => `<div class="chips">${["전체","서울","경기"].map(r => `<button class="chip ${r === region ? "on" : ""}" data-region="${r}">${r}</button>`).join("")}</div>`;
 const sampleBanner = () => DATA.sample ? `<div class="banner violet"><span>🪄</span><span>지금은 <b>샘플 데이터</b>예요. GitHub에 청약홈 인증키를 등록하면 실제 공고로 바뀌어요.</span></div>` : "";
 
+/* ---------- 홈 : 주간 띠 + 타임라인 ---------- */
+const keepL = l => { if (!(onlyOk && hasBank())) return true; const b = bankFit(l); return !!b && (b.level === "ok" || b.level === "maybe"); };
+function weekStrip() {
+  const t = TODAY(), sn = dn(sel);
+  const cells = Array.from({length: 7}, (_, i) => {
+    const n = t + i, d = new Date(n * 86400000);
+    const kinds = [...new Set(itemsOn(n).filter(x => keepL(x.l)).map(x => x.e.kind))].sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b)).slice(0, 3);
+    return `<button class="wd ${n === sn ? "on" : ""}" data-day="${ds(n)}" aria-label="${md(n)} 일정"><small>${i === 0 ? "오늘" : WD[d.getUTCDay()]}</small><span>${d.getUTCDate()}</span><div class="dots">${kinds.map(k => `<i style="background:${COLORS[k]}"></i>`).join("")}</div></button>`;
+  }).join("");
+  return `<div class="week">${cells}</div><div class="legend">${["special","first","second","winner","contract"].filter(k => DATA.kinds[k]).map(k => `<span><i style="background:${COLORS[k]}"></i>${DATA.kinds[k].short}</span>`).join("")}</div>`;
+}
+function tlItem(x, i, last) {
+  const t = TODAY(), n = dn(sel), e = x.e, ong = dn(e.start) <= t && t <= dn(e.end);
+  const label = e.kind !== "announcement" && dn(e.end) === n && APPLY.includes(e.kind) ? `${DATA.kinds[e.kind].title} · ${n === t ? "오늘 " : ""}마감` : DATA.kinds[e.kind].title;
+  return `<div class="tli"><div class="rail"><i style="${ong || n === t ? `background:${COLORS[e.kind]}` : `border:2px solid ${COLORS[e.kind]}`}"></i><u></u></div>
+    <div class="body" data-id="${esc(x.l.id)}"><div class="k"><span style="color:${COLORS[e.kind]}">${esc(label)}</span><em>${esc(x.l.region)}${x.l.address ? " · " + esc(x.l.address.split(" ").slice(1, 2).join("")) : ""}</em></div>
+    <h4>${esc(x.l.name)}</h4>${tagsHtml(x.l)}</div></div>`;
+}
+function dayTimeline() {
+  const n = dn(sel), items = itemsOn(n).filter(x => keepL(x.l));
+  return `<div class="sec-t">${n === TODAY() ? "오늘 일정" : mdw(n) + " 일정"}</div>` +
+    (items.length ? items.map(tlItem).join("") : `<div class="empty" style="padding:18px 0">이 날은 예정된 청약 일정이 없어요</div>`);
+}
+function upcomingList() {
+  const t = TODAY(), n = dn(sel);
+  const list = visible().filter(keepL).flatMap(l => l.events.filter(e => APPLY.includes(e.kind) && dn(e.start) > n && dn(e.start) <= n + 14).map(e => ({l, e})))
+    .sort((a, b) => dn(a.e.start) - dn(b.e.start)).slice(0, 8);
+  if (!list.length) return "";
+  return `<div class="sec-t">곧 시작해요</div>` + list.map(x => `<div class="tli compact"><div class="rail"><i style="border:2px solid ${COLORS[x.e.kind]}"></i><u></u></div>
+    <div class="body" data-id="${esc(x.l.id)}"><div class="dd"><div style="min-width:0"><div class="k"><span style="color:${COLORS[x.e.kind]}">${md(dn(x.e.start))} ${WD[new Date(dn(x.e.start) * 86400000).getUTCDay()]} · ${DATA.kinds[x.e.kind].title}</span></div>
+    <h4>${esc(x.l.name)}</h4></div><b>${dn(x.e.start) - t === 0 ? "오늘" : "D-" + (dn(x.e.start) - t)}</b></div>${tagsHtml(x.l)}</div></div>`).join("");
+}
+
 /* ---------- 홈 ---------- */
 function viewHome() {
   const all = visible().map(l => ({l, s: statusOf(l), f: personaCards() ? fit(l, persona) : null, b: bankFit(l)}))
@@ -357,7 +415,6 @@ function viewHome() {
   const rest = all.filter(x => x.f && !x.f.unknown && !x.f.items.length && x.s.phase !== "done"); // 일반공급만 가능
   const by = p => L.filter(x => x.s.phase === p).sort((a, b) => a.s.sort - b.s.sort);
   const open = by("open"), up = by("upcoming"), wait = by("wait");
-  const soon = up.filter(x => x.s.sort - TODAY() <= 7).length;
   const sec = (t, a) => a.length ? `<section><h2>${t}<span class="count">${a.length}</span></h2>${a.map(x => card(x.l)).join("")}</section>` : "";
   const restHtml = rest.length ? `<section><h2>일반공급만 가능<span class="count">${rest.length}</span></h2>
     <p class="help" style="margin:-4px 0 10px">${persona} 대상 특별공급이 없는 단지예요. 일반공급(가점제·추첨제)으로는 신청할 수 있어요.</p>
@@ -367,10 +424,8 @@ function viewHome() {
     ? `<div class="chips who"><span class="lbl">내 통장 ${Math.floor(me.months / 12)}년 ${me.months % 12}개월</span><button class="chip ${onlyOk ? "on" : ""}" data-only="1">1순위 가능만 보기</button></div>`
     : `<div class="banner blue" data-goto="me" style="cursor:pointer"><span>🏦</span><span>내 <b>청약통장 가입기간</b>을 입력하면 단지마다 1순위 가능 여부를 보여줘요. <b>입력하러 가기 ›</b></span></div>`;
   return sampleBanner() + chips() + whoChips() + bankBar + whoNote +
-    `<div class="tiles">
-      <div class="tile"><b style="color:var(--success)">${open.length}</b><span>접수 중</span></div>
-      <div class="tile"><b style="color:var(--primary)">${soon}</b><span>7일 내 시작</span></div>
-      <div class="tile"><b style="color:var(--violet)">${added.size}</b><span>알림 추가</span></div></div>` +
+    weekStrip() + dayTimeline() + upcomingList() +
+    `<div class="sec-t" style="margin-top:28px">단지별 보기</div>` +
     sec("지금 접수 중", open) + sec("접수 예정", up) + sec("당첨자 발표·계약 대기", wait) +
     (open.length + up.length + wait.length || rest.length ? "" : `<div class="empty">표시할 청약 일정이 없어요</div>`) +
     (personaCards() && !(open.length + up.length + wait.length) ? `<div class="empty">${persona} 대상 특별공급 단지가 아직 없어요</div>` : "") +
