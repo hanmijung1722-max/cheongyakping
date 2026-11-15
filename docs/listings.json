@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T21:24+09:00",
+ "updated": "2026-11-16T07:26+09:00",
  "sample": false,
  "alarm_hour": 9,
  "alarms": {
@@ -42,6 +42,8 @@
  "listings": [
   {
    "id": "2026000409-2026000409",
+   "manage_no": "2026000409",
+   "pblanc_no": "2026000409",
    "name": "의정부우정 A2블록 공공분양주택(본청약)",
    "region": "경기",
    "address": "경기도 의정부시 녹양동 일원 의정부우정 공공주택지구 내 A-2블록",
@@ -51,6 +53,11 @@
    "move_in": "202905",
    "phone": "0315749144",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000409&pblancNo=2026000409",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -77,10 +84,53 @@
      "start": "2026-12-10",
      "end": "2026-12-15"
     }
+   ],
+   "supply": {
+    "general": 27,
+    "newlywed": 17,
+    "first_home": 26,
+    "multi_child": 17,
+    "parents": 9,
+    "institution": 26,
+    "newborn": 35,
+    "youth": 0,
+    "etc": 28
+   },
+   "types": [
+    {
+     "ty": "059.9200A",
+     "area": 59.92,
+     "general": 20,
+     "price": 40646,
+     "newlywed": 13,
+     "first_home": 19,
+     "multi_child": 13,
+     "parents": 7,
+     "institution": 20,
+     "newborn": 26,
+     "youth": 0,
+     "etc": 22
+    },
+    {
+     "ty": "059.9600B",
+     "area": 59.96,
+     "general": 7,
+     "price": 40419,
+     "newlywed": 4,
+     "first_home": 7,
+     "multi_child": 4,
+     "parents": 2,
+     "institution": 6,
+     "newborn": 9,
+     "youth": 0,
+     "etc": 6
+    }
    ]
   },
   {
    "id": "2026820009-2026820009",
+   "manage_no": "2026820009",
+   "pblanc_no": "2026820009",
    "name": "남양주진접2지구 A-4블록 신혼희망타운(공공분양) 잔여세대 추가입주자모집공고",
    "region": "경기",
    "address": "경기도 남양주시 진접읍 내각리, 연평리 일원 남양주진접2 공공주택지구 A-4블록",
@@ -90,6 +140,11 @@
    "move_in": "202804",
    "phone": "16001004",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820009&pblancNo=2026820009",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -116,10 +171,39 @@
      "start": "2026-12-10",
      "end": "2026-12-11"
     }
+   ],
+   "supply": {
+    "general": 0,
+    "newlywed": 0,
+    "first_home": 0,
+    "multi_child": 0,
+    "parents": 0,
+    "institution": 0,
+    "newborn": 0,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "055.0000O",
+     "area": 55.0,
+     "general": 0,
+     "price": 38446,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000416-2026000416",
+   "manage_no": "2026000416",
+   "pblanc_no": "2026000416",
    "name": "양주회천지구 A-26블록 공공분양주택",
    "region": "경기",
    "address": "경기도 양주시 덕정동 일원 양주신도시 택지개발지구 내 A-26블록",
@@ -129,6 +213,11 @@
    "move_in": "202910",
    "phone": "16001004",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000416&pblancNo=2026000416",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -155,10 +244,95 @@
      "start": "2026-12-10",
      "end": "2026-12-15"
     }
+   ],
+   "supply": {
+    "general": 119,
+    "newlywed": 79,
+    "first_home": 119,
+    "multi_child": 79,
+    "parents": 40,
+    "institution": 119,
+    "newborn": 158,
+    "youth": 0,
+    "etc": 79
+   },
+   "types": [
+    {
+     "ty": "059.7400A",
+     "area": 59.74,
+     "general": 41,
+     "price": 35708,
+     "newlywed": 26,
+     "first_home": 39,
+     "multi_child": 26,
+     "parents": 13,
+     "institution": 39,
+     "newborn": 52,
+     "youth": 0,
+     "etc": 26
+    },
+    {
+     "ty": "059.9100B",
+     "area": 59.91,
+     "general": 20,
+     "price": 35093,
+     "newlywed": 13,
+     "first_home": 20,
+     "multi_child": 13,
+     "parents": 7,
+     "institution": 20,
+     "newborn": 26,
+     "youth": 0,
+     "etc": 13
+    },
+    {
+     "ty": "074.6100A",
+     "area": 74.61,
+     "general": 13,
+     "price": 43704,
+     "newlywed": 9,
+     "first_home": 13,
+     "multi_child": 9,
+     "parents": 4,
+     "institution": 13,
+     "newborn": 17,
+     "youth": 0,
+     "etc": 9
+    },
+    {
+     "ty": "074.9700B",
+     "area": 74.97,
+     "general": 12,
+     "price": 43718,
+     "newlywed": 8,
+     "first_home": 12,
+     "multi_child": 8,
+     "parents": 4,
+     "institution": 12,
+     "newborn": 17,
+     "youth": 0,
+     "etc": 8
+    },
+    {
+     "ty": "084.8600A",
+     "area": 84.86,
+     "general": 33,
+     "price": 49201,
+     "newlywed": 23,
+     "first_home": 35,
+     "multi_child": 23,
+     "parents": 12,
+     "institution": 35,
+     "newborn": 46,
+     "youth": 0,
+     "etc": 23
+    }
    ]
   },
   {
    "id": "2026820011-2026820011",
+   "manage_no": "2026820011",
+   "pblanc_no": "2026820011",
    "name": "시흥하중지구 A-4블록 신혼희망타운(공공분양) 추가입주자모집",
    "region": "경기",
    "address": "경기도 시흥시 하중동 일원 (시흥하중 공공주택지구 내 A-4블록)",
@@ -168,6 +342,11 @@
    "move_in": "202807",
    "phone": "16001004",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820011&pblancNo=2026820011",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -194,10 +373,53 @@
      "start": "2026-12-29",
      "end": "2026-12-30"
     }
+   ],
+   "supply": {
+    "general": 0,
+    "newlywed": 0,
+    "first_home": 0,
+    "multi_child": 0,
+    "parents": 0,
+    "institution": 0,
+    "newborn": 0,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "055.0000O",
+     "area": 55.0,
+     "general": 0,
+     "price": 36707,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "056.0000O",
+     "area": 56.0,
+     "general": 0,
+     "price": 39358,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000373-2026000373",
+   "manage_no": "2026000373",
+   "pblanc_no": "2026000373",
    "name": "고덕강일지구 3단지 토지임대부(본청약)",
    "region": "서울",
    "address": "서울특별시 강동구 강일동 174 일원(고덕강일공공주택지구 3단지)",
@@ -207,6 +429,11 @@
    "move_in": "202705",
    "phone": "16003456",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000373&pblancNo=2026000373",
+   "kind": "국민",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -233,10 +460,305 @@
      "start": "2027-03-22",
      "end": "2027-04-02"
     }
+   ],
+   "supply": {
+    "general": 147,
+    "newlywed": 106,
+    "first_home": 106,
+    "multi_child": 0,
+    "parents": 0,
+    "institution": 0,
+    "newborn": 248,
+    "youth": 106,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "049.0000A",
+     "area": 49.0,
+     "general": 5,
+     "price": 30800,
+     "newlywed": 3,
+     "first_home": 3,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 9,
+     "youth": 3,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000B",
+     "area": 49.0,
+     "general": 2,
+     "price": 30800,
+     "newlywed": 1,
+     "first_home": 1,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 3,
+     "youth": 1,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000C",
+     "area": 49.0,
+     "general": 19,
+     "price": 31416,
+     "newlywed": 14,
+     "first_home": 14,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 32,
+     "youth": 14,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000D",
+     "area": 49.0,
+     "general": 3,
+     "price": 30800,
+     "newlywed": 2,
+     "first_home": 2,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 4,
+     "youth": 2,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000E",
+     "area": 49.0,
+     "general": 4,
+     "price": 30800,
+     "newlywed": 4,
+     "first_home": 4,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 8,
+     "youth": 4,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000F",
+     "area": 49.0,
+     "general": 14,
+     "price": 31724,
+     "newlywed": 11,
+     "first_home": 11,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 25,
+     "youth": 11,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000G",
+     "area": 49.0,
+     "general": 2,
+     "price": 31724,
+     "newlywed": 1,
+     "first_home": 1,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 2,
+     "youth": 1,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000H",
+     "area": 49.0,
+     "general": 8,
+     "price": 29567,
+     "newlywed": 6,
+     "first_home": 6,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 13,
+     "youth": 6,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000I",
+     "area": 49.0,
+     "general": 2,
+     "price": 31416,
+     "newlywed": 1,
+     "first_home": 1,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 4,
+     "youth": 1,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000J",
+     "area": 49.0,
+     "general": 2,
+     "price": 31416,
+     "newlywed": 1,
+     "first_home": 1,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 2,
+     "youth": 1,
+     "etc": 0
+    },
+    {
+     "ty": "049.0000K",
+     "area": 49.0,
+     "general": 3,
+     "price": 30184,
+     "newlywed": 2,
+     "first_home": 2,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 5,
+     "youth": 2,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000A",
+     "area": 59.0,
+     "general": 6,
+     "price": 38670,
+     "newlywed": 3,
+     "first_home": 3,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 9,
+     "youth": 3,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000B",
+     "area": 59.0,
+     "general": 12,
+     "price": 39050,
+     "newlywed": 9,
+     "first_home": 9,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 21,
+     "youth": 9,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000C",
+     "area": 59.0,
+     "general": 1,
+     "price": 38670,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 2,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000D",
+     "area": 59.0,
+     "general": 16,
+     "price": 39050,
+     "newlywed": 11,
+     "first_home": 11,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 27,
+     "youth": 11,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000E",
+     "area": 59.0,
+     "general": 9,
+     "price": 38670,
+     "newlywed": 7,
+     "first_home": 7,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 14,
+     "youth": 7,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000F",
+     "area": 59.0,
+     "general": 9,
+     "price": 37154,
+     "newlywed": 7,
+     "first_home": 7,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 16,
+     "youth": 7,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000G",
+     "area": 59.0,
+     "general": 25,
+     "price": 37912,
+     "newlywed": 18,
+     "first_home": 18,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 41,
+     "youth": 18,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000H",
+     "area": 59.0,
+     "general": 4,
+     "price": 37154,
+     "newlywed": 4,
+     "first_home": 4,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 8,
+     "youth": 4,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000I",
+     "area": 59.0,
+     "general": 1,
+     "price": 39050,
+     "newlywed": 1,
+     "first_home": 1,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 3,
+     "youth": 1,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000509-2026000509",
+   "manage_no": "2026000509",
+   "pblanc_no": "2026000509",
    "name": "아크메르 동탄 99",
    "region": "경기",
    "address": "경기도 화성특례시 동탄구 반송동 99번지[동탄(1) M1-2-2블록]",
@@ -246,6 +768,11 @@
    "move_in": "203201",
    "phone": "15228111",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000509&pblancNo=2026000509",
+   "kind": "민영",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -277,10 +804,151 @@
      "start": "2026-11-16",
      "end": "2026-11-18"
     }
+   ],
+   "supply": {
+    "general": 487,
+    "newlywed": 136,
+    "first_home": 63,
+    "multi_child": 99,
+    "parents": 29,
+    "institution": 91,
+    "newborn": 91,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.9916A",
+     "area": 84.99,
+     "general": 149,
+     "price": 171420,
+     "newlywed": 50,
+     "first_home": 23,
+     "multi_child": 34,
+     "parents": 10,
+     "institution": 34,
+     "newborn": 34,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9979B",
+     "area": 85.0,
+     "general": 39,
+     "price": 171680,
+     "newlywed": 13,
+     "first_home": 6,
+     "multi_child": 8,
+     "parents": 2,
+     "institution": 8,
+     "newborn": 8,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9970C",
+     "area": 85.0,
+     "general": 73,
+     "price": 171320,
+     "newlywed": 25,
+     "first_home": 12,
+     "multi_child": 17,
+     "parents": 5,
+     "institution": 17,
+     "newborn": 17,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9948D",
+     "area": 84.99,
+     "general": 76,
+     "price": 171380,
+     "newlywed": 24,
+     "first_home": 11,
+     "multi_child": 16,
+     "parents": 5,
+     "institution": 16,
+     "newborn": 16,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9975E",
+     "area": 85.0,
+     "general": 76,
+     "price": 171520,
+     "newlywed": 24,
+     "first_home": 11,
+     "multi_child": 16,
+     "parents": 5,
+     "institution": 16,
+     "newborn": 16,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "099.9965A",
+     "area": 100.0,
+     "general": 68,
+     "price": 191440,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 8,
+     "parents": 2,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "148.9945E",
+     "area": 148.99,
+     "general": 1,
+     "price": 316460,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "158.9937D",
+     "area": 158.99,
+     "general": 1,
+     "price": 337600,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "162.9999C",
+     "area": 163.0,
+     "general": 4,
+     "price": 347450,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000508-2026000508",
+   "manage_no": "2026000508",
+   "pblanc_no": "2026000508",
    "name": "아크메르 동탄 95",
    "region": "경기",
    "address": "경기도 화성특례시 동탄구 반송동 95번지[동탄(1) M1-1-2블록]",
@@ -290,6 +958,11 @@
    "move_in": "203201",
    "phone": "15228111",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000508&pblancNo=2026000508",
+   "kind": "민영",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -321,10 +994,137 @@
      "start": "2026-11-16",
      "end": "2026-11-18"
     }
+   ],
+   "supply": {
+    "general": 595,
+    "newlywed": 40,
+    "first_home": 18,
+    "multi_child": 81,
+    "parents": 24,
+    "institution": 27,
+    "newborn": 27,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.9970C",
+     "area": 85.0,
+     "general": 82,
+     "price": 171210,
+     "newlywed": 27,
+     "first_home": 12,
+     "multi_child": 18,
+     "parents": 5,
+     "institution": 18,
+     "newborn": 18,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9998F",
+     "area": 85.0,
+     "general": 41,
+     "price": 171530,
+     "newlywed": 13,
+     "first_home": 6,
+     "multi_child": 9,
+     "parents": 3,
+     "institution": 9,
+     "newborn": 9,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "116.9981A",
+     "area": 117.0,
+     "general": 80,
+     "price": 218670,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 9,
+     "parents": 3,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "116.9987B",
+     "area": 117.0,
+     "general": 157,
+     "price": 221350,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 18,
+     "parents": 5,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "128.9983A",
+     "area": 129.0,
+     "general": 78,
+     "price": 243610,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 9,
+     "parents": 3,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "129.9995B",
+     "area": 130.0,
+     "general": 153,
+     "price": 248290,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 18,
+     "parents": 5,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "184.9968B",
+     "area": 185.0,
+     "general": 2,
+     "price": 391150,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "188.9949A",
+     "area": 188.99,
+     "general": 2,
+     "price": 401320,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026820012-2026820012",
+   "manage_no": "2026820012",
+   "pblanc_no": "2026820012",
    "name": "시흥하중지구 A1블록 신혼희망타운(공공분양) 추가입주자모집공고",
    "region": "경기",
    "address": "경기도 시흥시 하중동 일원 시흥하중 공공주택지구 내 A1블록",
@@ -334,6 +1134,11 @@
    "move_in": "202903",
    "phone": "03180777970",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820012&pblancNo=2026820012",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -360,10 +1165,67 @@
      "start": "2027-02-16",
      "end": "2027-02-18"
     }
+   ],
+   "supply": {
+    "general": 0,
+    "newlywed": 0,
+    "first_home": 0,
+    "multi_child": 0,
+    "parents": 0,
+    "institution": 0,
+    "newborn": 0,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "055.0000A",
+     "area": 55.0,
+     "general": 0,
+     "price": 42374,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "055.0000B",
+     "area": 55.0,
+     "general": 0,
+     "price": 42215,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "055.0000C",
+     "area": 55.0,
+     "general": 0,
+     "price": 42298,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000531-2026000531",
+   "manage_no": "2026000531",
+   "pblanc_no": "2026000531",
    "name": "시흥거모지구 S-1블록 공공분양(본청약)",
    "region": "경기",
    "address": "경기도 시흥시 거모동, 군자동 일원 시흥거모 공공주택지구 내 S-1블록",
@@ -373,6 +1235,11 @@
    "move_in": "202906",
    "phone": "16001004",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000531&pblancNo=2026000531",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -399,10 +1266,67 @@
      "start": "2027-02-01",
      "end": "2027-02-03"
     }
+   ],
+   "supply": {
+    "general": 27,
+    "newlywed": 10,
+    "first_home": 16,
+    "multi_child": 10,
+    "parents": 4,
+    "institution": 17,
+    "newborn": 21,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "059.9000A",
+     "area": 59.9,
+     "general": 3,
+     "price": 41110,
+     "newlywed": 1,
+     "first_home": 2,
+     "multi_child": 1,
+     "parents": 1,
+     "institution": 2,
+     "newborn": 3,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.8000B",
+     "area": 59.8,
+     "general": 5,
+     "price": 41042,
+     "newlywed": 2,
+     "first_home": 3,
+     "multi_child": 2,
+     "parents": 1,
+     "institution": 3,
+     "newborn": 4,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.8900A",
+     "area": 84.89,
+     "general": 19,
+     "price": 57026,
+     "newlywed": 7,
+     "first_home": 11,
+     "multi_child": 7,
+     "parents": 2,
+     "institution": 12,
+     "newborn": 14,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000518-2026000518",
+   "manage_no": "2026000518",
+   "pblanc_no": "2026000518",
    "name": "GTX운정중앙역 시티프라디움 4단지(후속사업)",
    "region": "경기",
    "address": "경기도 파주시 파주운정3지구 주상복합 4블록(경기도 파주시 동패동 400-7번지 일원)",
@@ -412,6 +1336,11 @@
    "move_in": "203007",
    "phone": "18996995",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000518&pblancNo=2026000518",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -443,10 +1372,53 @@
      "start": "2026-11-25",
      "end": "2026-11-29"
     }
+   ],
+   "supply": {
+    "general": 128,
+    "newlywed": 52,
+    "first_home": 60,
+    "multi_child": 36,
+    "parents": 11,
+    "institution": 36,
+    "newborn": 35,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "060.9995",
+     "area": 61.0,
+     "general": 33,
+     "price": 60100,
+     "newlywed": 13,
+     "first_home": 15,
+     "multi_child": 9,
+     "parents": 4,
+     "institution": 9,
+     "newborn": 9,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9594",
+     "area": 84.96,
+     "general": 95,
+     "price": 81400,
+     "newlywed": 39,
+     "first_home": 45,
+     "multi_child": 27,
+     "parents": 7,
+     "institution": 27,
+     "newborn": 26,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000517-2026000517",
+   "manage_no": "2026000517",
+   "pblanc_no": "2026000517",
    "name": "GTX운정중앙역 시티프라디움 3단지(후속사업)",
    "region": "경기",
    "address": "경기도 파주시 파주운정3지구 주상복합 3블록(경기도 파주시 동패동 1673번지 일원)",
@@ -456,6 +1428,11 @@
    "move_in": "203007",
    "phone": "18996995",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000517&pblancNo=2026000517",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -487,10 +1464,95 @@
      "start": "2026-11-25",
      "end": "2026-11-29"
     }
+   ],
+   "supply": {
+    "general": 196,
+    "newlywed": 27,
+    "first_home": 34,
+    "multi_child": 34,
+    "parents": 10,
+    "institution": 18,
+    "newborn": 18,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "060.9995",
+     "area": 61.0,
+     "general": 12,
+     "price": 58900,
+     "newlywed": 4,
+     "first_home": 6,
+     "multi_child": 3,
+     "parents": 2,
+     "institution": 3,
+     "newborn": 3,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9594",
+     "area": 84.96,
+     "general": 29,
+     "price": 79800,
+     "newlywed": 11,
+     "first_home": 13,
+     "multi_child": 8,
+     "parents": 2,
+     "institution": 7,
+     "newborn": 7,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.4998",
+     "area": 84.5,
+     "general": 31,
+     "price": 79400,
+     "newlywed": 12,
+     "first_home": 15,
+     "multi_child": 9,
+     "parents": 3,
+     "institution": 8,
+     "newborn": 8,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "088.5023",
+     "area": 88.5,
+     "general": 55,
+     "price": 84100,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 6,
+     "parents": 1,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "115.3141",
+     "area": 115.31,
+     "general": 69,
+     "price": 99400,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 8,
+     "parents": 2,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000502-2026000502",
+   "manage_no": "2026000502",
+   "pblanc_no": "2026000502",
    "name": "화성 향남 롯데캐슬 시그니처",
    "region": "경기",
    "address": "경기도 화성시 만세구 향남읍 상신리 산 13-13 일원",
@@ -500,6 +1562,11 @@
    "move_in": "202912",
    "phone": "15511542",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000502&pblancNo=2026000502",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -531,10 +1598,165 @@
      "start": "2026-11-23",
      "end": "2026-11-25"
     }
+   ],
+   "supply": {
+    "general": 791,
+    "newlywed": 199,
+    "first_home": 91,
+    "multi_child": 151,
+    "parents": 46,
+    "institution": 132,
+    "newborn": 132,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.3522A",
+     "area": 84.35,
+     "general": 132,
+     "price": 53600,
+     "newlywed": 43,
+     "first_home": 20,
+     "multi_child": 29,
+     "parents": 9,
+     "institution": 29,
+     "newborn": 29,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.4355B",
+     "area": 84.44,
+     "general": 64,
+     "price": 54300,
+     "newlywed": 20,
+     "first_home": 9,
+     "multi_child": 13,
+     "parents": 4,
+     "institution": 13,
+     "newborn": 13,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.1443C",
+     "area": 84.14,
+     "general": 187,
+     "price": 53500,
+     "newlywed": 62,
+     "first_home": 28,
+     "multi_child": 41,
+     "parents": 12,
+     "institution": 41,
+     "newborn": 41,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.4447D",
+     "area": 84.44,
+     "general": 40,
+     "price": 53900,
+     "newlywed": 13,
+     "first_home": 6,
+     "multi_child": 9,
+     "parents": 3,
+     "institution": 9,
+     "newborn": 9,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.5473E",
+     "area": 84.55,
+     "general": 136,
+     "price": 54200,
+     "newlywed": 45,
+     "first_home": 21,
+     "multi_child": 30,
+     "parents": 9,
+     "institution": 30,
+     "newborn": 30,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.8194F",
+     "area": 84.82,
+     "general": 38,
+     "price": 54600,
+     "newlywed": 13,
+     "first_home": 6,
+     "multi_child": 8,
+     "parents": 2,
+     "institution": 8,
+     "newborn": 8,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.3216G",
+     "area": 84.32,
+     "general": 8,
+     "price": 53200,
+     "newlywed": 3,
+     "first_home": 1,
+     "multi_child": 2,
+     "parents": 1,
+     "institution": 2,
+     "newborn": 2,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "102.6403",
+     "area": 102.64,
+     "general": 49,
+     "price": 64000,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 5,
+     "parents": 2,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "112.1044",
+     "area": 112.1,
+     "general": 69,
+     "price": 67800,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 7,
+     "parents": 2,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "120.3418",
+     "area": 120.34,
+     "general": 68,
+     "price": 72700,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 7,
+     "parents": 2,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000533-2026000533",
+   "manage_no": "2026000533",
+   "pblanc_no": "2026000533",
    "name": "안산신길2지구 B-1블록 공공분양주택(본청약)",
    "region": "경기",
    "address": "경기도 안산시 단원구 신길동 일원 안산신길2 공공주택지구 내 B-1블록",
@@ -544,6 +1766,11 @@
    "move_in": "202908",
    "phone": "0312970311",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000533&pblancNo=2026000533",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -570,10 +1797,137 @@
      "start": "2027-03-15",
      "end": "2027-03-18"
     }
+   ],
+   "supply": {
+    "general": 31,
+    "newlywed": 12,
+    "first_home": 19,
+    "multi_child": 12,
+    "parents": 4,
+    "institution": 18,
+    "newborn": 25,
+    "youth": 0,
+    "etc": 3
+   },
+   "types": [
+    {
+     "ty": "074.9400A",
+     "area": 74.94,
+     "general": 6,
+     "price": 51190,
+     "newlywed": 3,
+     "first_home": 5,
+     "multi_child": 2,
+     "parents": 1,
+     "institution": 4,
+     "newborn": 6,
+     "youth": 0,
+     "etc": 1
+    },
+    {
+     "ty": "084.7100A",
+     "area": 84.71,
+     "general": 8,
+     "price": 59653,
+     "newlywed": 3,
+     "first_home": 5,
+     "multi_child": 4,
+     "parents": 1,
+     "institution": 5,
+     "newborn": 7,
+     "youth": 0,
+     "etc": 1
+    },
+    {
+     "ty": "084.9800B",
+     "area": 84.98,
+     "general": 9,
+     "price": 58646,
+     "newlywed": 3,
+     "first_home": 5,
+     "multi_child": 3,
+     "parents": 1,
+     "institution": 5,
+     "newborn": 7,
+     "youth": 0,
+     "etc": 1
+    },
+    {
+     "ty": "084.8700D",
+     "area": 84.87,
+     "general": 4,
+     "price": 59766,
+     "newlywed": 2,
+     "first_home": 3,
+     "multi_child": 2,
+     "parents": 1,
+     "institution": 3,
+     "newborn": 4,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.5300G",
+     "area": 84.53,
+     "general": 1,
+     "price": 60116,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.4400H",
+     "area": 84.44,
+     "general": 1,
+     "price": 60052,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.5400I",
+     "area": 84.54,
+     "general": 1,
+     "price": 60123,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9800J",
+     "area": 84.98,
+     "general": 1,
+     "price": 60969,
+     "newlywed": 1,
+     "first_home": 1,
+     "multi_child": 1,
+     "parents": 0,
+     "institution": 1,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000528-2026000528",
+   "manage_no": "2026000528",
+   "pblanc_no": "2026000528",
    "name": "광교 자연앤 센트레빌(A17BL) 공공분양주택",
    "region": "경기",
    "address": "경기도 수원시 영통구 원천동 633번지 일원",
@@ -583,6 +1937,11 @@
    "move_in": "202910",
    "phone": "0312611770",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000528&pblancNo=2026000528",
+   "kind": "국민",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -614,10 +1973,67 @@
      "start": "2026-12-21",
      "end": "2026-12-23"
     }
+   ],
+   "supply": {
+    "general": 90,
+    "newlywed": 36,
+    "first_home": 54,
+    "multi_child": 36,
+    "parents": 18,
+    "institution": 54,
+    "newborn": 72,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.7637A",
+     "area": 84.76,
+     "general": 10,
+     "price": 94930,
+     "newlywed": 4,
+     "first_home": 6,
+     "multi_child": 4,
+     "parents": 2,
+     "institution": 6,
+     "newborn": 8,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.8159B",
+     "area": 84.82,
+     "general": 70,
+     "price": 94890,
+     "newlywed": 28,
+     "first_home": 41,
+     "multi_child": 28,
+     "parents": 14,
+     "institution": 42,
+     "newborn": 55,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.6192C",
+     "area": 84.62,
+     "general": 10,
+     "price": 93860,
+     "newlywed": 4,
+     "first_home": 7,
+     "multi_child": 4,
+     "parents": 2,
+     "institution": 6,
+     "newborn": 9,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000527-2026000527",
+   "manage_no": "2026000527",
+   "pblanc_no": "2026000527",
    "name": "광교 자연앤 센트레빌(A17BL) 지분적립형 분양주택",
    "region": "경기",
    "address": "경기도 수원시 영통구 원천동 633번지 일원",
@@ -627,6 +2043,11 @@
    "move_in": "202910",
    "phone": "0312611770",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000527&pblancNo=2026000527",
+   "kind": "국민",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -658,10 +2079,81 @@
      "start": "2027-01-25",
      "end": "2027-01-27"
     }
+   ],
+   "supply": {
+    "general": 72,
+    "newlywed": 36,
+    "first_home": 17,
+    "multi_child": 24,
+    "parents": 7,
+    "institution": 0,
+    "newborn": 48,
+    "youth": 36,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "059.8958A",
+     "area": 59.9,
+     "general": 13,
+     "price": 68440,
+     "newlywed": 6,
+     "first_home": 3,
+     "multi_child": 5,
+     "parents": 1,
+     "institution": 0,
+     "newborn": 9,
+     "youth": 6,
+     "etc": 0
+    },
+    {
+     "ty": "059.9657B",
+     "area": 59.97,
+     "general": 43,
+     "price": 68590,
+     "newlywed": 22,
+     "first_home": 10,
+     "multi_child": 14,
+     "parents": 4,
+     "institution": 0,
+     "newborn": 28,
+     "youth": 22,
+     "etc": 0
+    },
+    {
+     "ty": "059.7232C",
+     "area": 59.72,
+     "general": 13,
+     "price": 66790,
+     "newlywed": 6,
+     "first_home": 3,
+     "multi_child": 4,
+     "parents": 1,
+     "institution": 0,
+     "newborn": 9,
+     "youth": 6,
+     "etc": 0
+    },
+    {
+     "ty": "059.9593D",
+     "area": 59.96,
+     "general": 3,
+     "price": 67850,
+     "newlywed": 2,
+     "first_home": 1,
+     "multi_child": 1,
+     "parents": 1,
+     "institution": 0,
+     "newborn": 2,
+     "youth": 2,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000515-2026000515",
+   "manage_no": "2026000515",
+   "pblanc_no": "2026000515",
    "name": "평택 고덕 우미 린 더 프리미어",
    "region": "경기",
    "address": "경기도 평택시 고덕 국제화계획지구 내 Abc-33블록",
@@ -671,6 +2163,11 @@
    "move_in": "202905",
    "phone": "0316661003",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000515&pblancNo=2026000515",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -702,10 +2199,165 @@
      "start": "2026-11-29",
      "end": "2026-12-01"
     }
+   ],
+   "supply": {
+    "general": 335,
+    "newlywed": 60,
+    "first_home": 68,
+    "multi_child": 62,
+    "parents": 18,
+    "institution": 40,
+    "newborn": 40,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.9343A",
+     "area": 84.93,
+     "general": 109,
+     "price": 59130,
+     "newlywed": 46,
+     "first_home": 52,
+     "multi_child": 31,
+     "parents": 9,
+     "institution": 31,
+     "newborn": 31,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9075B",
+     "area": 84.91,
+     "general": 21,
+     "price": 59130,
+     "newlywed": 9,
+     "first_home": 11,
+     "multi_child": 6,
+     "parents": 2,
+     "institution": 6,
+     "newborn": 6,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.8505D",
+     "area": 84.85,
+     "general": 10,
+     "price": 57890,
+     "newlywed": 5,
+     "first_home": 5,
+     "multi_child": 3,
+     "parents": 1,
+     "institution": 3,
+     "newborn": 3,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "094.3143A",
+     "area": 94.31,
+     "general": 42,
+     "price": 62010,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 5,
+     "parents": 2,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "094.2875B",
+     "area": 94.29,
+     "general": 20,
+     "price": 62010,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 3,
+     "parents": 1,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "094.3805D",
+     "area": 94.38,
+     "general": 5,
+     "price": 56790,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 1,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "101.8311A",
+     "area": 101.83,
+     "general": 65,
+     "price": 68190,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 8,
+     "parents": 2,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "101.8531B",
+     "area": 101.85,
+     "general": 48,
+     "price": 68100,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 5,
+     "parents": 1,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "111.5911A",
+     "area": 111.59,
+     "general": 6,
+     "price": 66760,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "111.4331B",
+     "area": 111.43,
+     "general": 9,
+     "price": 68100,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000472-2026000472",
+   "manage_no": "2026000472",
+   "pblanc_no": "2026000472",
    "name": "구리갈매역세권 B-1블록 신안인스빌 디센트",
    "region": "경기",
    "address": "경기도 구리시 구리갈매역세권 B-1블록",
@@ -715,6 +2367,11 @@
    "move_in": "202808",
    "phone": "0315669450",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000472&pblancNo=2026000472",
+   "kind": "민영",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -746,10 +2403,53 @@
      "start": "2026-11-30",
      "end": "2026-12-02"
     }
+   ],
+   "supply": {
+    "general": 73,
+    "newlywed": 32,
+    "first_home": 36,
+    "multi_child": 22,
+    "parents": 6,
+    "institution": 22,
+    "newborn": 22,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "075.7770",
+     "area": 75.78,
+     "general": 38,
+     "price": 69580,
+     "newlywed": 16,
+     "first_home": 18,
+     "multi_child": 11,
+     "parents": 3,
+     "institution": 11,
+     "newborn": 11,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.6686",
+     "area": 84.67,
+     "general": 35,
+     "price": 78500,
+     "newlywed": 16,
+     "first_home": 18,
+     "multi_child": 11,
+     "parents": 3,
+     "institution": 11,
+     "newborn": 11,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000535-2026000535",
+   "manage_no": "2026000535",
+   "pblanc_no": "2026000535",
    "name": "중앙하이츠 구성 플랫폼시티",
    "region": "경기",
    "address": "경기도 용인시 기흥구 마북동 298-1번지 일원",
@@ -759,6 +2459,11 @@
    "move_in": "202806",
    "phone": "18991008",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000535&pblancNo=2026000535",
+   "kind": "민영",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -790,10 +2495,109 @@
      "start": "2026-11-30",
      "end": "2026-12-02"
     }
+   ],
+   "supply": {
+    "general": 41,
+    "newlywed": 10,
+    "first_home": 6,
+    "multi_child": 6,
+    "parents": 2,
+    "institution": 5,
+    "newborn": 6,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "059.9670A",
+     "area": 59.97,
+     "general": 7,
+     "price": 62500,
+     "newlywed": 3,
+     "first_home": 2,
+     "multi_child": 2,
+     "parents": 1,
+     "institution": 1,
+     "newborn": 2,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.9898B",
+     "area": 59.99,
+     "general": 7,
+     "price": 62530,
+     "newlywed": 2,
+     "first_home": 1,
+     "multi_child": 1,
+     "parents": 0,
+     "institution": 1,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "068.9683",
+     "area": 68.97,
+     "general": 4,
+     "price": 71680,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "074.9857",
+     "area": 74.99,
+     "general": 12,
+     "price": 77110,
+     "newlywed": 3,
+     "first_home": 2,
+     "multi_child": 2,
+     "parents": 1,
+     "institution": 2,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "079.9780",
+     "area": 79.98,
+     "general": 7,
+     "price": 82270,
+     "newlywed": 1,
+     "first_home": 1,
+     "multi_child": 1,
+     "parents": 0,
+     "institution": 1,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9932",
+     "area": 84.99,
+     "general": 4,
+     "price": 85210,
+     "newlywed": 1,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000525-2026000525",
+   "manage_no": "2026000525",
+   "pblanc_no": "2026000525",
    "name": "엘리프 시흥 더프라임",
    "region": "경기",
    "address": "경기도 시흥시 거모동 시흥거모지구 B-5블록",
@@ -803,6 +2607,11 @@
    "move_in": "202908",
    "phone": "16441966",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000525&pblancNo=2026000525",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -834,10 +2643,53 @@
      "start": "2026-11-28",
      "end": "2026-11-30"
     }
+   ],
+   "supply": {
+    "general": 114,
+    "newlywed": 44,
+    "first_home": 51,
+    "multi_child": 29,
+    "parents": 8,
+    "institution": 29,
+    "newborn": 29,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.9607A",
+     "area": 84.96,
+     "general": 95,
+     "price": 59930,
+     "newlywed": 38,
+     "first_home": 44,
+     "multi_child": 25,
+     "parents": 7,
+     "institution": 25,
+     "newborn": 25,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9236B",
+     "area": 84.92,
+     "general": 19,
+     "price": 59910,
+     "newlywed": 6,
+     "first_home": 7,
+     "multi_child": 4,
+     "parents": 1,
+     "institution": 4,
+     "newborn": 4,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000499-2026000499",
+   "manage_no": "2026000499",
+   "pblanc_no": "2026000499",
    "name": "한화포레나 지제역",
    "region": "경기",
    "address": "경기도 평택시 세교동 725번지 일원",
@@ -847,6 +2699,11 @@
    "move_in": "202911",
    "phone": "16611098",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000499&pblancNo=2026000499",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -878,10 +2735,95 @@
      "start": "2026-11-29",
      "end": "2026-12-01"
     }
+   ],
+   "supply": {
+    "general": 570,
+    "newlywed": 141,
+    "first_home": 64,
+    "multi_child": 106,
+    "parents": 31,
+    "institution": 93,
+    "newborn": 93,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.9424A",
+     "area": 84.94,
+     "general": 207,
+     "price": 70875,
+     "newlywed": 67,
+     "first_home": 31,
+     "multi_child": 44,
+     "parents": 13,
+     "institution": 45,
+     "newborn": 45,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9927B",
+     "area": 84.99,
+     "general": 97,
+     "price": 70095,
+     "newlywed": 31,
+     "first_home": 14,
+     "multi_child": 20,
+     "parents": 6,
+     "institution": 20,
+     "newborn": 20,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9839C",
+     "area": 84.98,
+     "general": 79,
+     "price": 72450,
+     "newlywed": 25,
+     "first_home": 11,
+     "multi_child": 16,
+     "parents": 5,
+     "institution": 16,
+     "newborn": 16,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9199D",
+     "area": 84.92,
+     "general": 57,
+     "price": 72350,
+     "newlywed": 18,
+     "first_home": 8,
+     "multi_child": 12,
+     "parents": 3,
+     "institution": 12,
+     "newborn": 12,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "116.9134",
+     "area": 116.91,
+     "general": 130,
+     "price": 96845,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 14,
+     "parents": 4,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026820014-2026820014",
+   "manage_no": "2026820014",
+   "pblanc_no": "2026820014",
    "name": "남양주왕숙 A-2블록 신혼희망타운(공공분양) 잔여세대 추가입주자모집공고",
    "region": "경기",
    "address": "경기도 남양주시 진접읍, 진건읍, 퇴계원읍 일원, 남양주왕숙 공공주택지구 내 A-2블록",
@@ -891,6 +2833,11 @@
    "move_in": "202808",
    "phone": "16001004",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820014&pblancNo=2026820014",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -917,10 +2864,53 @@
      "start": "2027-02-01",
      "end": "2027-02-02"
     }
+   ],
+   "supply": {
+    "general": 0,
+    "newlywed": 0,
+    "first_home": 0,
+    "multi_child": 0,
+    "parents": 0,
+    "institution": 0,
+    "newborn": 0,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "046.0000O",
+     "area": 46.0,
+     "general": 0,
+     "price": 35276,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "055.0000O",
+     "area": 55.0,
+     "general": 0,
+     "price": 41908,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000497-2026000497",
+   "manage_no": "2026000497",
+   "pblanc_no": "2026000497",
    "name": "중화역 라온프라이빗 센트로",
    "region": "서울",
    "address": "서울특별시 중랑구 중화동 303-9번지 일원",
@@ -930,6 +2920,11 @@
    "move_in": "202902",
    "phone": "15556223",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000497&pblancNo=2026000497",
+   "kind": "민영",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -961,10 +2956,165 @@
      "start": "2026-12-07",
      "end": "2026-12-09"
     }
+   ],
+   "supply": {
+    "general": 53,
+    "newlywed": 17,
+    "first_home": 7,
+    "multi_child": 11,
+    "parents": 3,
+    "institution": 11,
+    "newborn": 11,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "045.0210",
+     "area": 45.02,
+     "general": 4,
+     "price": 65800,
+     "newlywed": 2,
+     "first_home": 1,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "058.3650",
+     "area": 58.37,
+     "general": 7,
+     "price": 86200,
+     "newlywed": 3,
+     "first_home": 1,
+     "multi_child": 2,
+     "parents": 0,
+     "institution": 2,
+     "newborn": 2,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.9740",
+     "area": 59.97,
+     "general": 9,
+     "price": 95600,
+     "newlywed": 3,
+     "first_home": 1,
+     "multi_child": 2,
+     "parents": 1,
+     "institution": 2,
+     "newborn": 2,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "070.9640",
+     "area": 70.96,
+     "general": 10,
+     "price": 110100,
+     "newlywed": 4,
+     "first_home": 2,
+     "multi_child": 3,
+     "parents": 1,
+     "institution": 3,
+     "newborn": 3,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "073.4730T",
+     "area": 73.47,
+     "general": 1,
+     "price": 119200,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9940",
+     "area": 84.99,
+     "general": 15,
+     "price": 127700,
+     "newlywed": 5,
+     "first_home": 2,
+     "multi_child": 4,
+     "parents": 1,
+     "institution": 4,
+     "newborn": 4,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9400T",
+     "area": 84.94,
+     "general": 2,
+     "price": 139100,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "093.5970T",
+     "area": 93.6,
+     "general": 1,
+     "price": 150600,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "098.9000T",
+     "area": 98.9,
+     "general": 2,
+     "price": 160900,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "126.8090T",
+     "area": 126.81,
+     "general": 2,
+     "price": 202100,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026820015-2026820015",
+   "manage_no": "2026820015",
+   "pblanc_no": "2026820015",
    "name": "시흥 거모 아테라(시흥거모 A-6BL) 신혼희망타운(공공분양)(본청약)",
    "region": "경기",
    "address": "경기도 시흥시 거모지구 내 A-6블록",
@@ -974,6 +3124,11 @@
    "move_in": "202909",
    "phone": "16615596",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820015&pblancNo=2026820015",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -1000,10 +3155,81 @@
      "start": "2027-03-11",
      "end": "2027-03-14"
     }
+   ],
+   "supply": {
+    "general": 0,
+    "newlywed": 0,
+    "first_home": 0,
+    "multi_child": 0,
+    "parents": 0,
+    "institution": 0,
+    "newborn": 0,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "055.0000A",
+     "area": 55.0,
+     "general": 0,
+     "price": 43390,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000A",
+     "area": 59.0,
+     "general": 0,
+     "price": 46436,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000B",
+     "area": 59.0,
+     "general": 0,
+     "price": 46359,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.0000C",
+     "area": 59.0,
+     "general": 0,
+     "price": 46328,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000557-2026000557",
+   "manage_no": "2026000557",
+   "pblanc_no": "2026000557",
    "name": "제일풍경채 광주 포에듀",
    "region": "경기",
    "address": "경기도 광주시 탄벌동 203-4번지 일원 (탄벌A지구 A5블럭)",
@@ -1013,6 +3239,11 @@
    "move_in": "202911",
    "phone": "15337767",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000557&pblancNo=2026000557",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -1044,10 +3275,53 @@
      "start": "2026-12-07",
      "end": "2026-12-09"
     }
+   ],
+   "supply": {
+    "general": 265,
+    "newlywed": 84,
+    "first_home": 39,
+    "multi_child": 56,
+    "parents": 16,
+    "institution": 56,
+    "newborn": 56,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.9904A",
+     "area": 84.99,
+     "general": 193,
+     "price": 69100,
+     "newlywed": 62,
+     "first_home": 29,
+     "multi_child": 41,
+     "parents": 12,
+     "institution": 41,
+     "newborn": 41,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9732B",
+     "area": 84.97,
+     "general": 72,
+     "price": 69100,
+     "newlywed": 22,
+     "first_home": 10,
+     "multi_child": 15,
+     "parents": 4,
+     "institution": 15,
+     "newborn": 15,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000553-2026000553",
+   "manage_no": "2026000553",
+   "pblanc_no": "2026000553",
    "name": "의정부역 펠리스타워 양우내안애",
    "region": "경기",
    "address": "경기도 의정부시 의정부동 424번지 일원",
@@ -1057,6 +3331,11 @@
    "move_in": "203101",
    "phone": "15773197",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000553&pblancNo=2026000553",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -1088,10 +3367,81 @@
      "start": "2026-12-07",
      "end": "2026-12-09"
     }
+   ],
+   "supply": {
+    "general": 188,
+    "newlywed": 62,
+    "first_home": 28,
+    "multi_child": 41,
+    "parents": 13,
+    "institution": 41,
+    "newborn": 41,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "059.9777",
+     "area": 59.98,
+     "general": 6,
+     "price": 63720,
+     "newlywed": 4,
+     "first_home": 2,
+     "multi_child": 2,
+     "parents": 1,
+     "institution": 8,
+     "newborn": 3,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.7415A",
+     "area": 84.74,
+     "general": 85,
+     "price": 85692,
+     "newlywed": 26,
+     "first_home": 12,
+     "multi_child": 17,
+     "parents": 5,
+     "institution": 15,
+     "newborn": 17,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.8836B",
+     "area": 84.88,
+     "general": 58,
+     "price": 83678,
+     "newlywed": 19,
+     "first_home": 8,
+     "multi_child": 12,
+     "parents": 5,
+     "institution": 9,
+     "newborn": 12,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9911C",
+     "area": 84.99,
+     "general": 39,
+     "price": 86314,
+     "newlywed": 13,
+     "first_home": 6,
+     "multi_child": 10,
+     "parents": 2,
+     "institution": 9,
+     "newborn": 9,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026820013-2026820013",
+   "manage_no": "2026820013",
+   "pblanc_no": "2026820013",
    "name": "안산신길2 A-6블록 신혼희망타운(공공분양)(본청약)",
    "region": "경기",
    "address": "경기도 안산시 단원구 신길동 일원 안산신길2 공공주택지구 내 A-6블록",
@@ -1101,6 +3451,11 @@
    "move_in": "202911",
    "phone": "0312970311",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820013&pblancNo=2026820013",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -1127,10 +3482,53 @@
      "start": "2027-03-30",
      "end": "2027-04-02"
     }
+   ],
+   "supply": {
+    "general": 0,
+    "newlywed": 0,
+    "first_home": 0,
+    "multi_child": 0,
+    "parents": 0,
+    "institution": 0,
+    "newborn": 0,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "055.0000A",
+     "area": 55.0,
+     "general": 0,
+     "price": 46658,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "055.0000B",
+     "area": 55.0,
+     "general": 0,
+     "price": 45692,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000560-2026000560",
+   "manage_no": "2026000560",
+   "pblanc_no": "2026000560",
    "name": "해링턴 플레이스 문래",
    "region": "서울",
    "address": "서울특별시 영등포구 문래동3가 27-1번지 일원",
@@ -1140,6 +3538,11 @@
    "move_in": "203003",
    "phone": "0234637774",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000560&pblancNo=2026000560",
+   "kind": "민영",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -1171,10 +3574,67 @@
      "start": "2026-12-14",
      "end": "2026-12-16"
     }
+   ],
+   "supply": {
+    "general": 101,
+    "newlywed": 32,
+    "first_home": 15,
+    "multi_child": 21,
+    "parents": 7,
+    "institution": 21,
+    "newborn": 21,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.9409A",
+     "area": 84.94,
+     "general": 51,
+     "price": 182700,
+     "newlywed": 16,
+     "first_home": 7,
+     "multi_child": 11,
+     "parents": 3,
+     "institution": 11,
+     "newborn": 11,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9708B",
+     "area": 84.97,
+     "general": 25,
+     "price": 178500,
+     "newlywed": 8,
+     "first_home": 4,
+     "multi_child": 5,
+     "parents": 2,
+     "institution": 5,
+     "newborn": 5,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9894C",
+     "area": 84.99,
+     "general": 25,
+     "price": 177500,
+     "newlywed": 8,
+     "first_home": 4,
+     "multi_child": 5,
+     "parents": 2,
+     "institution": 5,
+     "newborn": 5,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000576-2026000576",
+   "manage_no": "2026000576",
+   "pblanc_no": "2026000576",
    "name": "아르뮤제자이",
    "region": "경기",
    "address": "경기도 안산시 상록구 성포동 586번지 일원",
@@ -1184,6 +3644,11 @@
    "move_in": "203103",
    "phone": "18333367",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000576&pblancNo=2026000576",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -1215,10 +3680,109 @@
      "start": "2026-12-13",
      "end": "2026-12-15"
     }
+   ],
+   "supply": {
+    "general": 713,
+    "newlywed": 53,
+    "first_home": 24,
+    "multi_child": 97,
+    "parents": 27,
+    "institution": 35,
+    "newborn": 35,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "084.8861A",
+     "area": 84.89,
+     "general": 82,
+     "price": 110500,
+     "newlywed": 27,
+     "first_home": 12,
+     "multi_child": 18,
+     "parents": 5,
+     "institution": 18,
+     "newborn": 18,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9580B",
+     "area": 84.96,
+     "general": 43,
+     "price": 110500,
+     "newlywed": 13,
+     "first_home": 6,
+     "multi_child": 8,
+     "parents": 2,
+     "institution": 8,
+     "newborn": 8,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.8700C",
+     "area": 84.87,
+     "general": 42,
+     "price": 109900,
+     "newlywed": 13,
+     "first_home": 6,
+     "multi_child": 9,
+     "parents": 2,
+     "institution": 9,
+     "newborn": 9,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "099.9001A",
+     "area": 99.9,
+     "general": 157,
+     "price": 127200,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 18,
+     "parents": 5,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "099.9015B",
+     "area": 99.9,
+     "general": 237,
+     "price": 124200,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 27,
+     "parents": 8,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "104.8286",
+     "area": 104.83,
+     "general": 152,
+     "price": 140840,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 17,
+     "parents": 5,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    }
    ]
   },
   {
    "id": "2026000457-2026000457",
+   "manage_no": "2026000457",
+   "pblanc_no": "2026000457",
    "name": "부천대장 하우스토리 디센트(부천대장지구 A2BL) 공공분양주택",
    "region": "경기",
    "address": "경기도 부천시 오정구 대장동, 오정동, 원종동, 삼정동 일원 부천대장 공공주택지구 내 A2블록",
@@ -1228,6 +3792,11 @@
    "move_in": "202906",
    "phone": "0323220548",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000457&pblancNo=2026000457",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
    "events": [
     {
      "kind": "announcement",
@@ -1259,10 +3828,95 @@
      "start": "2027-01-25",
      "end": "2027-01-29"
     }
+   ],
+   "supply": {
+    "general": 82,
+    "newlywed": 55,
+    "first_home": 82,
+    "multi_child": 55,
+    "parents": 27,
+    "institution": 82,
+    "newborn": 110,
+    "youth": 0,
+    "etc": 55
+   },
+   "types": [
+    {
+     "ty": "059.7100A",
+     "area": 59.71,
+     "general": 37,
+     "price": 61345,
+     "newlywed": 24,
+     "first_home": 36,
+     "multi_child": 24,
+     "parents": 12,
+     "institution": 36,
+     "newborn": 49,
+     "youth": 0,
+     "etc": 24
+    },
+    {
+     "ty": "059.9900B",
+     "area": 59.99,
+     "general": 18,
+     "price": 61520,
+     "newlywed": 13,
+     "first_home": 19,
+     "multi_child": 13,
+     "parents": 6,
+     "institution": 19,
+     "newborn": 25,
+     "youth": 0,
+     "etc": 13
+    },
+    {
+     "ty": "059.9900C",
+     "area": 59.99,
+     "general": 3,
+     "price": 61515,
+     "newlywed": 1,
+     "first_home": 2,
+     "multi_child": 1,
+     "parents": 1,
+     "institution": 2,
+     "newborn": 3,
+     "youth": 0,
+     "etc": 1
+    },
+    {
+     "ty": "074.9800A",
+     "area": 74.98,
+     "general": 8,
+     "price": 75423,
+     "newlywed": 5,
+     "first_home": 8,
+     "multi_child": 5,
+     "parents": 2,
+     "institution": 7,
+     "newborn": 10,
+     "youth": 0,
+     "etc": 5
+    },
+    {
+     "ty": "084.9500A",
+     "area": 84.95,
+     "general": 16,
+     "price": 85406,
+     "newlywed": 12,
+     "first_home": 17,
+     "multi_child": 12,
+     "parents": 6,
+     "institution": 18,
+     "newborn": 23,
+     "youth": 0,
+     "etc": 12
+    }
    ]
   },
   {
    "id": "2026000505-2026000505",
+   "manage_no": "2026000505",
+   "pblanc_no": "2026000505",
    "name": "경희궁 에피트",
    "region": "서울",
    "address": "서울특별시 종로구 교남동 28번지 일원",
@@ -1272,6 +3926,11 @@
    "move_in": "203008",
    "phone": "023032280",
    "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000505&pblancNo=2026000505",
+   "kind": "민영",
+   "reg": {
+    "spec": true,
+    "adj": true
+   },
    "events": [
     {
      "kind": "announcement",
@@ -1302,6 +3961,75 @@
      "kind": "contract",
      "start": "2026-12-16",
      "end": "2026-12-18"
+    }
+   ],
+   "supply": {
+    "general": 62,
+    "newlywed": 20,
+    "first_home": 9,
+    "multi_child": 13,
+    "parents": 4,
+    "institution": 13,
+    "newborn": 13,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "039.9342",
+     "area": 39.93,
+     "general": 5,
+     "price": 118241,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.9926",
+     "area": 59.99,
+     "general": 13,
+     "price": 189843,
+     "newlywed": 5,
+     "first_home": 1,
+     "multi_child": 3,
+     "parents": 1,
+     "institution": 5,
+     "newborn": 3,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9794A",
+     "area": 84.98,
+     "general": 25,
+     "price": 257484,
+     "newlywed": 8,
+     "first_home": 4,
+     "multi_child": 5,
+     "parents": 2,
+     "institution": 4,
+     "newborn": 5,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9940B",
+     "area": 84.99,
+     "general": 19,
+     "price": 251744,
+     "newlywed": 7,
+     "first_home": 4,
+     "multi_child": 5,
+     "parents": 1,
+     "institution": 4,
+     "newborn": 5,
+     "youth": 0,
+     "etc": 0
     }
    ]
   }
