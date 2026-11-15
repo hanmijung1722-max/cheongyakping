@@ -22,6 +22,7 @@ KST = ZoneInfo("Asia/Seoul")
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 ENDPOINT = "https://api.odcloud.kr/api/ApplyhomeInfoDetailSvc/v1/getAPTLttotPblancDetail"
+MODEL_ENDPOINT = "https://api.odcloud.kr/api/ApplyhomeInfoDetailSvc/v1/getAPTLttotPblancMdl"  # 주택형별 상세
 
 # 종류: (제목, 짧은 이름, 쉬운 설명)
 KINDS = {
@@ -147,6 +148,8 @@ def to_listing(row):
 
     return {
         "id": f"{manage}-{v('PBLANC_NO') or '0'}",
+        "manage_no": manage,
+        "pblanc_no": v("PBLANC_NO") or "0",
         "name": name,
         "region": region,
         "address": v("HSSPLY_ADRES") or "",
@@ -180,6 +183,79 @@ def fetch_all(key, regions, today):
     return out
 
 
+# ---------------------------------------------------------------- 주택형별 공급 유형 (싱글/신혼부부 구분용)
+
+# 특별공급 유형 → 주택형별 API 필드
+SUPPLY_FIELDS = {
+    "newlywed": "NWWDS_HSHLDCO",             # 신혼부부
+    "first_home": "LFE_FRST_HSHLDCO",        # 생애최초
+    "multi_child": "MNYCH_HSHLDCO",          # 다자녀
+    "parents": "OLD_PARNTS_SUPORT_HSHLDCO",  # 노부모부양
+    "institution": "INSTT_RECOMEND_HSHLDCO", # 기관추천
+    "newborn": "NWBB_HSHLDCO",               # 신생아
+    "youth": "YGMN_HSHLDCO",                 # 청년
+    "etc": "ETC_HSHLDCO",                    # 기타
+}
+
+
+def to_num(value):
+    try:
+        return int(float(str(value).replace(",", "").strip()))
+    except (TypeError, ValueError):
+        return 0
+
+
+def fetch_models(key, manage_no, pblanc_no):
+    query = urllib.parse.urlencode({
+        "page": 1,
+        "perPage": 200,
+        "cond[HOUSE_MANAGE_NO::EQ]": manage_no,
+        "cond[PBLANC_NO::EQ]": pblanc_no,
+    })
+    req = urllib.request.Request(f"{MODEL_ENDPOINT}?{query}", headers={"Authorization": f"Infuser {key}"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.load(resp).get("data", [])
+
+
+def summarize_models(rows):
+    """주택형 행들을 → (공급유형별 합계, 주택형별 목록) 으로 요약"""
+    totals = {"general": 0}
+    totals.update({k: 0 for k in SUPPLY_FIELDS})
+    types = []
+    for row in rows:
+        ty = str(row.get("HOUSE_TY") or "").strip()
+        m = re.match(r"\s*([0-9]+(?:\.[0-9]+)?)", ty)
+        area = round(float(m.group(1)), 2) if m else None
+        item = {"ty": ty, "area": area, "general": to_num(row.get("SUPLY_HSHLDCO"))}
+        price = to_num(row.get("LTTOT_TOP_AMOUNT"))   # 최고 분양가(만원)
+        if price:
+            item["price"] = price
+        totals["general"] += item["general"]
+        for name, field in SUPPLY_FIELDS.items():
+            n = to_num(row.get(field))
+            item[name] = n
+            totals[name] += n
+        types.append(item)
+    return totals, types
+
+
+def attach_supply(key, listings):
+    """각 단지에 공급 유형 정보를 붙입니다. 실패해도 나머지 데이터는 그대로 둡니다."""
+    debug = []
+    for listing in listings:
+        try:
+            rows = fetch_models(key, listing["manage_no"], listing["pblanc_no"])
+        except Exception as e:  # 네트워크/권한 오류는 건너뜀
+            print(f"주택형 조회 실패 {listing['name']}: {e}", file=sys.stderr)
+            continue
+        if not rows:
+            continue
+        listing["supply"], listing["types"] = summarize_models(rows)
+        if len(debug) < 3:
+            debug.append({"name": listing["name"], "rows": rows[:2]})
+    return debug
+
+
 # ---------------------------------------------------------------- 샘플 데이터 (가상 단지)
 
 def sample_listings(today):
@@ -187,27 +263,37 @@ def sample_listings(today):
         return {"kind": kind, "start": (today + timedelta(days=a)).isoformat(),
                 "end": (today + timedelta(days=b if b is not None else a)).isoformat()}
 
-    def make(i, name, region, addr, units, evs):
+    def make(i, name, region, addr, units, evs, types):
+        keys = ["general"] + list(SUPPLY_FIELDS)
+        totals = {k: sum(t.get(k, 0) for t in types) for k in keys}
+        full = [{**{k: 0 for k in keys}, **t} for t in types]
         return {"id": f"sample-{i}", "name": f"{name} (샘플)", "region": region, "address": addr,
                 "units": units, "builder": "샘플건설", "developer": "샘플디벨롭", "move_in": "202908",
-                "phone": "02-000-0000", "url": None, "events": evs}
+                "phone": "02-000-0000", "url": None, "events": evs, "supply": totals, "types": full}
 
     return [
         make(1, "한강 포레스트힐", "서울", "서울특별시 강동구 샘플동 100", 412,
              [ev("announcement", -8), ev("special", -1, 0), ev("first", 1, 2), ev("second", 3),
-              ev("winner", 9), ev("contract", 15, 18)]),
+              ev("winner", 9), ev("contract", 15, 18)],
+             [{"ty": "059.9800A", "area": 59.98, "general": 120, "newlywed": 40, "first_home": 30, "multi_child": 14, "parents": 8, "institution": 10, "youth": 0},
+              {"ty": "084.9500B", "area": 84.95, "general": 140, "newlywed": 30, "first_home": 20, "multi_child": 12, "parents": 6, "institution": 8}]),
         make(2, "광교 에코파크", "경기", "경기도 수원시 영통구 샘플로 55", 860,
              [ev("announcement", -5), ev("special", 0, 1), ev("first", 2, 4), ev("second", 5),
-              ev("winner", 11), ev("contract", 18, 21)]),
+              ev("winner", 11), ev("contract", 18, 21)],
+             [{"ty": "084.9900A", "area": 84.99, "general": 520, "newlywed": 120, "first_home": 80, "multi_child": 50, "parents": 30, "institution": 60}]),
         make(3, "마포 리버뷰 센트럴", "서울", "서울특별시 마포구 샘플대로 12", 158,
              [ev("announcement", -2), ev("special", 4, 5), ev("first", 6, 7), ev("second", 8),
-              ev("winner", 14), ev("contract", 21, 24)]),
+              ev("winner", 14), ev("contract", 21, 24)],
+             [{"ty": "046.9700A", "area": 46.97, "general": 70, "newlywed": 30, "first_home": 20, "multi_child": 6, "parents": 4, "institution": 8},
+              {"ty": "059.9000B", "area": 59.9, "general": 10, "newlywed": 6, "first_home": 4}]),
         make(4, "위례 스카이 테라스", "경기", "경기도 하남시 샘플길 77", 530,
              [ev("announcement", 0), ev("special", 9, 10), ev("first", 11, 12), ev("second", 13),
-              ev("winner", 19), ev("contract", 26, 29)]),
+              ev("winner", 19), ev("contract", 26, 29)],
+             [{"ty": "074.9900A", "area": 74.99, "general": 300, "newlywed": 90, "first_home": 60, "multi_child": 30, "parents": 20, "institution": 30}]),
         make(5, "성수 아뜰리에", "서울", "서울특별시 성동구 샘플로 8", 96,
              [ev("announcement", -14), ev("special", -9, -8), ev("first", -7, -6), ev("second", -5),
-              ev("winner", 2), ev("contract", 9, 12)]),
+              ev("winner", 2), ev("contract", 9, 12)],
+             [{"ty": "033.8000A", "area": 33.8, "general": 60, "youth": 0, "first_home": 12, "newlywed": 0, "institution": 4}]),
     ]
 
 
@@ -304,10 +390,14 @@ def main():
     cfg = load_config()
     today = today_kst()
     key = os.environ.get("APPLYHOME_SERVICE_KEY", "").strip()
+    debug = []
 
     if key:
         listings = fetch_all(key, cfg["regions"], today)
         sample = False
+        debug = attach_supply(key, listings)   # 싱글/신혼부부 구분용 주택형 정보
+        got = sum(1 for x in listings if x.get("supply"))
+        print(f"주택형 정보: {got}/{len(listings)}개 단지", file=sys.stderr)
     else:
         print("APPLYHOME_SERVICE_KEY 가 없어 샘플 데이터로 만듭니다.", file=sys.stderr)
         listings = [x for x in sample_listings(today) if x["region"] in cfg["regions"]]
@@ -321,6 +411,8 @@ def main():
 
     DOCS.mkdir(exist_ok=True)
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
+    if debug:  # 주택형 API 응답 샘플 (필드명 확인용)
+        (DOCS / "debug_models.json").write_text(json.dumps(debug, ensure_ascii=False, indent=1), encoding="utf-8")
 
     payload = {
         "updated": datetime.now(KST).isoformat(timespec="minutes"),
