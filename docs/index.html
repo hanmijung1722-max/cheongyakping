@@ -51,6 +51,38 @@ h2 .count{font-size:12px;font-weight:700;color:var(--sub);background:var(--fill)
 .tbl th{color:var(--sub);font-weight:600}
 .tbl td:first-child,.tbl th:first-child{text-align:left}
 .tbl td.z{color:var(--sub)}
+.tag2.ok{color:var(--success);background:color-mix(in srgb,var(--success) 13%,transparent)}
+.tag2.warn{color:#c77a00;background:color-mix(in srgb,var(--orange) 18%,transparent)}
+.tag2.bad{color:var(--urgent);background:color-mix(in srgb,var(--urgent) 12%,transparent)}
+.seg{display:flex;background:var(--fill);border-radius:12px;padding:3px;margin:8px 0 4px}
+.seg button{flex:1;border:0;background:none;color:var(--sub);font-weight:700;font-size:14px;padding:8px 0;border-radius:10px}
+.seg button.on{background:var(--card);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.form{background:var(--card);border-radius:20px;padding:6px 16px;margin-top:12px}
+.form label{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:600}
+.form label:last-child{border-bottom:0}
+.form small{display:block;font-weight:400;color:var(--sub);font-size:12px;margin-top:2px}
+.form input,.form select{font:inherit;font-size:16px;color:var(--text);background:var(--fill);border:0;border-radius:10px;padding:8px 10px;text-align:right}
+.form input[type=number]{width:64px}
+.form .pair{display:flex;align-items:center;gap:6px;font-weight:400;font-size:14px}
+.score{background:linear-gradient(135deg,var(--violet),var(--primary));color:#fff;border-radius:22px;padding:18px;margin-top:14px}
+.score .big{font-size:44px;font-weight:800;letter-spacing:-1px}
+.score .big small{font-size:16px;font-weight:600;opacity:.8}
+.score .bars{margin-top:10px;display:grid;gap:8px}
+.score .bar{font-size:12px}
+.score .bar i{display:block;height:7px;border-radius:99px;background:rgba(255,255,255,.28);margin-top:4px;overflow:hidden}
+.score .bar i b{display:block;height:100%;background:#fff;border-radius:99px}
+.score p{margin:10px 0 0;font-size:13px;line-height:1.5;opacity:.95}
+.card2{background:var(--card);border-radius:20px;padding:16px;margin-top:12px;font-size:14px;line-height:1.65}
+.card2 h3{margin:0 0 6px;font-size:16px}
+.card2 ul{margin:6px 0 0;padding-left:18px;color:var(--text)}
+.card2 li{margin:4px 0}
+.card2 .sub{color:var(--sub);font-size:12.5px}
+.tbl2{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.tbl2 th,.tbl2 td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:center}
+.tbl2 th{color:var(--sub);font-weight:600}
+.tbl2 td:first-child,.tbl2 th:first-child{text-align:left}
+.go{display:block;width:100%;border:0;border-radius:14px;padding:13px;font-size:15px;font-weight:700;margin-top:12px;background:var(--primary);color:#fff}
+.go.soft{background:color-mix(in srgb,var(--primary) 12%,transparent);color:var(--primary)}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
 .tile{background:var(--card);border-radius:16px;padding:14px 6px;text-align:center}
 .tile b{display:block;font-size:28px;font-weight:800}
@@ -166,7 +198,10 @@ const APPLY = ["special","first","second"];
 const WD = ["일","월","화","수","목","금","토"];
 
 let DATA = {listings:[], kinds:{}, sample:true};
-let tab = "home", region = "전체", persona = "전체";
+let tab = "home", region = "전체", persona = "전체", moreTab = "guide", onlyOk = false;
+let me = {months:null, homeless:null, dep:0};
+try { Object.assign(me, JSON.parse(localStorage.getItem("me") || "{}")); } catch (e) {}
+const saveMe = () => { try { localStorage.setItem("me", JSON.stringify(me)); } catch (e) {} };
 try { const p = localStorage.getItem("persona"); if (["전체","싱글","신혼부부"].includes(p)) persona = p; } catch (e) {}
 let added = new Set();
 try { added = new Set(JSON.parse(localStorage.getItem("added") || "[]")); } catch (e) {}
@@ -213,6 +248,48 @@ function statusOf(l) {
 }
 const visible = () => DATA.listings.filter(l => region === "전체" || l.region === region);
 
+/* ---------- 내 청약통장 · 가점 (참고용 추정) ----------
+   기준: 민영 일반공급 1순위 가입기간 — 규제지역(투기과열·조정대상) 24개월, 그 외 수도권 12개월.
+   예치금·납입횟수·세대주·무주택 요건은 반영하지 않아요. */
+const hasBank = () => me.months != null && !isNaN(me.months);
+const scoreBank = m => m < 6 ? 1 : m < 12 ? 2 : Math.min(17, 2 + Math.floor(m / 12));
+const scoreHome = h => h === "u30" ? 0 : (h == null || h === "") ? null : Math.min(32, 2 * (Math.floor(Number(h)) + 1));
+const scoreDep = n => Math.min(35, 5 + 5 * Math.max(0, Number(n) || 0));
+function myScore() {
+  const b = hasBank() ? scoreBank(me.months) : null, h = scoreHome(me.homeless), d = scoreDep(me.dep);
+  return {b, h, d, total: (b || 0) + (h || 0) + d, complete: b != null && h != null};
+}
+function zone(l) {
+  const r = l.reg || {};
+  if (r.spec === true) return "spec";
+  if (r.adj === true) return "adj";
+  if (r.spec === false && r.adj === false) return "none";
+  return "unk";
+}
+function bankFit(l) {
+  if (!hasBank()) return null;
+  const m = me.months, z = zone(l), need = (z === "spec" || z === "adj") ? 24 : z === "none" ? 12 : null;
+  const pub = l.kind === "국민" ? " · 납입 횟수도 필요" : "";
+  if (need != null) {
+    if (m >= need) return {level:"ok", cls:"ok", text:`✅ 1순위 가입기간 충족 (${need}개월)${pub}`};
+    if (m >= 6) return {level:"special", cls:"warn", text:`🟡 일반 1순위는 ${need}개월 필요 · 특공 가능성`};
+    return {level:"low", cls:"bad", text:"⛔ 가입 6개월 미만"};
+  }
+  if (m >= 24) return {level:"ok", cls:"ok", text:`✅ 1순위 가입기간 충족${pub}`};
+  if (m >= 12) return {level:"maybe", cls:"warn", text:"🟡 규제지역이면 24개월 필요 (공고 확인)"};
+  if (m >= 6) return {level:"special", cls:"warn", text:"🟡 일반 1순위는 12개월 이상 필요"};
+  return {level:"low", cls:"bad", text:"⛔ 가입 6개월 미만"};
+}
+/* 주택형별 추첨제 비중(대략) — 규제지역: 60㎡↓ 60% · 60~85㎡ 30% · 85㎡↑ 20%(투기과열)/50%(조정) / 비규제: 85㎡↓ 60% · 85㎡↑ 100% */
+function lotShare(l, t) {
+  if (l.kind === "국민" || t.area == null) return null;
+  const z = zone(l);
+  if (z === "unk") return null;
+  if (z === "none") return t.area <= 85 ? 60 : 100;
+  return t.area <= 60 ? 60 : t.area <= 85 ? 30 : (z === "spec" ? 20 : 50);
+}
+const bestLot = l => Math.max(0, ...(l.types || []).map(t => lotShare(l, t) || 0));
+
 /* ---------- 싱글 / 신혼부부 : 가능성 있는 공급 유형 ----------
    ※ 참고용 분류예요. 소득·자산·무주택·통장 요건은 반영하지 않아요. 최종 확인은 공고문에서! */
 const SUPPLY_LABEL = {newlywed:"신혼부부", first_home:"생애최초", multi_child:"다자녀", parents:"노부모부양", institution:"기관추천", newborn:"신생아", youth:"청년", etc:"기타"};
@@ -256,11 +333,17 @@ function card(l) {
   </article>`;
 }
 function tagsHtml(l) {
-  if (!personaCards()) return "";
-  const f = fit(l, persona);
-  if (f.unknown) return `<div class="tags"><span class="tag2 gray">유형 정보 확인 필요</span></div>`;
-  if (!f.items.length) return `<div class="tags"><span class="tag2 gray">${persona} 특공 없음 · 일반공급만</span></div>`;
-  return `<div class="tags">${f.items.map(i => `<span class="tag2">${i.text.replace(" 특별공급","").replace("(추첨)","")} ${i.n}세대</span>`).join("")}</div>`;
+  let out = "";
+  if (personaCards()) {
+    const f = fit(l, persona);
+    if (f.unknown) out += `<span class="tag2 gray">유형 정보 확인 필요</span>`;
+    else if (!f.items.length) out += `<span class="tag2 gray">${persona} 특공 없음 · 일반공급만</span>`;
+    else out += f.items.map(i => `<span class="tag2">${i.text.replace(" 특별공급","").replace("(추첨)","")} ${i.n}세대</span>`).join("");
+  }
+  const b = bankFit(l);
+  if (b) out += `<span class="tag2 ${b.cls}">${b.text}</span>`;
+  if (b && bestLot(l) >= 60) out += `<span class="tag2 gray">추첨제 비중 높음</span>`;
+  return out ? `<div class="tags">${out}</div>` : "";
 }
 const whoChips = () => `<div class="chips who"><span class="lbl">나는</span>${["전체","싱글","신혼부부"].map(r => `<button class="chip ${r === persona ? "on" : ""}" data-persona="${r}">${r}</button>`).join("")}</div>`;
 const chips = () => `<div class="chips">${["전체","서울","경기"].map(r => `<button class="chip ${r === region ? "on" : ""}" data-region="${r}">${r}</button>`).join("")}</div>`;
@@ -268,7 +351,8 @@ const sampleBanner = () => DATA.sample ? `<div class="banner violet"><span>🪄<
 
 /* ---------- 홈 ---------- */
 function viewHome() {
-  const all = visible().map(l => ({l, s: statusOf(l), f: personaCards() ? fit(l, persona) : null}));
+  const all = visible().map(l => ({l, s: statusOf(l), f: personaCards() ? fit(l, persona) : null, b: bankFit(l)}))
+    .filter(x => !(onlyOk && hasBank()) || (x.b && (x.b.level === "ok" || x.b.level === "maybe")));
   const L = all.filter(x => !x.f || x.f.unknown || x.f.items.length);          // 내 특공 대상 + 확인 필요
   const rest = all.filter(x => x.f && !x.f.unknown && !x.f.items.length && x.s.phase !== "done"); // 일반공급만 가능
   const by = p => L.filter(x => x.s.phase === p).sort((a, b) => a.s.sort - b.s.sort);
@@ -279,7 +363,10 @@ function viewHome() {
     <p class="help" style="margin:-4px 0 10px">${persona} 대상 특별공급이 없는 단지예요. 일반공급(가점제·추첨제)으로는 신청할 수 있어요.</p>
     ${rest.sort((a, b) => a.s.sort - b.s.sort).map(x => card(x.l)).join("")}</section>` : "";
   const whoNote = personaCards() ? `<div class="banner violet"><span>🔎</span><span><b>${persona}</b> 기준으로 가능성 있는 특별공급 단지만 위에 모았어요. 소득·자산·무주택 여부 등은 반영하지 않은 <b>참고용 분류</b>예요.</span></div>` : "";
-  return sampleBanner() + chips() + whoChips() + whoNote +
+  const bankBar = hasBank()
+    ? `<div class="chips who"><span class="lbl">내 통장 ${Math.floor(me.months / 12)}년 ${me.months % 12}개월</span><button class="chip ${onlyOk ? "on" : ""}" data-only="1">1순위 가능만 보기</button></div>`
+    : `<div class="banner blue" data-goto="me" style="cursor:pointer"><span>🏦</span><span>내 <b>청약통장 가입기간</b>을 입력하면 단지마다 1순위 가능 여부를 보여줘요. <b>입력하러 가기 ›</b></span></div>`;
+  return sampleBanner() + chips() + whoChips() + bankBar + whoNote +
     `<div class="tiles">
       <div class="tile"><b style="color:var(--success)">${open.length}</b><span>접수 중</span></div>
       <div class="tile"><b style="color:var(--primary)">${soon}</b><span>7일 내 시작</span></div>
@@ -339,6 +426,90 @@ function viewGuide() {
   <p class="note">이 화면은 이해를 돕기 위한 일반 안내예요. 실제 자격·점수·기간은 청약홈과 각 단지의 입주자 모집공고문 기준으로 확인하세요.</p>`;
 }
 
+/* ---------- 내 조건 ---------- */
+const opt = (v, label, cur) => `<option value="${v}" ${String(cur) === String(v) ? "selected" : ""}>${label}</option>`;
+function viewMe() {
+  const y = hasBank() ? Math.floor(me.months / 12) : "", mo = hasBank() ? me.months % 12 : "";
+  const homeOpts = opt("", "선택 안 함", me.homeless ?? "") + opt("u30", "만 30세 미만 미혼 (0점)", me.homeless) +
+    opt(0, "1년 미만", me.homeless) + Array.from({length: 14}, (_, i) => opt(i + 1, `${i + 1}년 이상`, me.homeless)).join("") + opt(15, "15년 이상", me.homeless);
+  const depOpts = Array.from({length: 7}, (_, i) => opt(i, i === 0 ? "0명 (싱글)" : i === 6 ? "6명 이상" : `${i}명`, me.dep)).join("");
+  return `<section><h2>내 청약 조건</h2><p class="help" style="margin:-4px 2px 4px">이 기기에만 저장돼요. 입력하면 홈 화면의 단지마다 1순위 가능 여부가 표시돼요.</p>
+  <div class="form">
+    <label><span>청약통장 가입기간<small>청약홈·은행앱에서 확인</small></span><span class="pair"><input type="number" inputmode="numeric" min="0" max="40" placeholder="0" data-me="years" value="${y}">년 <input type="number" inputmode="numeric" min="0" max="11" placeholder="0" data-me="months" value="${mo}">개월</span></label>
+    <label><span>무주택 기간<small>만 30세(또는 혼인)부터 · 선택</small></span><select data-me="homeless">${homeOpts}</select></label>
+    <label><span>부양가족 수<small>본인 제외 · 선택</small></span><select data-me="dep">${depOpts}</select></label>
+  </div></section><div id="meRes">${meResult()}</div>`;
+}
+function meResult() {
+  const sc = myScore();
+  const tier = !sc.complete ? "" : sc.total >= 60 ? "가점이 높은 편이에요. 다만 서울 인기 단지는 70점대 당첨 사례도 보도돼서, 가점제 비중이 큰 곳은 경쟁이 매우 치열할 수 있어요."
+    : sc.total >= 40 ? "가점제만 믿기엔 경쟁이 센 구간이에요. 추첨제 비중이 높은 단지와 특별공급을 같이 노려보세요."
+    : "가점제보다 추첨제 물량과 특별공급 위주로 보는 게 현실적이에요. 통장 기간과 무주택 기간은 시간이 지날수록 점수가 올라가요.";
+  const bar = (label, v, max) => `<div class="bar">${label} <b>${v == null ? "입력 전" : v + "점"}</b> / ${max}<i><b style="width:${v == null ? 0 : v / max * 100}%"></b></i></div>`;
+  let okN = 0;
+  if (hasBank()) okN = DATA.listings.filter(l => { const s = statusOf(l); const b = bankFit(l); return s.phase !== "done" && b && (b.level === "ok" || b.level === "maybe"); }).length;
+  return `<div class="score"><div class="big">${sc.total}<small> / 84점${sc.complete ? "" : " (입력한 항목 기준)"}</small></div>
+    <div class="bars">${bar("무주택기간", sc.h, 32)}${bar("부양가족", sc.d, 35)}${bar("청약통장", sc.b, 17)}</div>
+    ${tier ? `<p>${tier}</p>` : '<p>가입기간과 무주택 기간을 입력하면 가점을 보여드려요.</p>'}</div>
+  ${hasBank() ? `<div class="card2"><h3>지금 내 통장으로는</h3>접수 예정·진행 중인 단지 중 <b>${okN}곳</b>에서 가입기간 기준 1순위가 가능해 보여요.
+    <button class="go" data-goto="home" data-only="1">1순위 가능한 단지 보기</button></div>` : ""}
+  <div class="card2"><h3>1순위 가입기간 기준 (민영)</h3>
+    <table class="tbl2"><tr><th>지역</th><th>가입기간</th></tr><tr><td>투기과열·조정대상(청약과열) 지역</td><td>24개월</td></tr><tr><td>그 외 수도권</td><td>12개월</td></tr></table>
+    <p class="sub">국민주택(공공)은 가입기간과 함께 납입 횟수(12·24회)도 필요해요. 예치금, 세대주, 무주택 요건은 공고문에서 따로 확인하세요.</p></div>
+  <button class="go soft" data-tab="tips">청약에 유리한 조건 보기 ›</button>
+  <p class="note">가점은 청약홈 가점계산기 기준을 단순화한 추정치예요. 신청 전 청약홈에서 꼭 다시 계산해 보세요.</p>`;
+}
+
+/* ---------- 유리한 조건 ---------- */
+function viewTips() {
+  const sc = myScore();
+  const mine = [];
+  if (hasBank() && me.months < 12) mine.push("통장 가입 12개월(규제지역은 24개월)이 지나야 일반공급 1순위가 돼요. 해지하지 말고 매달 납입하세요.");
+  else if (hasBank() && me.months < 24) mine.push("규제지역(서울 등) 단지는 24개월이 필요해요. 비규제 수도권 단지부터 1순위로 노려볼 수 있어요.");
+  if (persona === "싱글") mine.push("싱글은 부양가족 점수가 5점뿐이라 가점제가 불리해요. 전용 60㎡ 이하 추첨제와 생애최초 특공(추첨), 청년 특공을 우선 보세요.");
+  if (persona === "신혼부부") mine.push("신혼부부 특공은 가점이 아니라 소득·자녀 수 등으로 가려요. 혼인 7년 이내인 지금이 기회라 놓치지 마세요.");
+  if (sc.complete && sc.total < 40) mine.push("가점이 낮다면 추첨제 비중이 높은 단지(비규제·60㎡ 이하·85㎡ 초과)에 집중하세요.");
+  if (!mine.length) mine.push("“내 조건” 탭에 통장 기간을 입력하면 여기에 맞춤 팁이 나와요.");
+  return `<div class="hero"><h2>청약에 유리한 조건</h2><p>점수가 낮아도 길은 있어요. 핵심만 모았어요.</p></div>
+  <div class="card2" style="background:color-mix(in srgb,var(--violet) 10%,transparent)"><h3>👤 내 상황 맞춤</h3><ul>${mine.map(m => `<li>${m}</li>`).join("")}</ul></div>
+
+  <div class="card2"><h3>① 가점 84점은 이렇게 쌓여요</h3>
+    <table class="tbl2"><tr><th>항목</th><th>만점</th><th>쌓는 법</th></tr>
+    <tr><td>무주택 기간</td><td>32</td><td>1년당 2점</td></tr><tr><td>부양가족</td><td>35</td><td>1명당 5점</td></tr><tr><td>통장 가입기간</td><td>17</td><td>1년당 1점</td></tr></table>
+    <ul><li><b>통장은 해지하지 마세요.</b> 해지하면 쌓은 기간도 사라져요.</li>
+    <li>무주택 기간은 만 30세(혼인했다면 혼인신고일)부터 세요. 집을 샀다면 처분한 날부터 다시 세요.</li>
+    <li>부양가족은 배우자, 미혼 자녀, 만 60세 이상 직계존속(3년 이상 같은 세대)이 해당돼요. 비중이 가장 커서 싱글은 구조적으로 불리해요.</li>
+    <li class="sub">미성년 때 가입한 기간은 최대 5년까지 인정되는 규정이 있어요. 청약홈에서 확인하세요.</li></ul></div>
+
+  <div class="card2"><h3>② 가점이 낮아도 노릴 수 있는 곳</h3>
+    <p class="sub" style="margin:0">일반공급 중 추첨으로 뽑는 물량 비중(대략)</p>
+    <table class="tbl2"><tr><th>전용면적</th><th>규제지역</th><th>비규제</th></tr>
+    <tr><td>60㎡ 이하</td><td>60%</td><td>60%</td></tr><tr><td>60~85㎡</td><td>30%</td><td>60%</td></tr><tr><td>85㎡ 초과</td><td>20~50%</td><td>100%</td></tr></table>
+    <ul><li><b>전용 60㎡ 이하 소형</b>은 규제지역에서도 추첨 비중이 커요. 싱글·신혼에게 가장 현실적이에요.</li>
+    <li><b>비규제 지역</b>은 추첨제가 넓어서 가점이 낮아도 기회가 있어요.</li>
+    <li><b>특별공급</b>(신혼·생애최초 등)은 가점과 별개로 신청해요. 일반공급과 따로 지원할 수 있어요.</li>
+    <li><b>무순위·잔여세대</b>는 가점과 상관없이 추첨으로 뽑는 경우가 많아요.</li>
+    <li>서울 인기 단지는 70점대 당첨 사례도 있어요. 경쟁이 덜한 신도시·외곽 단지도 같이 보세요.</li></ul></div>
+
+  <div class="card2"><h3>③ 통장 기간이 중요한 순간</h3>
+    <ul><li><b>12개월</b> — 수도권 일반 지역 민영 1순위 기준</li>
+    <li><b>24개월</b> — 투기과열·조정대상 지역(서울 등) 1순위 기준</li>
+    <li>국민주택(공공)은 가입기간과 <b>납입 횟수</b>가 같이 필요해서 매달 빠짐없이 넣는 게 좋아요. 월 인정 한도는 25만 원이에요.</li>
+    <li>민영주택은 거주지·면적별 <b>예치금</b>을 신청 전까지 채워야 해요.</li></ul></div>
+
+  <div class="card2"><h3>④ 신청 전에 꼭 확인</h3>
+    <ul><li>규제지역은 <b>세대주</b>가 아니면 1순위여도 2순위로 신청해요.</li>
+    <li>당첨자 발표일이 같은 단지는 <b>1인 1건</b>만 신청할 수 있어요.</li>
+    <li>순위 요건을 갖췄어도 <b>신청 전에 통장을 해지하면</b> 청약이 안 돼요.</li>
+    <li>자격이 맞지 않는 당첨은 부적격 처리되어 불이익이 있어요.</li></ul></div>
+  <p class="note">2026년 11월 기준의 일반 안내예요. 제도와 지역 지정은 자주 바뀌니 신청 전 청약홈과 입주자 모집공고문에서 꼭 확인하세요.</p>`;
+}
+
+function viewMore() {
+  return `<div class="seg"><button class="${moreTab === "guide" ? "on" : ""}" data-more="guide">가이드</button><button class="${moreTab === "set" ? "on" : ""}" data-more="set">알림 설정</button></div>` +
+    (moreTab === "guide" ? viewGuide() : viewSettings());
+}
+
 /* ---------- 설정/알림 안내 ---------- */
 function viewSettings() {
   const url = new URL("all.ics", location.href).href;
@@ -357,6 +528,19 @@ function viewSettings() {
 }
 
 /* ---------- 상세 시트 ---------- */
+function bankSection(l) {
+  if (!hasBank()) return `<div class="fit no"><b>내 통장 기준</b>“내 조건” 탭에서 가입기간을 입력하면 이 단지의 1순위 가능 여부를 알려줘요.</div>`;
+  const b = bankFit(l), z = zone(l), sc = myScore();
+  const zt = {spec:"투기과열지구", adj:"조정대상(청약과열)지역", none:"비규제지역", unk:"규제지역 여부 확인 필요"}[z];
+  const rows = (l.types || []).map(t => {
+    const lot = lotShare(l, t);
+    return `<tr><td>${t.area != null ? t.area + "㎡" : esc(t.ty)}</td><td>${lot == null ? "-" : (100 - lot) + "%"}</td><td>${lot == null ? "-" : lot + "%"}</td></tr>`;
+  }).join("");
+  const lotTable = rows && l.kind !== "국민" && z !== "unk"
+    ? `<table class="tbl2"><tr><th>주택형</th><th>가점제</th><th>추첨제</th></tr>${rows}</table><p class="help">일반공급 물량 기준 대략적인 비율이에요. 정확한 배정은 공고문에서 확인하세요.</p>` : "";
+  return `<div class="fit ${b.cls === "ok" ? "" : "no"}"><b>내 통장(${Math.floor(me.months / 12)}년 ${me.months % 12}개월) 기준</b>${b.text}<br>
+    <span style="color:var(--sub);font-size:12.5px">${zt}${l.kind ? " · " + l.kind + "주택" : ""} · 예치금·세대주·무주택 요건은 따로 확인해야 해요.${sc.complete ? ` 내 가점 약 ${sc.total}점.` : ""}</span></div>${lotTable}`;
+}
 function supplySection(l) {
   const who = persona === "전체" ? ["싱글", "신혼부부"] : [persona];
   const boxes = who.map(p => {
@@ -383,7 +567,7 @@ function openDetail(id) {
       <div class="txt"><b style="${past ? "color:var(--sub)" : ""}">${DATA.kinds[e.kind].title}</b>${ong ? '<span class="tag">진행 중</span>' : ""}
       <div class="d" style="color:${past ? "var(--sub)" : COLORS[e.kind]}">${range(e)}</div><p>${DATA.kinds[e.kind].hint}</p></div></div>`;
   }).join("");
-  const supplyHtml = supplySection(l);
+  const supplyHtml = bankSection(l) + supplySection(l);
   const noticeUrl = l.url && /^https?:\/\//.test(l.url) ? l.url : "https://www.applyhome.co.kr";
   $("#panel").innerHTML = `<button class="close" data-close aria-label="닫기">✕</button>
     <span class="pill r-${esc(l.region)}">${esc(l.region)}</span>
@@ -408,20 +592,25 @@ const ICON = {
   book:'<svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5"/><path d="M9 8h6"/></svg>',
   bell:'<svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 1 1 12 0v6l2 2H4zM10 21h4"/></svg>'
 };
-const TABS = [["home","홈",ICON.home],["cal","캘린더",ICON.cal],["guide","가이드",ICON.book],["set","알림 설정",ICON.bell]];
+ICON.me = '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>';
+ICON.tip = '<svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg>';
+const TABS = [["home","홈",ICON.home],["cal","캘린더",ICON.cal],["me","내 조건",ICON.me],["tips","유리한 조건",ICON.tip],["more","더보기",ICON.book]];
 function render() {
   $("#tabs").innerHTML = TABS.map(t => `<button class="${t[0] === tab ? "on" : ""}" data-tab="${t[0]}">${t[2]}${t[1]}</button>`).join("");
-  $("#view").innerHTML = ({home:viewHome, cal:viewCalendar, guide:viewGuide, set:viewSettings}[tab])();
+  $("#view").innerHTML = ({home:viewHome, cal:viewCalendar, me:viewMe, tips:viewTips, more:viewMore}[tab])();
   const upd = DATA.updated ? DATA.updated.slice(5, 16).replace("T", " ") : "";
   $("#sub").textContent = `서울·경기 청약 일정${upd ? " · 업데이트 " + upd : ""}`;
 }
 document.addEventListener("click", ev => {
-  const t = ev.target.closest("[data-tab],[data-region],[data-persona],[data-day],[data-mv],[data-id],[data-close],[data-add],[data-copy]");
+  const t = ev.target.closest("[data-tab],[data-region],[data-persona],[data-more],[data-only],[data-goto],[data-day],[data-mv],[data-id],[data-close],[data-add],[data-copy]");
   if (!t) return;
   const d = t.dataset;
   if (d.add) { added.add(d.add); saveAdded(); setTimeout(render, 300); return; }        // 링크는 그대로 열리게 둠
   if (d.close !== undefined) { closeSheet(); return; }
-  if (d.tab) { tab = d.tab; window.scrollTo(0, 0); }
+  if (d.goto) { tab = d.goto; if (d.only) onlyOk = true; window.scrollTo(0, 0); }
+  else if (d.only) { onlyOk = !onlyOk; }
+  else if (d.more) { moreTab = d.more; window.scrollTo(0, 0); }
+  else if (d.tab) { tab = d.tab; window.scrollTo(0, 0); }
   else if (d.region) region = d.region;
   else if (d.persona) { persona = d.persona; try { localStorage.setItem("persona", persona); } catch (e) {} }
   else if (d.day) sel = d.day;
@@ -437,6 +626,18 @@ document.addEventListener("click", ev => {
   }
   else if (d.id) { openDetail(d.id); return; }
   render();
+});
+
+document.addEventListener("change", ev => {
+  const t = ev.target.closest("[data-me]"); if (!t) return;
+  const k = t.dataset.me, v = t.value;
+  if (k === "years" || k === "months") {
+    const root = t.closest(".pair"), yv = root.querySelector('[data-me=years]').value, mv = root.querySelector('[data-me=months]').value;
+    me.months = (yv === "" && mv === "") ? null : Math.max(0, (Number(yv) || 0) * 12 + (Number(mv) || 0));
+  } else if (k === "homeless") me.homeless = v === "" ? null : v === "u30" ? "u30" : Number(v);
+  else if (k === "dep") me.dep = Number(v);
+  saveMe();
+  if (tab === "me" && $("#meRes")) $("#meRes").innerHTML = meResult(); else render();
 });
 
 fetch("listings.json?v=" + Date.now()).then(r => r.json()).then(j => { DATA = j; render(); })
