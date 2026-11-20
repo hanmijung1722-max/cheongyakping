@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T11:53+09:00",
+ "updated": "2026-11-20T11:46+09:00",
  "sample": false,
  "alarm_hour": 9,
  "alarms": {
@@ -3664,6 +3664,218 @@
      "newborn": 5,
      "youth": 0,
      "etc": 0
+    }
+   ]
+  },
+  {
+   "id": "2026000585-2026000585",
+   "manage_no": "2026000585",
+   "pblanc_no": "2026000585",
+   "name": "고양 한신더휴 퍼스트원",
+   "region": "경기",
+   "address": "경기도 고양시 덕양구 행신동 173-1번지 일원",
+   "units": 102,
+   "builder": "한신공영 주식회사",
+   "developer": "행신2의1구역재건축정비사업조합",
+   "move_in": "202905",
+   "phone": "0231593428",
+   "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000585&pblancNo=2026000585",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
+   "events": [
+    {
+     "kind": "announcement",
+     "start": "2026-11-19",
+     "end": "2026-11-19"
+    },
+    {
+     "kind": "special",
+     "start": "2026-11-30",
+     "end": "2026-11-30"
+    },
+    {
+     "kind": "first",
+     "start": "2026-12-01",
+     "end": "2026-12-01"
+    },
+    {
+     "kind": "second",
+     "start": "2026-12-02",
+     "end": "2026-12-02"
+    },
+    {
+     "kind": "winner",
+     "start": "2026-12-09",
+     "end": "2026-12-09"
+    },
+    {
+     "kind": "contract",
+     "start": "2026-12-21",
+     "end": "2026-12-23"
+    }
+   ],
+   "supply": {
+    "general": 41,
+    "newlywed": 16,
+    "first_home": 8,
+    "multi_child": 11,
+    "parents": 4,
+    "institution": 11,
+    "newborn": 11,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "059.8728",
+     "area": 59.87,
+     "general": 7,
+     "price": 64472,
+     "newlywed": 5,
+     "first_home": 3,
+     "multi_child": 3,
+     "parents": 1,
+     "institution": 3,
+     "newborn": 4,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "071.9348",
+     "area": 71.93,
+     "general": 21,
+     "price": 72944,
+     "newlywed": 6,
+     "first_home": 3,
+     "multi_child": 4,
+     "parents": 2,
+     "institution": 5,
+     "newborn": 4,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9614",
+     "area": 84.96,
+     "general": 13,
+     "price": 84579,
+     "newlywed": 5,
+     "first_home": 2,
+     "multi_child": 4,
+     "parents": 1,
+     "institution": 3,
+     "newborn": 3,
+     "youth": 0,
+     "etc": 0
+    }
+   ]
+  },
+  {
+   "id": "2026000575-2026000575",
+   "manage_no": "2026000575",
+   "pblanc_no": "2026000575",
+   "name": "왕숙 한신더휴 센텀(남양주 왕숙 A-17BL) 공공분양주택",
+   "region": "경기",
+   "address": "경기도 남양주시 진건읍 진관리 일원 남양주 왕숙 공공주택지구 A-17BL",
+   "units": 379,
+   "builder": "한신공영(주),쌍용건설(주),(주)대승글로벌,(주)고덕종합건설,(주)지아이",
+   "developer": "한신공영(주)",
+   "move_in": "202907",
+   "phone": "18336650",
+   "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000575&pblancNo=2026000575",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
+   "events": [
+    {
+     "kind": "announcement",
+     "start": "2026-11-19",
+     "end": "2026-11-19"
+    },
+    {
+     "kind": "special",
+     "start": "2026-11-30",
+     "end": "2026-11-30"
+    },
+    {
+     "kind": "first",
+     "start": "2026-12-01",
+     "end": "2026-12-01"
+    },
+    {
+     "kind": "second",
+     "start": "2026-12-02",
+     "end": "2026-12-02"
+    },
+    {
+     "kind": "winner",
+     "start": "2026-12-08",
+     "end": "2026-12-08"
+    },
+    {
+     "kind": "contract",
+     "start": "2027-02-15",
+     "end": "2027-02-17"
+    }
+   ],
+   "supply": {
+    "general": 91,
+    "newlywed": 34,
+    "first_home": 54,
+    "multi_child": 34,
+    "parents": 11,
+    "institution": 50,
+    "newborn": 70,
+    "youth": 0,
+    "etc": 35
+   },
+   "types": [
+    {
+     "ty": "059.9600A",
+     "area": 59.96,
+     "general": 57,
+     "price": 60750,
+     "newlywed": 22,
+     "first_home": 33,
+     "multi_child": 22,
+     "parents": 7,
+     "institution": 33,
+     "newborn": 42,
+     "youth": 0,
+     "etc": 25
+    },
+    {
+     "ty": "059.7100B",
+     "area": 59.71,
+     "general": 15,
+     "price": 60496,
+     "newlywed": 6,
+     "first_home": 9,
+     "multi_child": 6,
+     "parents": 2,
+     "institution": 8,
+     "newborn": 12,
+     "youth": 0,
+     "etc": 5
+    },
+    {
+     "ty": "059.1400C",
+     "area": 59.14,
+     "general": 19,
+     "price": 59919,
+     "newlywed": 6,
+     "first_home": 12,
+     "multi_child": 6,
+     "parents": 2,
+     "institution": 9,
+     "newborn": 16,
+     "youth": 0,
+     "etc": 5
     }
    ]
   }
