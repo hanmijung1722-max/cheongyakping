@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T11:46+09:00",
+ "updated": "2026-11-21T11:55+09:00",
  "sample": false,
  "alarm_hour": 9,
  "alarms": {
@@ -3662,6 +3662,168 @@
      "parents": 1,
      "institution": 4,
      "newborn": 5,
+     "youth": 0,
+     "etc": 0
+    }
+   ]
+  },
+  {
+   "id": "2026000591-2026000591",
+   "manage_no": "2026000591",
+   "pblanc_no": "2026000591",
+   "name": "소사 휴먼빌",
+   "region": "경기",
+   "address": "경기도 부천시 소사구 소사본동 277-30번지 일원",
+   "units": 45,
+   "builder": "일신건영(주)",
+   "developer": "소사본동277의30번지일원가로주택정비사업조합",
+   "move_in": "202805",
+   "phone": "0326750022",
+   "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000591&pblancNo=2026000591",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
+   "events": [
+    {
+     "kind": "announcement",
+     "start": "2026-11-20",
+     "end": "2026-11-20"
+    },
+    {
+     "kind": "special",
+     "start": "2026-11-30",
+     "end": "2026-11-30"
+    },
+    {
+     "kind": "first",
+     "start": "2026-12-01",
+     "end": "2026-12-01"
+    },
+    {
+     "kind": "second",
+     "start": "2026-12-02",
+     "end": "2026-12-02"
+    },
+    {
+     "kind": "winner",
+     "start": "2026-12-08",
+     "end": "2026-12-08"
+    },
+    {
+     "kind": "contract",
+     "start": "2026-12-21",
+     "end": "2026-12-23"
+    }
+   ],
+   "supply": {
+    "general": 22,
+    "newlywed": 7,
+    "first_home": 4,
+    "multi_child": 4,
+    "parents": 0,
+    "institution": 4,
+    "newborn": 4,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "059.9906A",
+     "area": 59.99,
+     "general": 4,
+     "price": 55932,
+     "newlywed": 1,
+     "first_home": 1,
+     "multi_child": 1,
+     "parents": 0,
+     "institution": 1,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.2735B",
+     "area": 59.27,
+     "general": 6,
+     "price": 54986,
+     "newlywed": 2,
+     "first_home": 1,
+     "multi_child": 1,
+     "parents": 0,
+     "institution": 1,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.2599C",
+     "area": 59.26,
+     "general": 2,
+     "price": 55051,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.1615D",
+     "area": 59.16,
+     "general": 1,
+     "price": 49355,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.5869A",
+     "area": 84.59,
+     "general": 4,
+     "price": 78256,
+     "newlywed": 2,
+     "first_home": 1,
+     "multi_child": 1,
+     "parents": 0,
+     "institution": 1,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.6433B",
+     "area": 84.64,
+     "general": 4,
+     "price": 78307,
+     "newlywed": 2,
+     "first_home": 1,
+     "multi_child": 1,
+     "parents": 0,
+     "institution": 1,
+     "newborn": 1,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.9848C",
+     "area": 84.98,
+     "general": 1,
+     "price": 78847,
+     "newlywed": 0,
+     "first_home": 0,
+     "multi_child": 0,
+     "parents": 0,
+     "institution": 0,
+     "newborn": 0,
      "youth": 0,
      "etc": 0
     }
