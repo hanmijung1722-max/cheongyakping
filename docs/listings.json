@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T14:41+09:00",
+ "updated": "2026-11-25T13:42+09:00",
  "sample": false,
  "alarm_hour": 9,
  "alarms": {
@@ -40,93 +40,6 @@
   }
  },
  "listings": [
-  {
-   "id": "2026000409-2026000409",
-   "manage_no": "2026000409",
-   "pblanc_no": "2026000409",
-   "name": "의정부우정 A2블록 공공분양주택(본청약)",
-   "region": "경기",
-   "address": "경기도 의정부시 녹양동 일원 의정부우정 공공주택지구 내 A-2블록",
-   "units": 463,
-   "builder": "남광토건 주식회사, 금광기업(주), 경안종합건설 주식회사, 중앙건설 주식회사",
-   "developer": "한국토지주택공사 경기북부지역본부",
-   "move_in": "202905",
-   "phone": "0315749144",
-   "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000409&pblancNo=2026000409",
-   "kind": "국민",
-   "reg": {
-    "spec": false,
-    "adj": false
-   },
-   "events": [
-    {
-     "kind": "announcement",
-     "start": "2026-08-26",
-     "end": "2026-08-26"
-    },
-    {
-     "kind": "first",
-     "start": "2026-09-07",
-     "end": "2026-09-15"
-    },
-    {
-     "kind": "second",
-     "start": "2026-09-16",
-     "end": "2026-09-17"
-    },
-    {
-     "kind": "winner",
-     "start": "2026-10-08",
-     "end": "2026-10-08"
-    },
-    {
-     "kind": "contract",
-     "start": "2026-12-10",
-     "end": "2026-12-15"
-    }
-   ],
-   "supply": {
-    "general": 27,
-    "newlywed": 17,
-    "first_home": 26,
-    "multi_child": 17,
-    "parents": 9,
-    "institution": 26,
-    "newborn": 35,
-    "youth": 0,
-    "etc": 28
-   },
-   "types": [
-    {
-     "ty": "059.9200A",
-     "area": 59.92,
-     "general": 20,
-     "price": 40646,
-     "newlywed": 13,
-     "first_home": 19,
-     "multi_child": 13,
-     "parents": 7,
-     "institution": 20,
-     "newborn": 26,
-     "youth": 0,
-     "etc": 22
-    },
-    {
-     "ty": "059.9600B",
-     "area": 59.96,
-     "general": 7,
-     "price": 40419,
-     "newlywed": 4,
-     "first_home": 7,
-     "multi_child": 4,
-     "parents": 2,
-     "institution": 6,
-     "newborn": 9,
-     "youth": 0,
-     "etc": 6
-    }
-   ]
-  },
   {
    "id": "2026820009-2026820009",
    "manage_no": "2026820009",
