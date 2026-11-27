@@ -1,0 +1,148 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CheongyakPing//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:청약핑 · 병점복합타운 주복1블록 공공분양
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:2026000611-2026000611-first@cheongyakping
+DTSTAMP:20261127T035252Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261209
+SUMMARY:[1순위] 병점복합타운 주복1블록 공공분양
+LOCATION:경기도 화성시 병점구 병점동\, 진안동 일원 병점
+ 복합타운 내 주복1블록
+DESCRIPTION:1순위 접수: 청약통장 요건을 갖춘 분들이 신청
+ 하는 일반공급 첫 번째 기회예요.\n경기도 화성시 병점
+ 구 병점동\, 진안동 일원 병점복합타운 내 주복1블록\n공
+ 고문: https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?h
+ ouseManageNo=2026000611&pblancNo=2026000611\n※ 신청 전 입주자 모
+ 집공고문에서 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000611&pblancNo=2026000611
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 1순위 접수 · 경기 · 병점복합타운 주복1
+ 블록 공공분양
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 1순위 접수 · 경기 · 병점복합타운 주복1
+ 블록 공공분양
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 1순위 접수 · 경기 · 병점복합타운 
+ 주복1블록 공공분양
+TRIGGER:P1DT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000611-2026000611-second@cheongyakping
+DTSTAMP:20261127T035252Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261211
+SUMMARY:[2순위] 병점복합타운 주복1블록 공공분양
+LOCATION:경기도 화성시 병점구 병점동\, 진안동 일원 병점
+ 복합타운 내 주복1블록
+DESCRIPTION:2순위 접수: 1순위에서 마감되지 않았을 때 이어
+ 지는 신청 기회예요.\n경기도 화성시 병점구 병점동\, 진
+ 안동 일원 병점복합타운 내 주복1블록\n공고문: https://www
+ .applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=202600
+ 0611&pblancNo=2026000611\n※ 신청 전 입주자 모집공고문에서 
+ 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000611&pblancNo=2026000611
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 2순위 접수 · 경기 · 병점복합타운 주복1
+ 블록 공공분양
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 2순위 접수 · 경기 · 병점복합타운 주복1
+ 블록 공공분양
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 2순위 접수 · 경기 · 병점복합타운 
+ 주복1블록 공공분양
+TRIGGER:P1DT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000611-2026000611-winner@cheongyakping
+DTSTAMP:20261127T035252Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:[발표] 병점복합타운 주복1블록 공공분양
+LOCATION:경기도 화성시 병점구 병점동\, 진안동 일원 병점
+ 복합타운 내 주복1블록
+DESCRIPTION:당첨자 발표: 청약홈 등에서 당첨 여부를 확인
+ 할 수 있어요.\n경기도 화성시 병점구 병점동\, 진안동 
+ 일원 병점복합타운 내 주복1블록\n공고문: https://www.applyh
+ ome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000611&pb
+ lancNo=2026000611\n※ 신청 전 입주자 모집공고문에서 자격
+ 과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000611&pblancNo=2026000611
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 당첨자 발표 · 경기 · 병점복합타운 주복1
+ 블록 공공분양
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 당첨자 발표 · 경기 · 병점복합타운 주복1
+ 블록 공공분양
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026000611-2026000611-contract@cheongyakping
+DTSTAMP:20261127T035252Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270313
+SUMMARY:[계약] 병점복합타운 주복1블록 공공분양
+LOCATION:경기도 화성시 병점구 병점동\, 진안동 일원 병점
+ 복합타운 내 주복1블록
+DESCRIPTION:계약 체결: 당첨자가 서류를 내고 계약금을 납
+ 부하는 기간이에요.\n경기도 화성시 병점구 병점동\, 진
+ 안동 일원 병점복합타운 내 주복1블록\n공고문: https://www
+ .applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=202600
+ 0611&pblancNo=2026000611\n※ 신청 전 입주자 모집공고문에서 
+ 자격과 일정을 꼭 확인하세요.
+TRANSP:TRANSPARENT
+URL:https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseM
+ anageNo=2026000611&pblancNo=2026000611
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:내일 계약 체결 · 경기 · 병점복합타운 주복1블
+ 록 공공분양
+TRIGGER:-PT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 계약 체결 · 경기 · 병점복합타운 주복1블
+ 록 공공분양
+TRIGGER:PT9H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:오늘 마감! 계약 체결 · 경기 · 병점복합타운 
+ 주복1블록 공공분양
+TRIGGER:P3DT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

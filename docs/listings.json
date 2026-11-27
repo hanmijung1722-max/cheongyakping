@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T12:51+09:00",
+ "updated": "2026-11-27T12:52+09:00",
  "sample": false,
  "alarm_hour": 9,
  "alarms": {
@@ -3618,6 +3618,191 @@
      "newborn": 16,
      "youth": 0,
      "etc": 5
+    }
+   ]
+  },
+  {
+   "id": "2026000611-2026000611",
+   "manage_no": "2026000611",
+   "pblanc_no": "2026000611",
+   "name": "병점복합타운 주복1블록 공공분양",
+   "region": "경기",
+   "address": "경기도 화성시 병점구 병점동, 진안동 일원 병점복합타운 내 주복1블록",
+   "units": 726,
+   "builder": "(주)태왕이앤씨,우경건설(주), 토브디엔씨(주)",
+   "developer": "한국토지주택공사 경기남부지역본부",
+   "move_in": "203006",
+   "phone": "03180777989",
+   "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000611&pblancNo=2026000611",
+   "kind": "국민",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
+   "events": [
+    {
+     "kind": "announcement",
+     "start": "2026-11-26",
+     "end": "2026-11-26"
+    },
+    {
+     "kind": "first",
+     "start": "2026-12-07",
+     "end": "2026-12-08"
+    },
+    {
+     "kind": "second",
+     "start": "2026-12-09",
+     "end": "2026-12-10"
+    },
+    {
+     "kind": "winner",
+     "start": "2026-12-23",
+     "end": "2026-12-23"
+    },
+    {
+     "kind": "contract",
+     "start": "2027-03-09",
+     "end": "2027-03-12"
+    }
+   ],
+   "supply": {
+    "general": 183,
+    "newlywed": 72,
+    "first_home": 109,
+    "multi_child": 72,
+    "parents": 22,
+    "institution": 123,
+    "newborn": 145,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "061.9800A",
+     "area": 61.98,
+     "general": 10,
+     "price": 50089,
+     "newlywed": 3,
+     "first_home": 6,
+     "multi_child": 3,
+     "parents": 1,
+     "institution": 6,
+     "newborn": 7,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "063.8300A",
+     "area": 63.83,
+     "general": 14,
+     "price": 51584,
+     "newlywed": 5,
+     "first_home": 8,
+     "multi_child": 5,
+     "parents": 2,
+     "institution": 9,
+     "newborn": 11,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "065.9900A",
+     "area": 65.99,
+     "general": 20,
+     "price": 53858,
+     "newlywed": 8,
+     "first_home": 11,
+     "multi_child": 8,
+     "parents": 2,
+     "institution": 14,
+     "newborn": 15,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "066.9700A",
+     "area": 66.97,
+     "general": 9,
+     "price": 54657,
+     "newlywed": 4,
+     "first_home": 6,
+     "multi_child": 4,
+     "parents": 1,
+     "institution": 7,
+     "newborn": 7,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "071.8800A",
+     "area": 71.88,
+     "general": 30,
+     "price": 58665,
+     "newlywed": 12,
+     "first_home": 18,
+     "multi_child": 12,
+     "parents": 3,
+     "institution": 20,
+     "newborn": 24,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "072.9800A",
+     "area": 72.98,
+     "general": 30,
+     "price": 59562,
+     "newlywed": 12,
+     "first_home": 18,
+     "multi_child": 12,
+     "parents": 4,
+     "institution": 20,
+     "newborn": 24,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "072.9800B",
+     "area": 72.98,
+     "general": 30,
+     "price": 59562,
+     "newlywed": 12,
+     "first_home": 18,
+     "multi_child": 12,
+     "parents": 4,
+     "institution": 20,
+     "newborn": 24,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "073.9900A",
+     "area": 73.99,
+     "general": 30,
+     "price": 60388,
+     "newlywed": 12,
+     "first_home": 18,
+     "multi_child": 12,
+     "parents": 3,
+     "institution": 20,
+     "newborn": 24,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.8100A",
+     "area": 84.81,
+     "general": 10,
+     "price": 69218,
+     "newlywed": 4,
+     "first_home": 6,
+     "multi_child": 4,
+     "parents": 2,
+     "institution": 7,
+     "newborn": 9,
+     "youth": 0,
+     "etc": 0
     }
    ]
   }
