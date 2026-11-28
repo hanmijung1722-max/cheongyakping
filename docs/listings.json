@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T12:52+09:00",
+ "updated": "2026-11-28T12:39+09:00",
  "sample": false,
  "alarm_hour": 9,
  "alarms": {
@@ -3618,6 +3618,126 @@
      "newborn": 16,
      "youth": 0,
      "etc": 5
+    }
+   ]
+  },
+  {
+   "id": "2026000612-2026000612",
+   "manage_no": "2026000612",
+   "pblanc_no": "2026000612",
+   "name": "용인반도체클러스터 동일하이빌 파크밸리 2단지(D1-2블록)",
+   "region": "경기",
+   "address": "경기도 용인시 처인구 원삼면 용인 반도체 클러스터 일반산업단지 D1-2BL",
+   "units": 661,
+   "builder": "(주)동일토건",
+   "developer": "(주)디케이이엔씨",
+   "move_in": "202905",
+   "phone": "15330589",
+   "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000612&pblancNo=2026000612",
+   "kind": "민영",
+   "reg": {
+    "spec": false,
+    "adj": false
+   },
+   "events": [
+    {
+     "kind": "announcement",
+     "start": "2026-11-27",
+     "end": "2026-11-27"
+    },
+    {
+     "kind": "special",
+     "start": "2026-12-07",
+     "end": "2026-12-08"
+    },
+    {
+     "kind": "first",
+     "start": "2026-12-09",
+     "end": "2026-12-09"
+    },
+    {
+     "kind": "second",
+     "start": "2026-12-10",
+     "end": "2026-12-10"
+    },
+    {
+     "kind": "winner",
+     "start": "2026-12-16",
+     "end": "2026-12-16"
+    },
+    {
+     "kind": "contract",
+     "start": "2026-12-28",
+     "end": "2026-12-30"
+    }
+   ],
+   "supply": {
+    "general": 89,
+    "newlywed": 101,
+    "first_home": 114,
+    "multi_child": 67,
+    "parents": 22,
+    "institution": 67,
+    "newborn": 67,
+    "youth": 0,
+    "etc": 0
+   },
+   "types": [
+    {
+     "ty": "059.9390A",
+     "area": 59.94,
+     "general": 36,
+     "price": 44300,
+     "newlywed": 38,
+     "first_home": 43,
+     "multi_child": 25,
+     "parents": 8,
+     "institution": 25,
+     "newborn": 25,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "059.8977B",
+     "area": 59.9,
+     "general": 16,
+     "price": 43200,
+     "newlywed": 18,
+     "first_home": 21,
+     "multi_child": 12,
+     "parents": 4,
+     "institution": 12,
+     "newborn": 12,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "071.8211B",
+     "area": 71.82,
+     "general": 14,
+     "price": 49500,
+     "newlywed": 18,
+     "first_home": 20,
+     "multi_child": 12,
+     "parents": 4,
+     "institution": 12,
+     "newborn": 12,
+     "youth": 0,
+     "etc": 0
+    },
+    {
+     "ty": "084.7577A",
+     "area": 84.76,
+     "general": 23,
+     "price": 56800,
+     "newlywed": 27,
+     "first_home": 30,
+     "multi_child": 18,
+     "parents": 6,
+     "institution": 18,
+     "newborn": 18,
+     "youth": 0,
+     "etc": 0
     }
    ]
   },
